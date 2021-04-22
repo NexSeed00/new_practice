@@ -15,3 +15,7 @@ const win_width = window.innerWidth;
 alert(win_width);
 ```
 </div></details>
+
+### 解説
+ウィンドウの横幅も取得できるということは、高さも取得ということになります。
+画面を縮めてリロードをするとアラートに出る数値が変化します。
