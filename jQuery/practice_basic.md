@@ -2,7 +2,7 @@
 
 ## Q-1. ウィンドウサイズを変数に入れ、アラートを出してみよう。 
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/850131b606a81f36a761838fd9714e36.gif)](https://gyazo.com/850131b606a81f36a761838fd9714e36)
 
 
@@ -28,7 +28,7 @@ alert(win_width);
 変数num2に8を代入しふたつの変数をひいてアラートに出しましょう。
 
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/15ddb634da9fe2c0a13705572b21287e.gif)](https://gyazo.com/15ddb634da9fe2c0a13705572b21287e)
 
 
@@ -57,7 +57,7 @@ alert(num2 - num1);
 ただし条件があり、"グレープ" と言う文字列は取り除きましょう。
 
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/08649dda81f6fcd8c0563fb457f5f353.gif)](https://gyazo.com/08649dda81f6fcd8c0563fb457f5f353)
 
 
@@ -89,7 +89,7 @@ alert(my_fruits);
 ただし条件があり、"グレープ" と言う文字列は取り除きましょう。
 
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/08649dda81f6fcd8c0563fb457f5f353.gif)](https://gyazo.com/08649dda81f6fcd8c0563fb457f5f353)
 
 
@@ -118,7 +118,7 @@ alert(my_fruits);
 リロードしてから5秒後に、アラートを出力してみましょう
 
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/8cb4234e239f9680ab2c35be1b2608be.gif)](https://gyazo.com/8cb4234e239f9680ab2c35be1b2608be)
 
 
@@ -147,7 +147,7 @@ setTimeout(function() {
 代入ができたら、 "グレープ" をアラートに出して見よう。
 
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/4cb60791cca08ece363dc8405df3f4d9.gif)](https://gyazo.com/4cb60791cca08ece363dc8405df3f4d9)
 
 
@@ -203,7 +203,7 @@ li{
 }
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/414a2c128e75f3cd62cb3f0960babe45.gif)](https://gyazo.com/414a2c128e75f3cd62cb3f0960babe45)
 
 
@@ -287,7 +287,7 @@ p.is-active {
 }
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/688fbbe01bf85fe5f44e3c1b2cd815fa.gif)](https://gyazo.com/688fbbe01bf85fe5f44e3c1b2cd815fa)
 
 
@@ -345,7 +345,7 @@ jQueryを使用しよう。
 </div>
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/1309ab8e2061cfcc08fb9cd5ac25cfb1.gif)](https://gyazo.com/1309ab8e2061cfcc08fb9cd5ac25cfb1)
 
 
@@ -397,7 +397,7 @@ jQueryを使用しよう。
 </div>
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/d23c80609af40251ed3e3d4708269fda.gif)](https://gyazo.com/d23c80609af40251ed3e3d4708269fda)
 
 
@@ -444,7 +444,7 @@ jQueryを使用しよう。
 <div class="target" style="display: none;">学習がんばれ〜〜〜</div>
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582.gif)](https://gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582)
 
 
@@ -489,7 +489,7 @@ jQueryを使用しよう。
 <div class="target">少しだけ学習さぼってしまおうかな〜〜〜</div>
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/81bbe74d64329745c928c425a927cba4.gif)](https://gyazo.com/81bbe74d64329745c928c425a927cba4)
 
 
@@ -533,7 +533,7 @@ jQueryを使用しよう。
 <div class="target" style="display: none;">プログラミングが楽しくなってきた！！</div>
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/e9e5ba47cd49220cb98c316f5dc003af.gif)](https://gyazo.com/e9e5ba47cd49220cb98c316f5dc003af)
 
 
@@ -583,7 +583,7 @@ jQueryを使用しよう。
 <div class="target">明日から本気だそう</div>
 ```
 
-### 正解後の挙動
+### 正解の挙動
 [![Image from Gyazo](https://i.gyazo.com/026c22b46f19d40d0b917393e9f48d32.gif)](https://gyazo.com/026c22b46f19d40d0b917393e9f48d32)
 
 
