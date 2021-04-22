@@ -6,7 +6,8 @@ foreach文と配列を使用して、カードを横に並びにしましょう�
 
 
 ### 準備
-#### 下記のリンクをクリックしてzipファイルをダウンロードし、htdocsの中に移動させましょう。index.phpの中にコードを書いていきましょう。
+#### 下記のリンクをクリックしてzipファイルをダウンロードし、htdocsの中に移動させましょう。index.phpの中にコードを書いていきましょう。<br>
+https://github.com/NexSeed00/new_practice/blob/master/PHP/foreach_array.zip?raw=true
 
 
 ### 正解の挙動
