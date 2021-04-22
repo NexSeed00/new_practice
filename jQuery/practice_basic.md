@@ -221,7 +221,7 @@ li{
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./q6.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="./app.js"></script>
 </head>
 <body>
@@ -253,7 +253,7 @@ li{
 ```
 
 ```
-JS
+// JS
 $(function(){
   alert('liタグの数は' + $('li').length + '個です！');
 });
@@ -297,7 +297,7 @@ p.is-active {
 ```
 // HTML
 <!-- jqueryの読み込み -->
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 <p>クリックしたら文字を黒色→青色→黒色に変更しましょう</p>
 ```
@@ -310,7 +310,7 @@ p.is-active {
 ```
 
 ```
-JS
+// JS
 $(function() {
   $('p').click(function() {
     $(this).toggleClass('is-active');
@@ -326,7 +326,7 @@ classのつけはがしには、toggleClass()メソッドを使用します。<b
 アコーディオンなどやハンバーガメーニューの実装時に使用します
 </div></details>
 
-## Q-7. 要素の先頭に子要素を追加しよう
+## Q-8. 要素の先頭に子要素を追加しよう
 
 ### 問題
 文頭に文字要素を追加してみましょう<br>
@@ -367,7 +367,7 @@ jQueryを使用しよう。
 ```
 
 ```
-JS
+// JS
 $(function() {
   $('.target').prepend('<p>テキスト1</p>');
 })
@@ -378,7 +378,7 @@ $(function() {
 親要素の下の子要素先頭に追加する際にはprevend()を使用します。
 </div></details>
 
-## Q-8. 要素の最後に子要素を追加しよう
+## Q-9. 要素の最後に子要素を追加しよう
 
 ### 問題
 文末に文字要素を追加してみましょう<br>
@@ -419,7 +419,7 @@ jQueryを使用しよう。
 ```
 
 ```
-JS
+// JS
 $(function() {
   $('.target').append('<p>テキスト6</p>');
 })
@@ -430,7 +430,7 @@ $(function() {
 親要素の下の子要素末に追加する際にはappend()を使用します。
 </div></details>
 
-## Q-9. 要素を表示しよう
+## Q-10. 要素を表示しよう
 
 ### 問題
 クリックした際に文字を表示させてみましょう。<br>
@@ -445,7 +445,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解後の挙動
-[![Image from Gyazo](https://i.gyazo.com/d23c80609af40251ed3e3d4708269fda.gif)](https://gyazo.com/d23c80609af40251ed3e3d4708269fda)
+[![Image from Gyazo](https://i.gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582.gif)](https://gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582)
 
 
 ### 回答例
@@ -456,23 +456,160 @@ jQueryを使用しよう。
 <!-- jqueryの読み込み -->
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-<div class="target">
-    <p>テキスト1</p>
-    <p>テキスト2</p>
-    <p>テキスト3</p>
-    <p>テキスト4</p>
-    <p>テキスト5</p>
-</div>
+<div class="trigger" style="margin-bottom: 30px;">クリック</div>
+<div class="target" style="display: none;">学習がんばれ〜〜〜</div>
 ```
 
 ```
-JS
+// JS
 $(function() {
-  $('.target').append('<p>テキスト6</p>');
+  $('.trigger').click(function() {
+    $('.target').show();
+  });
 })
 ```
 </div></details>
 
 <details><summary>解説</summary><div>
-親要素の下の子要素末に追加する際にはappend()を使用します。
+クリックされる前にはcssでdisplay:none;をあてておき、クリックされたら、show()をつかって表示します。<br>
+こちらも実務で良く使うものです。
+</div></details>
+
+## Q-11. 要素を削除しよう
+
+### 問題
+クリックした際に文字を削除してみましょう。<br>
+jQueryを使用しよう。
+
+### 準備
+#### 下記コードを記載した上で、問題を解きましょう
+```
+// HTML
+<div class="trigger" style="margin-bottom: 30px;">クリック</div>
+<div class="target">少しだけ学習さぼってしまおうかな〜〜〜</div>
+```
+
+### 正解後の挙動
+[![Image from Gyazo](https://i.gyazo.com/81bbe74d64329745c928c425a927cba4.gif)](https://gyazo.com/81bbe74d64329745c928c425a927cba4)
+
+
+### 回答例
+<details><summary>ソースコード</summary><div>
+	
+```
+// HTML
+<!-- jqueryの読み込み -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<div class="trigger" style="margin-bottom: 30px;">クリック</div>
+<div class="target">少しだけ学習さぼってしまおうかな〜〜〜</div>
+```
+
+```
+// JS
+$(function() {
+  $('.trigger').click(function() {
+    $('.target').hide();
+  });
+})
+```
+</div></details>
+
+<details><summary>解説</summary><div>
+クリックされたあとに、要素をけす。つまりdisplay;noneを付与するためには、hide()を使用します。
+</div></details>
+
+## Q-12. 要素をフェードインさせてみよう
+
+### 問題
+クリックしたら文字をフェードインで出現させてみましょう<br>
+jQueryを使用しよう。
+
+### 準備
+#### 下記コードを記載した上で、問題を解きましょう
+```
+// HTML
+<div class="trigger" style="margin-bottom: 30px;">クリックしてください</div>
+<div class="target" style="display: none;">プログラミングが楽しくなってきた！！</div>
+```
+
+### 正解後の挙動
+[![Image from Gyazo](https://i.gyazo.com/e9e5ba47cd49220cb98c316f5dc003af.gif)](https://gyazo.com/e9e5ba47cd49220cb98c316f5dc003af)
+
+
+### 回答例
+<details><summary>ソースコード</summary><div>
+	
+```
+// HTML
+<!-- jqueryの読み込み -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<div class="trigger" style="margin-bottom: 30px;">クリックしてください</div>
+<div class="target" style="display: none;">プログラミングが楽しくなってきた！！</div>
+```
+
+```
+// JS
+$(function() {
+  $('.trigger').click(function() {
+    $('.target').fadeIn("2500");
+  });
+})
+```
+</div></details>
+
+<details><summary>解説</summary><div>
+display:noneが付与されている要素のフェードインは、fadeIn()を使用します。<br>
+fadeInメソッドにはオプションがあります。<br>
+例）fadeIn("2500"); fadeIn("normal");　fadeIn("slow"); <br>
+引数を操作します<br>
+<br>
+1000 = 1秒 のスピードになります。
+2500 = 2.5秒
+</div></details>
+
+## Q-13. 要素をフェードアウトさせてみよう
+
+### 問題
+クリックしたら文字をフェードアウトさせてみましょう<br>
+jQueryを使用しよう。
+
+### 準備
+#### 下記コードを記載した上で、問題を解きましょう
+```
+// HTML
+<div class="trigger" style="margin-bottom: 30px;">クリックしてください</div>
+<div class="target">明日から本気だそう</div>
+```
+
+### 正解後の挙動
+[![Image from Gyazo](https://i.gyazo.com/026c22b46f19d40d0b917393e9f48d32.gif)](https://gyazo.com/026c22b46f19d40d0b917393e9f48d32)
+
+
+### 回答例
+<details><summary>ソースコード</summary><div>
+	
+```
+// HTML
+<!-- jqueryの読み込み -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<div class="trigger" style="margin-bottom: 30px;">クリックしてください</div>
+<div class="target">明日から本気だそう</div>
+```
+
+```
+// JS
+$(function() {
+  $('.trigger').click(function() {
+    $('.target').fadeOut("slow");
+  });
+})
+```
+</div></details>
+
+<details><summary>解説</summary><div>
+要素のフェードアウトは、fadeOut()を使用します。<br>
+fadeOut()にもfadeIn()と同じ様にオプションがあります。
 </div></details>
