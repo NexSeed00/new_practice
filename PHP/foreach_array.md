@@ -72,7 +72,7 @@ https://github.com/NexSeed00/new_practice/blob/master/PHP/foreach_array.zip?raw=
 PHPはこのように、自動化を行うためにも使用します。<br>
 HTMLではカードを複数記述して、カードを並べましたが、今回組んだコードでは配列に、新しい商品が追加されるたびに、
 カードが勝手に横に増えていきますね。<br>
-<?php foreach (A as B) :?> → こちらはコロン構文というものです。<br>
+今回の問題でのforeach文の記述方法はコロン構文というものを使用しています。<br>
 よく使用するので覚えておいてくださいね。 
 
 
