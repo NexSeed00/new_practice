@@ -227,7 +227,7 @@ $years = [1800, 2000, 2020, 2040];
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/f18ad603555bdb1bd35ed9d14e8ec925.png)](https://gyazo.com/f18ad603555bdb1bd35ed9d14e8ec925)
+[![Image from Gyazo](https://i.gyazo.com/5345c20435259991111941689ee294b3.png)](https://gyazo.com/5345c20435259991111941689ee294b3)
 
 
 ### 回答例
