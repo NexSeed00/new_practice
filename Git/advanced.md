@@ -1,59 +1,16 @@
-# 初級問題
+# 中級問題
 
-## Q-1.ローカルリポジトリを作成しよう 
+## Q-1. 復習 - ローカルリポジトリ・リモートリポジトリを作成し、Gitの管理下においてみよう
 ### 問題 
-デスクトップ上に、『sample』というローカルリポジトリをGithub Desktop上から作成してみましょう。
-
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/696ecd9d0e14b9cc3fc59512996a6b6a.gif)](https://gyazo.com/696ecd9d0e14b9cc3fc59512996a6b6a)
-
-## Q-2. コード書き加えてみよう
-
-### 問題 
-Q-1で作成したsampleフォルダをVisual Studio Codeを開き、index.htmlを作成後、HTML雛形をコードに書き込みましょう。
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/696ecd9d0e14b9cc3fc59512996a6b6a.gif)](https://gyazo.com/696ecd9d0e14b9cc3fc59512996a6b6a)
-
-## Q-3. add/commitをしてみよう
-
-### 問題 
-Github Desktopから、index.htmlをadd（選択）し、『initial commit』というコミットメッセージを書いて、commit（保存）してみましょう。
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/d286fd5e28bf3bf5eed66d769424d2e0.gif)](https://gyazo.com/d286fd5e28bf3bf5eed66d769424d2e0)
-
-## Q-4. pushしてみよう
-
-### 問題 
-リモートリポジトリ（Github上のリポジトリ）を、『sample』と命名し、ローカルからリモートへ成果物をpushしましょう。
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/252be59c1b4851f5f8dd79fa0f39beb0.gif)](https://gyazo.com/252be59c1b4851f5f8dd79fa0f39beb0)
-
-## Q-5. ファイルがアップロードできているのか確認しよう
-
-### 問題 
-Githubにアクセスし、pushした内容が反映されているか確認してみましょう
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/21e5982d0a3fd0fb918067ed37e0eb93.gif)](https://gyazo.com/21e5982d0a3fd0fb918067ed37e0eb93)
-
-## Q-6. Github flowを練習しよう①
-
-### 問題 
-create-headerブランチを作成し、下記のコードを記載してみましょう。（style.cssはファイルを新規作成すること）<br>
-その後、コミットメッセージを『Add : header』としてコミットまで行いましょう。
+- デスクトップ上に、『sample_git』というローカルリポジトリをGithub Desktop上から作成してみましょう。
+- 下記の作業は、mainブランチで行っていきましょう。
+- vs codeでsample_gitを開き、index.htmlを作成し、下記『準備』に記載のコードを記載しましょう。
+- add, commitを行い（commitメッセージは、initial commit）を最後にpushを行いましょう。
+- リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『sample_git』として作成しましょう。
 
 ### 準備
+index.htmlに下記コードを記載しましょう
 ```
-// HTML
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -61,106 +18,157 @@ create-headerブランチを作成し、下記のコードを記載してみま�
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <div class="header-left">
-    </div>
-    <div class="header-right">
-        <ul class="nav">
-            <li><a href="#programming">Programming</a></li>
-            <li><a href="#english">English</a></li>
-        </ul>
-    </div>
-  </header>
+  
 </body>
 </html>
 ```
-```
-// CSS
-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;  
-  background-color: rgb(6, 39, 66);
-  padding: 14px 40px;
-}
-.nav {
-  display: flex;
-}
-.nav > li > a {
-  color: white;
-  font-size: 20px;
-  margin-left: 20px;
-  text-decoration: none;
-}
-```
+
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/a72fd841e4c7589c399b3438324c2a18.gif)](https://gyazo.com/a72fd841e4c7589c399b3438324c2a18)
-
-## Q-7. Github flowを練習しよう②
-
-### 問題 
-create-headerブランチをpushしてみましょう。<br>
-続けてPull Requestを作成してみてましょう。<br>
-Pull Requestには下記の文言を記入してみましょう<br>
-
-### 準備
-この#や-で見出し化、リスト化する記述は、マークダウン記法というものである。<br>
-Notionというアプリ、Evernoteというアプリ、それからQiitaとあらゆる箇所で用いられている記法なので、覚えておいて損はないですよ。
-```
-# What
-- headerを作成しました。
-
-# Why
-- headerを作成することにより、サーバーサイドのログイン機能も実装できるようになるため。
-```
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/94b08ce9ac228f8128f8f48fac96ae40.gif)](https://gyazo.com/94b08ce9ac228f8128f8f48fac96ae40) <br>
-
-[![Image from Gyazo](https://i.gyazo.com/8a4f16234abbce744189bcb211bae20c.gif)](https://gyazo.com/8a4f16234abbce744189bcb211bae20c) <br>
-
-[![Image from Gyazo](https://i.gyazo.com/368db9ae9dea044a83c9b040498643c6.gif)](https://gyazo.com/368db9ae9dea044a83c9b040498643c6)
-
-## Q-8. Github flowを練習しよう③
-
-### 問題 
-create-headerブランチをmergeしてみましょう。
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/a2bade8a3be9cc4c4351da8722c05432.gif)](https://gyazo.com/a2bade8a3be9cc4c4351da8722c05432)
-
-#### 補足
-個人開発であればGithub flowを用いて開発する必要はありません。<br>
-しかしチーム開発、つまり実務では、Github flowを当たり前にように使用していきます。（実務で個人開発を行うことは稀です）<br>
-Github上のmainブランチに直接、add/commit/pushしていくのではなく、ブランチをきり、そのブランチ上で開発していきます。（mainブランチのコピーのため、コードがぐちゃぐちゃになってしまった場合捨てることができる）<br>
-そして、mainブランチにmergeする前に、Pull request（チームメンバーへ自分のコードが正しいのか正しいのかをお伺いする手紙）を提出して、チームメンバーでレビューする。そしてmainブランチが汚れないように開発する。<br>
-これがGithub flowです。
-
-## Q-9. Github flowを練習しよう④
-
-### 問題 
-Github Desktop上で、create-headerブランチからmainブランチへと使用するブランチを切り替え、pull（Github上のmainブランチ）してみましょう。<br>
-またその後、create-footerブランチを作成し、『footerを作成する』という次の作業に取り書かれる準備をした状態にしておきましょう。
-
-### 回答例
-#### 解説
-[![Image from Gyazo](https://i.gyazo.com/612fda44b94b77513fb3b3b9b5ceeeba.gif)](https://gyazo.com/612fda44b94b77513fb3b3b9b5ceeeba) <br>
-
-[![Image from Gyazo](https://i.gyazo.com/8b60e89efad69e2ecc30097546311e72.gif)](https://gyazo.com/8b60e89efad69e2ecc30097546311e72) <br>
-
-[![Image from Gyazo](https://i.gyazo.com/cb95ddf430d8df03d75012ed1cef0e6a.gif)](https://gyazo.com/cb95ddf430d8df03d75012ed1cef0e6a)
-
-<details><summary>補足</summary><div>
-Github flowを練習しよう①~④の流れは、使いこなせるように、何回も練習していきましょう。<br>
-個人開発では用いる必要はないとQ-8で説明しましたが、実際に開発現場では複数人で開発するため、必須スキルともいえます。<br>
-是非個人開発でも、意識的にGithub flowを使用するようにし、使い方になれてほしいです。<br>
-開発会社からすれば、求職者の『コードのスキルが現状高くない』としても、Github flowを使用できる人材であれば、開発タスクに、joinさせることができます。<br>
-逆に扱えないと、Github flowを勉強しておいてねとなってしまい、開発会社にはいったとしても実務経験をつめるのが遅くなってしまいますね。<br>
+<details><summary>解説</summary><div>
+git基本操作の復習です。<br>
+何度も繰り返し、練習していきましょう。
 </div></details>
+
+#### ローカルリポジトリの作成
+[![Image from Gyazo](https://i.gyazo.com/23a27fb7e8f9c10ec152e16264f868c4.gif)](https://gyazo.com/23a27fb7e8f9c10ec152e16264f868c4)
+
+#### ローカルリポジトリをvs code開き、htmlコードを貼り付け
+[![Image from Gyazo](https://i.gyazo.com/45ef5755f1eb935bb7a591c5cd3436c3.gif)](https://gyazo.com/45ef5755f1eb935bb7a591c5cd3436c3)
+
+#### add/commit
+[![Image from Gyazo](https://i.gyazo.com/378bc218a6e0d477e8ae3605fe36317b.gif)](https://gyazo.com/378bc218a6e0d477e8ae3605fe36317b)
+
+#### pushする前のリモートリポジトリの作成、push
+[![Image from Gyazo](https://i.gyazo.com/86d4f01cd693bdf3355219e8882115c6.gif)](https://gyazo.com/86d4f01cd693bdf3355219e8882115c6)
+
+
+## Q-2. 復習 - コミットをしていこう
+### 問題 
+- 準備①コードを記載し、commitメッセージに、1と記載し、pushしましょう。
+- 準備②コードを記載し、commitメッセージに、2と記載し、pushしましょう。
+- 準備③コードを記載し、commitメッセージに、3と記載し、pushしましょう。
+
+### 準備①
+index.htmlのbodyの中に下記コードを記載しましょう
+```
+<h1>Hello World!</h1>
+```
+
+### 準備②
+index.htmlのbodyの中に下記コードを記載しましょう
+```
+<h2>Hello Japan!</h2>
+```
+
+### 準備③
+index.htmlのbodyの中に下記コードを記載しましょう
+```
+<h3>Hello Tokyo!</h3>
+```
+
+### 回答例
+#### 解説
+
+#### 準備①
+[![Image from Gyazo](https://i.gyazo.com/0813946ef08adeec8382b9c066f77a55.gif)](https://gyazo.com/0813946ef08adeec8382b9c066f77a55)
+
+[![Image from Gyazo](https://i.gyazo.com/695befaf0a21930af8663f8da20709c5.gif)](https://gyazo.com/695befaf0a21930af8663f8da20709c5)
+
+
+#### 準備②
+[![Image from Gyazo](https://i.gyazo.com/77b9a690268432044c0fd281eae07a8b.gif)](https://gyazo.com/77b9a690268432044c0fd281eae07a8b)
+
+#### 準備③
+[![Image from Gyazo](https://i.gyazo.com/15be2f5fe11184fe1c6fed98a7fec3b7.gif)](https://gyazo.com/15be2f5fe11184fe1c6fed98a7fec3b7)
+
+
+## Q-3. コミットの取り消しをしてみよう①
+### 問題 
+commitメッセージ『3』のコミットを取り消してみましょう。<br>
+※この問題は、解くというよりは解説を見ながら、操作して理解を深めて頂いても構いません。
+
+
+### 回答例
+#### 解説
+
+<details><summary>説明</summary><div>
+間違ってコミットしてしまった場合や、とりあえずコミットをしてみたが、なかったことにしたいということが開発をしているとあるでしょう。<br>
+vs codeで上書きして、コミットすればいいのではないかと思われる方もいるかもしれません。<br>
+基本はコミットで上書きしていけばよいです。<br>
+ですが、そのような運用でいくと、pushした際に、githubに変更履歴がアップロードされ、ときに、大事な情報であったり、隠すべき事項がインターネット上に流出してしまう可能性もあります。<br>
+ですので、この問題を通して、commitの取消方法は抑えておきましょう。<br>
+きっと役に立つ日がくるでしょう。
+
+</div></details>
+
+#### ①取り消したいコミットを右クリックし、”Revert changes in commit”をクリック
+[![Image from Gyazo](https://i.gyazo.com/b5fd8f78aac329a374fd37cc9cc464ab.gif)](https://gyazo.com/b5fd8f78aac329a374fd37cc9cc464ab)
+
+#### ②『Revert3』というcommitメッセージを持ったcommitが確認できる。これをpushする。
+この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴がのこることになる。
+[![Image from Gyazo](https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif)](https://gyazo.com/d66b1c80dd145be8fa6c847885e5e755)
+
+#### ③『Revert3』というcommitメッセージを持ったcommitが確認できる。これをpushする。
+この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴がのこることになる。
+[![Image from Gyazo](https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif)](https://gyazo.com/d66b1c80dd145be8fa6c847885e5e755)
+
+## Q-3. コミットの取り消しをしてみよう②
+### 問題 
+下記準備①コードをindex.htmlにはりつけ、commitメッセージ『4』のコミットをつくりだし、pushしましょう。<br>
+commitメッセージ『4』のコミットを<b>変更履歴を残さず</b>取り消しましょう。<br>
+※この問題は、解くというよりは解説を見ながら、操作して理解を深めて頂いても構いません。
+
+### 準備①
+index.htmlのbodyの中に下記コードを記載しましょう
+
+```
+<h4>Hello Kobe!</h4>
+```
+
+### 回答例
+#### 解説
+
+<details><summary>説明</summary><div>
+変更履歴を残さずに、commitを取り消す方法です。
+
+</div></details>
+
+#### ① commitメッセージ『4』のコミットを作り出し、pushする
+[![Image from Gyazo](https://i.gyazo.com/7595bfd71ec84b6674c559c000a950ad.gif)](https://gyazo.com/7595bfd71ec84b6674c559c000a950ad)
+
+
+#### ② "Repository"から"open in Terminal"をクリックし、ターミナルを開く
+※ Windowsユーザーは、Git Bashをひらきます<br>
+※ この時、『sample_git』上に自分がいることを確認しましょう
+[![Image from Gyazo](https://i.gyazo.com/1d792a1079d033f0f71f8ff1a6f854cb.gif)](https://gyazo.com/1d792a1079d033f0f71f8ff1a6f854cb)
+
+#### ③ ターミナル上でコマンドを入力する
+```
+// 公式
+git log --oneline
+```
+[![Image from Gyazo](https://i.gyazo.com/aa5f9cc1d4897153810a1d2847ecfc7d.gif)](https://gyazo.com/aa5f9cc1d4897153810a1d2847ecfc7d)
+
+
+```
+// コミット取り消し
+git reset --hard xxxxxxxxx
+
+```
+
+下記コマンドは今回のキャプチャでの例になります。<br>
+今回は『4』のコミットを取り消したい、つまり、Revert 3まで戻ればよいので、git lo --onlineで出力されるcommitメッセージ『3』のコミット（463e2ba）までresetコマンドでもどる<br>
+
+```
+git reset --hard 463e2ba
+
+```
+
+このあと、再度コマンドで、git log --onelineと入力し、commitメッセージ『4』がきえていることを確認する<br>
+また、Github Desktopでもcommitメッセージ『4』がきえていることを確認する
+
+[![Image from Gyazo](https://i.gyazo.com/f607c4d0f4519766207eac62b641506e.gif)](https://gyazo.com/f607c4d0f4519766207eac62b641506e)
