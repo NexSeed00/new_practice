@@ -172,3 +172,105 @@ git reset --hard 463e2ba
 また、Github Desktopでもcommitメッセージ『4』がきえていることを確認する
 
 [![Image from Gyazo](https://i.gyazo.com/f607c4d0f4519766207eac62b641506e.gif)](https://gyazo.com/f607c4d0f4519766207eac62b641506e)
+
+
+## Q-4. Git Stashを経験してみよう①
+
+### 問題 
+- Git Stashを経験するために下記準備を行いましょう。
+
+### 準備
+- デスクトップ上に、『GitStash』というローカルリポジトリを作成しましょう。
+- 下記の作業は、mainブランチで行っていきましょう。
+- vs codeで『GitStash』ディレクトリを開き、index.htmlを作成し、下記に記載のコードを記載しましょう。
+- add, commitを行い（commitメッセージは、initial commit）を最後にpushを行いましょう。
+- リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『GitStash』として作成しましょう。
+
+```
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+### 回答例
+#### 解説
+<details><summary>解説</summary><div>
+git基本操作の復習です。<br>
+何度も繰り返し、練習していきましょう。
+</div></details>
+
+#### ローカルリポジトリの作成
+[![Image from Gyazo](https://i.gyazo.com/bbe234ce853c48576c1b81910d70cf0e.gif)](https://gyazo.com/bbe234ce853c48576c1b81910d70cf0e)
+
+#### VS CODE起動、index.htmlにコードの記載
+[![Image from Gyazo](https://i.gyazo.com/24c6aa449981f396cced69f344634fce.gif)](https://gyazo.com/24c6aa449981f396cced69f344634fce)
+
+#### add/commit
+[![Image from Gyazo](https://i.gyazo.com/dfedb6fa3dede634f8be4bc9c6dc23c2.gif)](https://gyazo.com/dfedb6fa3dede634f8be4bc9c6dc23c2)
+
+#### push
+[![Image from Gyazo](https://i.gyazo.com/8b98fd42b35b8078723f40ac86bb8051.gif)](https://gyazo.com/8b98fd42b35b8078723f40ac86bb8051)
+
+## Q-5. Git Stashを経験してみよう②
+
+### 問題 
+- Git Stashを使用し、コードをコミットせず、一時保存してみましょう。
+
+### 操作手順
+- mainブランチ上で下記コードを記載
+- Github Desktop上の『Current Branch』から新しくtestブランチを作成、ポップアップが表示されるので、『Leave my changes on main』を選択し、『testブランチ』に移動する
+- vs codeを確認する
+- testブランチから、mainブランチに移動する
+- 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VS CODEを確認する
+- ここでGithub flowで開発していることを想定する。本来testブランチでコードを書き進める必要があるのにも関わらず今回、mainブランチに間違ってコードを書き進めてしまった（<h1>Hello</h1>）。このコードをtestブランチへと反映し、mainブランチではなかったことにする。ブランチ移動を行い、『Bring my changes to test』を選択する
+- testブランチ上でcommitを行い、その後、mainブランチへと戻り、VS CODEを確認してみる
+
+```
+<h1>Hello</h1>
+```
+
+### 回答例
+#### 解説
+<details><summary>解説</summary><div>
+Git Stashとはコードを一時退避・一時保存しておく技術です。<br>
+Github flowを用いて開発中、急に別のブランチをきって開発せざるを得なくなった場合や、ブランチをきりわすれmainブランチで作業をしてしまっている場合に、作業が中途半端過ぎてcommitはしたくないという場合に、利用します。<br>
+つまり一時的にコードを退避させておくということになります。<br>
+急な作業を終えた後に、一時退避させておいたコードを自分の作業ブランチに反映・復元（restore）することで作業を継続することができます。<br>
+実際の開発現場では、チームで開発を行っていきます。タスクが割り振られ、そのタスクを完成させるためのブランチをきり作業をしていきますが、時に差し込みで急なタスクの依頼をうけることが多々あります。commitができればいいですが、commitするまで区切りよく開発できていない、つまりキリがよくないこともあるでしょう。その際にはGitStashを使って一時退避・一時保存しておきましょう。
+</div></details>
+
+#### index.htmlにコードの記載
+[![Image from Gyazo](https://i.gyazo.com/47ec325d9a1dce1253328ce1312a5226.gif)](https://gyazo.com/47ec325d9a1dce1253328ce1312a5226)
+
+#### testブランチを作成、『Leave my changes on main』を選択肢、『testブランチ』に移動
+[![Image from Gyazo](https://i.gyazo.com/15d9376af60f9cfb5e57beaba43dd898.gif)](https://gyazo.com/15d9376af60f9cfb5e57beaba43dd898)
+
+[![Image from Gyazo](https://i.gyazo.com/9e7f88c80a81ed035f13456f7eb653e9.gif)](https://gyazo.com/9e7f88c80a81ed035f13456f7eb653e9)
+
+#### VS CODEを確認する（現在いるブランチはtestブランチ）
+[![Image from Gyazo](https://i.gyazo.com/9a5ff2ef41b91a0112a25c12e421c163.gif)](https://gyazo.com/9a5ff2ef41b91a0112a25c12e421c163)
+
+#### testブランチからmainブランチに移動する
+[![Image from Gyazo](https://i.gyazo.com/c22965dbab44198cf696ff6dcc7406f4.gif)](https://gyazo.com/c22965dbab44198cf696ff6dcc7406f4)
+
+#### 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VS CODEを確認する
+[![Image from Gyazo](https://i.gyazo.com/0de06e018d5af8237168798ef74b301e.gif)](https://gyazo.com/0de06e018d5af8237168798ef74b301e)
+
+#### mainブランチからtestブランチにコードを移動する
+[![Image from Gyazo](https://i.gyazo.com/6c64975caa431c720da4bf6ba5b47a18.gif)](https://gyazo.com/6c64975caa431c720da4bf6ba5b47a18)
+
+[![Image from Gyazo](https://i.gyazo.com/07c2eeb10bb30e8494606c300f983e47.gif)](https://gyazo.com/07c2eeb10bb30e8494606c300f983e47)
+
+#### testブランチでcommit後、mainブランチに移動し、VS CODEを確認する
+[![Image from Gyazo](https://i.gyazo.com/1c6098ad7db2b118c700b8f54c1e5303.gif)](https://gyazo.com/1c6098ad7db2b118c700b8f54c1e5303)
+
+[![Image from Gyazo](https://i.gyazo.com/e51dde52cae73ff5ec28094178ac9630.gif)](https://gyazo.com/e51dde52cae73ff5ec28094178ac9630)
