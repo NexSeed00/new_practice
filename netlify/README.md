@@ -5,9 +5,6 @@ Netlifyは、GitHubのレポジトリと連携して、HTML・CSS・JavaScript�
 まだできていない方は、ネット上にアップロードしたい成果物をGithubにアップロードしましょう。<br>
 1_HTMLで作成したWelcome_NexSeedを使って、ネット上に成果物を公開する手順を学ぶのもよいでしょう。
 
-* [GitとGitHubの概念](https://github.com/NexSeed00/git_basic)
-* [GitHubにファイルをアップロードする手順](https://github.com/NexSeed00/github)
-
 ## 手順
 
 1. Netlifyの登録
