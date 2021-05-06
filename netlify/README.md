@@ -1,4 +1,4 @@
-# Netlifyの使い方
+# Webサイトを公開してみよう
 
 Netlifyは、GitHubのレポジトリと連携して、HTML・CSS・JavaScript・jQueryで作成されたアプリやウェブサイトをネット上で公開するサービスです。<br>
 この解説はGitHubにレポジトリ作成までされている前提で進みます。<br>
