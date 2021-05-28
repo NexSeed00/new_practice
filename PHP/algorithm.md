@@ -234,7 +234,7 @@ $years = [1800, 2000, 2020, 2040];
 <details><summary>ソースコード</summary><div>
 	
 ```
-$years = [1900, 2000, 2020, 2022];
+$years = [1800, 2000, 2020, 2040];
 
 foreach ($years as $year) {
   if (year($year)) {
