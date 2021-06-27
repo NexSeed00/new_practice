@@ -20,7 +20,7 @@ $school = 'SeedTech';
 	
 ```
 $school = 'SeedTech';
-echo mb_substr($school, 4, 8);
+echo mb_substr($school, 4, 4);
 ```
 </div></details>
 
