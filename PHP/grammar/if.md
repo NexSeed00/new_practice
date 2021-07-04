@@ -234,7 +234,7 @@ switch ($x) {
         echo 'December';
         break;
      default:
-        echo '???';
+        echo '月が存在しません';
         break;
     }
 ```
