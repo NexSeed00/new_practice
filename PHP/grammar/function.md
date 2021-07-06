@@ -10,7 +10,7 @@
 ```
 function printHoge()
 {
-    echo "printHoge";
+    echo "Hoge";
 }
 
 printHoge();
