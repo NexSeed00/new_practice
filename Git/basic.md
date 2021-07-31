@@ -16,7 +16,8 @@ Q-1で作成したsampleフォルダをVisual Studio Codeを開き、index.html�
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/696ecd9d0e14b9cc3fc59512996a6b6a.gif)](https://gyazo.com/696ecd9d0e14b9cc3fc59512996a6b6a)
+[![Image from Gyazo](https://i.gyazo.com/06b961f63d17beb9133141e834879e2d.gif)](https://gyazo.com/06b961f63d17beb9133141e834879e2d)
+[![Image from Gyazo](https://i.gyazo.com/1ee2ffcef96f3c215aa3ad0b9e6c02cd.gif)](https://gyazo.com/1ee2ffcef96f3c215aa3ad0b9e6c02cd)
 
 ## Q-3. add/commitをしてみよう
 
