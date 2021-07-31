@@ -112,9 +112,6 @@ vs codeで上書きして、コミットすればいいのではないかと思�
 この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴がのこることになる。
 [![Image from Gyazo](https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif)](https://gyazo.com/d66b1c80dd145be8fa6c847885e5e755)
 
-#### ③『Revert3』というcommitメッセージを持ったcommitが確認できる。これをpushする。
-この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴がのこることになる。
-[![Image from Gyazo](https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif)](https://gyazo.com/d66b1c80dd145be8fa6c847885e5e755)
 
 ## Q-3. コミットの取り消しをしてみよう②
 ### 問題 
