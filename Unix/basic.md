@@ -106,7 +106,7 @@ PCの中身というのは階層構造になっており、１番上流にある
 
 </div></details>
 
-[![Image from Gyazo](https://i.gyazo.com/87850a5b5589283c02fb24dd5e289410.gif)](https://gyazo.com/87850a5b5589283c02fb24dd5e289410)
+[![Image from Gyazo](https://i.gyazo.com/df11ed169c79bf413b9639fdf2f17262.gif)](https://gyazo.com/df11ed169c79bf413b9639fdf2f17262)
 
 
 ## Q-6. ディレクトリ内のファイル・フォルダを表示してみよう
