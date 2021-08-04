@@ -194,7 +194,7 @@ SELECT * FROM prefecture ORDER BY id ASC;
 </div></details>
 
 #### 解説
-Q-9とQ-10の知識はとても大切です。<br>
+Q-10とQ-11の知識はとても大切です。<br>
 よくデータを日付の新旧で並び替えて取り出すことがあります。<br>
 ※昇順であれば古い日付から新しい日付、降順であれば新しい日付から古い日付に並べることができます。
 [![Image from Gyazo](https://i.gyazo.com/f96201b7643fd51b3340def36cb201f6.gif)](https://gyazo.com/f96201b7643fd51b3340def36cb201f6)
