@@ -81,15 +81,15 @@ btn11.addEventListener('click', function () {
     resultAge11.textContent = inputAge11.value;
   }
 
-  let inputname11 = document.querySelector('#q11-input-name');
-  let resultname11 = document.querySelector('#q11-result-name');
+  let inputName11 = document.querySelector('#q11-input-name');
+  let resultName11 = document.querySelector('#q11-result-name');
 
-  if (resultname11.textContent === '') {
-    resultname11.style.color = 'red';
-    resultname11.textContent = '名前が空欄です';
+  if (inputName11.value === '') {
+    resultName11.style.color = 'red';
+    resultName11.textContent = '名前が空欄です';
   } else {
-    resultname11.style.color = '';
-    resultname11.textContent = inputname11.value;
+    resultName11.style.color = '';
+    resultName11.textContent = inputName11.value;
   }
 
 })
