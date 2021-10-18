@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      // コメント
+      /*
+      複数行の
+      コメント
+      */
+
+// 2-2 基礎構文 - 変数
+      // 変数について
+      var wareki = "平成";
+      console.log(wareki);
+
+      wareki = "令和"; // 上書きするには var は不要
+      console.log(wareki);
+
+      var abc = "abc";
+      console.log(abc);
+
+      /*
+      変数の命名規則
+        ローワーキャメルケース：単語の先頭を大文字にしたもの 最初のの単語の先頭を小文字にする（JavaScriptではローワーキャメルケースがよく使われる）
+          fullName
+        スネークケース：単語をアンダースコアに区切りしたもの
+          full_name
+        アッパーキャメルケース：単語の先頭を大文字にしたもの 最初の単語も大文字にする（別名：パスカルケース）
+          FullName
+      */
+
+      // 変数の応用について(文字列連結・変数に変数を代入)
+      var firstName = "Taro";
+      var lastName = "Yamada";
+      var fullName = firstName + lastName;
+      console.log(fullName);
+
+      /*
+      練習問題
+      以下の変数を作成して、それぞれ出力してみましょう。
+      変数    | 値
+      name   | SeedKun
+      age    | 20歳
+      gender | 男
+      */
+    // Answer
+      var name = "SeedKub";
+      var age = "20歳";
+      var gender = "男";
+      console.log(name);
+      console.log(age);
+      console.log(gender);
+    </script>
+</body>
+</html>
