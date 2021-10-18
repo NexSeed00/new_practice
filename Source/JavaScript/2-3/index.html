@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2-3_基礎構文 - データ型と四則演算
+    /*
+    1.整数型：number
+    2.文字列型：string
+    3.論理型：boolean
+    4.配列型：array
+    */
+
+    // 1.整数型
+    var weight = 50;
+    console.log(weight);
+    console.log(typeof weight);
+
+    // 四則演算
+    console.log(2 + 2);
+    console.log(2 - 2);
+    console.log(2 * 2);
+    console.log(2 / 2);
+    console.log(3 % 2);
+
+    var five = 5;
+    var ten = 10;
+    console.log(five * ten);
+
+    // 2.文字列型
+    weight = "50";
+    console.log(weight);
+    console.log(typeof weight);
+
+    // 3.論理型
+    var boolean = true;
+    console.log(typeof boolean);
+
+    // 4.配列型
+    var array = ["１つ目のデータ", "２つ目のデータ"];
+    console.log(array);
+
+    /* 練習問題
+      以下の変数を作成して、各問題を説いてみましょう。
+      var a = 5;
+      var b = 12;
+      var c = 13;
+      var d = 20;
+
+      1.変数aと変数bと変数cを足した結果を出力してください。
+      2.変数aと変数bを足した結果に変数cを掛けた結果を出力してください。
+      3.変数dから変数aを引いた結果を出力してください。
+      4.変数bと変数cを掛けた結果を出力してください。
+      5.変数dと変数aで割った結果を出力してください。
+      6.変数dを変数cで割った余りを出力してください。
+    */
+
+    // Answer
+    var a = 5;
+    var b = 12;
+    var c = 13;
+    var d = 20;
+    console.log(a + b + c);
+    console.log((a + b) * c);
+    console.log(d - a);
+    console.log(b * c);
+    console.log(d / a);
+    console.log(d % c);
+  </script>
+</body>
+
+</html>

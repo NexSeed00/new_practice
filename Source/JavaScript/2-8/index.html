@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2-8_基礎構文 - 連想配列
+    var array = ["１つ目の値", "２つ目の値"];
+    console.log(array);
+
+    console.log(array[0]);
+    console.log(array[1]);
+    console.log(array[2]); //undefined = 未定義
+
+    array[0] = "１つ目の値を更新しました";
+    console.log(array);
+
+    array.push("３つ目の値"); // 配列の最後に追加できる
+    console.log(array);
+
+    array.splice(2, 1); // 配列のx番目からy個、配列から削除できる
+    console.log(array);
+
+    var alpha = ["a", "b", "c"];
+    console.log(alpha);
+
+    /*
+    配列名.push() = 配列の最後に持たせたい値を記述すると、配列に追加できます。
+    配列名.splice(x,y) = 配列のx番目からy個、配列から削除できます。
+    */
+
+    /*
+    for (単数値をわかりやすく表現した名前 of 配列) {
+      処理
+    }
+    */
+    for (each of array) {
+      console.log(each);
+    }
+
+    /*
+    練習問題
+    1.以下の配列を作成してください。
+      配列名 = numbers
+      値 = 1, 5, 10, 15, 20, 25, 30
+
+    2.配列numbersの最後に35を追加してください。
+
+    3.配列numbersの1を0に更新してください。
+
+    4.配列numbersの5を削除してください。
+
+    5.配列numbersを最初から最後の要素まで順番に出力してください。
+    */
+
+    // 1.
+    var numbers = [1, 5, 10, 15, 20, 25, 30];
+
+    // 2.
+    numbers.push(35);
+
+    // 3.
+    numbers[0] = 0;
+
+    // 4.
+    numbers.splice(1, 1);
+
+    // 5.
+    for (var eachNumber of numbers) {
+      console.log(each);
+    }
+
+    // 連想配列について
+    var profile = { age: 23, gender: "male", name: "Ichiro" };
+    console.log(profile);
+    console.log(profile["name"]);
+    console.log(profile["age"]);
+    console.log(profile["gender"]);
+
+    profile["age"] = 30;
+    console.log(profile);
+
+    profile["email"] = "test@gmail.com";
+    console.log(profile);
+    console.log(profile["email"]);
+
+    delete profile["email"];
+    console.log(profile);
+
+    /*
+    delete 連想配列名[key] = 連想配列のkeyを記述すると、keyに対する値を削除追加できます。
+    */
+
+    for (var key in profile) { // 配列profileの中身をkeyというあだ名でひとつひとつを表現
+      console.log("値:" = profile[key]); // ひとつひとつを出力
+    }
+
+    /*
+      練習問題
+      1.以下のような連想配列を作成してください。
+        連想配列名 | scores
+        key      | value
+        english  | 80
+        math     | 70
+        japanese | 90
+
+      2.連想配列に以下のキーと値を追加してください。
+        science  | 75
+
+      3.連想配列の以下の値を更新してください。
+        english  | 90
+
+      4.連想配列の以下のキーを削除してください。
+        math     | 70
+
+      5.連想配列を最初から最後の要素（キーと値）まで順番に出力してください。
+    */
+
+    // 1.
+    var scores = { english: 80, math: 70, japanese: 90 };
+    console.log(scores);
+
+    // 2.
+    scores["science"] = 75;
+    console.log(scores);
+
+    // 3.
+    scores["english"] = 90;
+    console.log(scores);
+
+    // 4.
+    delete scores["math"];
+    console.log(scores);
+
+    // 5.
+    for (var key in scores) {
+      console.log(key);
+      console.log(scores[key]);
+    }
+  </script>
+</body>
+
+</html>

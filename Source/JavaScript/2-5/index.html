@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2-5_基礎構文 - switch文
+    /*
+    switch (条件) {
+      case 選択肢1:
+        ある条件の結果、選択肢1と等しい場合の処理;
+        break;
+
+      case 選択肢2:
+        ある条件の結果、選択肢2と等しい場合の処理;
+        break;
+
+      case 選択肢3:
+        ある条件の結果、選択肢3と等しい場合の処理;
+        break;
+
+      default:
+        ある条件の結果、等しい選択肢がない場合の処理;
+        break;
+    }
+    */
+
+    var condition3 = "買い物";
+    switch (condition3) {
+      case "買い物":
+        console.log("買い物に行きます。");
+        break;
+
+      case "掃除機":
+        console.log("掃除機をかけます。");
+        break;
+
+      case "料理":
+        console.log("料理を作ります。");
+        break;
+
+      case "お風呂":
+      case "トイレ":
+        console.log("お風呂とトイレを掃除します。");
+        break;
+
+      default:
+        console.log("子供の面倒を見ます");
+        break;
+    }
+
+    /*
+    練習問題
+    以下の変数を作成して、各問題を解いてみましょう。
+    var optionalNumber = 任意の数字;
+
+    以下の条件に合うようにswitch文を作成してください。
+    条件    | 出力する文字
+    1      | 1です
+    2      | 2です
+    3      | 3です
+    4      | 4です
+    5      | 5です
+    1~5以外 | 1~5以外です
+    */
+
+    var optionalNumber = 1; // 任意の数字
+    switch (optionalNumber) {
+      case 1:
+        console.log("1です");
+        break;
+      case 2:
+        console.log("2です");
+        break;
+      case 3:
+        console.log("3です");
+        break;
+      case 4:
+        console.log("4です");
+        break;
+      case 5:
+        console.log("5です");
+        break;
+      default:
+        console.log("１〜５以外です");
+        break;
+    }
+  </script>
+</body>
+
+</html>

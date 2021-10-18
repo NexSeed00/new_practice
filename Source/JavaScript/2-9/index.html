@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2-9_基礎構文 - 関数
+    /*
+      関数とは
+      決められたルールに従って受け取った値を別の値に変換するもの
+
+      いつ使えば良いのか
+      何度も同じ計算（処理）をしていたら、その処理を関数にしていつでも呼び出せるようにする
+
+      関数の作り方
+      1.アロー関数式（新しい関数の作り方、モダンなJavaScriptではこの作り方が主流）
+      2.関数式
+      3.関数宣言（まだまだ使われている）
+
+      引数とは
+      関数が変換する前の値
+
+      返り値とは
+      関数が変換した後の値
+    */
+
+    // 1.アロー関数
+    const max = (x, y) => { // 関数を変数maxに代入（変数は再代入不可の変数 = 定数という）x,yは引数、関数が変換する前の値
+      if (x < y) {
+        return y; // 返り値がy,returnするとそこで関数の処理が終了する
+      }
+      return x;
+    }
+    // この関数は、「2つの値の掛け合わせ」から「大きい方の値」に変換する処理をしています
+    console.log(max(10, 2));
+    console.log(typeof max);
+
+    // 2.関数式
+    const min = function (x, y) {
+      if (x < y) {
+        return x;
+      }
+      return y;
+    }
+    console.log(min(10, 2));
+
+    // 3.関数宣言
+    function avg(x, y) {
+      return (x + y) / 2;
+    }
+    console.log(avg(10, 2));
+
+    const sayHi = () => {
+      console.log("Hello World");
+    }
+    sayHi();
+
+    /*
+    練習問題
+    年齢を渡して、
+    3歳以下は「あかちゃん」
+    18歳以下は「こども」
+    65歳未満は「大人」
+    65歳以上は「高齢者」
+    と出力する関数をアロー関数式で作ってください。
+    出力例）console.log(ageToType(65)); == 高齢者 が出力されること
+  */
+    const ageToType = (age) => {
+      if (age <= 3) {
+        return "あかちゃん";
+      } else if (age <= 18) {
+        return "子ども";
+      } else if (age < 65) {
+        return "大人";
+      } else {
+        return "高齢者";
+      }
+    }
+    console.log(ageToType(3));
+
+    console.log(ageToType(max(20, 80)));
+    console.log(ageToType(min(20, 80)));
+
+    /*
+      練習問題
+      1~50の数字を返す変数を作ってください。
+      ただし、
+      3で割り切れる場合は、数字の代わりに「Fizz」
+      5で割り切れる場合は、数字の代わりに「Buzz」
+      3と5で割り切れる場合は、数字の代わりに「FizzBuzz」を返してください。
+      出力例）console.log(fizzBuzz(i));
+      1
+      2
+      Fizz
+      4
+      Buzz
+      Fizz
+      ・・・・
+      13
+      14
+      FizzBuzz
+    */
+    const fizzBuzz = (number) => {
+      switch (true) {
+        case number % 15 === 0:
+          return "FizzBuzz";
+          break;
+
+        case number % 3 === 0:
+          return "Fizz";
+          break;
+
+        case number % 5 === 0:
+          return "Buzz";
+          break;
+
+        default:
+          return number;
+          break;
+      }
+    }
+    for (var i = 1; i <= 50; i++) {
+      console.log(fizzBuzz(i));
+    }
+  </script>
+</body>
+
+</html>

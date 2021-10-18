@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2-4_基礎構文 2-4_基礎構文 - if文
+    /*
+    boolean型
+      true false
+    if(boolean型の値){
+        trueの時実行する
+    }
+    */
+    if (true) {
+      console.log("条件がtrueだからお米を買いに行きます");
+
+    }
+    if (false) {
+      console.log("条件がfalseだったらお米を買いに行きません");
+    }
+
+    /*
+    論理演算子
+      trueはそのままtrue,falseはfalseを表しますが、
+      !は逆の意味を表します
+      !true つまり false
+      !false つまり true
+    */
+
+    var boolean = true;
+    if (boolean) {
+      console.log("条件がtrueだからお米を買いに行きます。");
+    }
+    if (!boolean) {
+      console.log("条件がfalseだからお米を買いに行きません。");
+    }
+
+    /*
+    else if と else
+
+    if(boolean型の値(条件)){
+      条件がtrueのとき実行する
+    } else if(上とは違う条件){
+      条件がtrueのとき実行する
+    } else{
+      どの条件にも満たない場合の処理
+    }
+
+    if文は一回条件が通れば他のものは読み込まれず次の処理へ移ることを覚えておきましょう。
+    */
+
+    var condition1 = false;
+    var condition2 = false;
+    if (condition1) {
+      console.log("差し支えないので、お米を買いに行きます。");
+    } else if (condition2) {
+      console.log("買い物は差し支えるので、掃除機をかけます。");
+    } else {
+      console.log("どちらも差し支えるので、子どもの面倒をみます。");
+    }
+
+    /*
+    比較演算子について
+    算数で使っていた、xはyより小さい、xはyより大きいなどの比較演算子をJavaScriptでも使うことができます。
+    x == y    xとyの値が等しい（非推奨）
+    x === y   xとyの値もデータ型も等しい
+    x != y     xとyの値が等しくない（非推奨）
+    x !== y    xとyの値もデータ型も等しくない
+    x < y     xはyより小さい
+    x <= y    xはy以下
+    x > y     xはyより大きい
+    x >= y    xはy以上
+    */
+
+    var number = 10;
+    var string = "10";
+    if (number == string) {
+      console.log("numberとstringは等しい？");
+    }
+    if (number === string) {
+      console.log("numberとstringは等しい？")
+    } else {
+      console.log("numberとstringは等しくない")
+    }
+
+    /*
+      論理積と論理和について
+      複雑な条件を満たす場合のみ実行したい処理がある場合、論理積や論理和を使います。
+      論理積 = && = aの条件がtrueかつbの条件がtrue
+      論理和 = || = aの条件がtrueまたはbの条件がtrue
+    */
+
+    var satoHeight = 160;
+    var tanakaHeight = 170;
+    if (satoHeight < tanakaHeight && tanakaHeight < 180) {
+      console.log("1つめの条件がtrue かつ 2つめの条件がtrueだから実行します。");
+    }
+
+    if (satoHeight < tanakaHeight && tanakaHeight < 160) {
+      console.log("1つめの条件がtrue かつ 2つめの条件がfalseだから無視します。");
+    }
+
+    if (satoHeight < tanakaHeight || tanakaHeight < 160) {
+      console.log("1つめの条件がtrueだから実行します。");
+    }
+
+    if (satoHeight > tanakaHeight || tanakaHeight < 160) {
+      console.log("いずれも条件がfalseだから無視します。");
+    }
+
+    /*
+      練習問題
+      以下の変数を作成して、各問題を解いてみましょう。
+      var ichiro = 23;
+      var jiro = 20;
+      var saburo = 17;
+      var shiro = 9;
+
+      1.一部が20歳以上か判定するif文を作成してください。
+        条件が真（true）の場合は、「20歳です」と出力してください。
+
+      2.二郎が20歳か判定するif文を作成してください。
+        条件が真（true）の場合は、「20歳です」と出力してください。
+
+      3.三郎が20歳以下かつ、四郎が20歳以下か判定するif文を作成してください。
+        条件が真（true）の場合は、「2人とも20歳以下です」と出力してください。
+
+      4.四郎が5歳以下か判定するif文を作成してください。
+        条件が真（true）の場合は、「5歳以下です」と出力してください。
+        また、条件が偽（false）の場合は、「5歳未満です」と出力してください。
+    */
+
+    var ichiro = 23;
+    var jiro = 20;
+    var saburo = 17;
+    var shiro = 9;
+
+    // 1.
+    if (ichiro <= 20) {
+      console.log("20歳以上です");
+    }
+
+    // 2.
+    if (jiro === 20) {
+      console.log("20歳です");
+    }
+
+    // 3.
+    if (20 >= saburo && 20 >= shiro) {
+      console.log("2人とも20歳以下です");
+    }
+
+    // 4.
+    if (5 <= shiro) {
+      console.log("5歳以上です");
+    } else {
+      console.log("5歳未満です");
+    }
+  </script>
+</body>
+
+</html>
