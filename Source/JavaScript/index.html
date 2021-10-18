@@ -1,716 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <script>
-        // コメント
-        /*
-        複数行の
-        コメント
-        */
-
-  // 2-2 基礎構文 - 変数
-        // 変数について
-        var wareki = "平成";
-        console.log(wareki);
-
-        wareki = "令和"; // 上書きするには var は不要
-        console.log(wareki);
-
-        var abc = "abc";
-        console.log(abc);
-
-        /*
-        変数の命名規則
-          ローワーキャメルケース：単語の先頭を大文字にしたもの 最初のの単語の先頭を小文字にする（JavaScriptではローワーキャメルケースがよく使われる）
-            fullName
-          スネークケース：単語をアンダースコアに区切りしたもの
-            full_name
-          アッパーキャメルケース：単語の先頭を大文字にしたもの 最初の単語も大文字にする（別名：パスカルケース）
-            FullName
-        */
-
-        // 変数の応用について(文字列連結・変数に変数を代入)
-        var firstName = "Taro";
-        var lastName = "Yamada";
-        var fullName = firstName + lastName;
-        console.log(fullName);
-
-        /*
-        練習問題
-        以下の変数を作成して、それぞれ出力してみましょう。
-        変数    | 値
-        name   | SeedKun
-        age    | 20歳
-        gender | 男
-        */
-      // Answer
-        var name = "SeedKub";
-        var age = "20歳";
-        var gender = "男";
-        console.log(name);
-        console.log(age);
-        console.log(gender);
-
-  // 2-3_基礎構文 - データ型と四則演算
-        /*
-        1.整数型：number
-        2.文字列型：string
-        3.論理型：boolean
-        4.配列型：array
-        */
-
-        // 1.整数型
-        var weight = 50;
-        console.log(weight);
-        console.log(typeof weight);
-
-        // 四則演算
-        console.log(2 + 2);
-        console.log(2 - 2);
-        console.log(2 * 2);
-        console.log(2 / 2);
-        console.log(3 % 2);
-
-        var five = 5;
-        var ten = 10;
-        console.log(five * ten);
-
-        // 2.文字列型
-        weight = "50";
-        console.log(weight);
-        console.log(typeof weight);
-
-        // 3.論理型
-        var boolean = true;
-        console.log(typeof boolean);
-
-        // 4.配列型
-        var array = ["１つ目のデータ", "２つ目のデータ"];
-        console.log(array);
-
-      /* 練習問題
-        以下の変数を作成して、各問題を説いてみましょう。
-        var a = 5;
-        var b = 12;
-        var c = 13;
-        var d = 20;
-
-        1.変数aと変数bと変数cを足した結果を出力してください。
-        2.変数aと変数bを足した結果に変数cを掛けた結果を出力してください。
-        3.変数dから変数aを引いた結果を出力してください。
-        4.変数bと変数cを掛けた結果を出力してください。
-        5.変数dと変数aで割った結果を出力してください。
-        6.変数dを変数cで割った余りを出力してください。
+  <script>
+      // コメント
+      /*
+      複数行の
+      コメント
       */
 
-      // Answer
-        var a = 5;
-        var b = 12;
-        var c = 13;
-        var d = 20;
-        console.log(a + b + c);
-        console.log((a + b) * c);
-        console.log(d - a);
-        console.log(b * c);
-        console.log(d / a);
-        console.log(d % c);
-
-  // 2-4_基礎構文 2-4_基礎構文 - if文
-        /*
-        boolean型
-          true false
-        if(boolean型の値){
-            trueの時実行する
-        }
-        */
-       if(true){
-           console.log("条件がtrueだからお米を買いに行きます");
-
-       }
-       if(false){
-           console.log("条件がfalseだったらお米を買いに行きません");
-       }
-
-       /*
-        論理演算子
-          trueはそのままtrue,falseはfalseを表しますが、
-          !は逆の意味を表します
-          !true つまり false
-          !false つまり true
-        */
-
-        var boolean = true;
-        if(boolean){
-          console.log("条件がtrueだからお米を買いに行きます。");
-        }
-        if(!boolean){
-          console.log("条件がfalseだからお米を買いに行きません。");
-        }
-
-        /*
-        else if と else
-
-        if(boolean型の値(条件)){
-          条件がtrueのとき実行する
-        } else if(上とは違う条件){
-          条件がtrueのとき実行する
-        } else{
-          どの条件にも満たない場合の処理
-        }
-
-        if文は一回条件が通れば他のものは読み込まれず次の処理へ移ることを覚えておきましょう。
-        */
-
-        var condition1 = false;
-        var condition2 = false;
-        if(condition1){
-          console.log("差し支えないので、お米を買いに行きます。");
-        } else if(condition2){
-          console.log("買い物は差し支えるので、掃除機をかけます。");
-        } else{
-          console.log("どちらも差し支えるので、子どもの面倒をみます。");
-        }
-
-        /*
-        比較演算子について
-        算数で使っていた、xはyより小さい、xはyより大きいなどの比較演算子をJavaScriptでも使うことができます。
-        x == y    xとyの値が等しい（非推奨）
-        x === y   xとyの値もデータ型も等しい
-        x != y     xとyの値が等しくない（非推奨）
-        x !== y    xとyの値もデータ型も等しくない
-        x < y     xはyより小さい
-        x <= y    xはy以下
-        x > y     xはyより大きい
-        x >= y    xはy以上
-        */
-
-        var number = 10;
-        var string = "10";
-        if (number == string) {
-          console.log("numberとstringは等しい？");
-        }
-        if (number === string) {
-          console.log("numberとstringは等しい？")
-        } else {
-          console.log("numberとstringは等しくない")
-        }
-
-        /*
-          論理積と論理和について
-          複雑な条件を満たす場合のみ実行したい処理がある場合、論理積や論理和を使います。
-          論理積 = && = aの条件がtrueかつbの条件がtrue
-          論理和 = || = aの条件がtrueまたはbの条件がtrue
-        */
-
-        var satoHeight = 160;
-        var tanakaHeight = 170;
-        if (satoHeight < tanakaHeight && tanakaHeight < 180) {
-          console.log("1つめの条件がtrue かつ 2つめの条件がtrueだから実行します。");
-        }
-
-        if (satoHeight < tanakaHeight && tanakaHeight < 160) {
-          console.log("1つめの条件がtrue かつ 2つめの条件がfalseだから無視します。");
-        }
-
-        if (satoHeight < tanakaHeight || tanakaHeight < 160) {
-          console.log("1つめの条件がtrueだから実行します。");
-        }
-
-        if (satoHeight > tanakaHeight || tanakaHeight < 160) {
-          console.log("いずれも条件がfalseだから無視します。");
-        }
-
-        /*
-          練習問題
-          以下の変数を作成して、各問題を解いてみましょう。
-          var ichiro = 23;
-          var jiro = 20;
-          var saburo = 17;
-          var shiro = 9;
-
-          1.一部が20歳以上か判定するif文を作成してください。
-            条件が真（true）の場合は、「20歳です」と出力してください。
-
-          2.二郎が20歳か判定するif文を作成してください。
-            条件が真（true）の場合は、「20歳です」と出力してください。
-
-          3.三郎が20歳以下かつ、四郎が20歳以下か判定するif文を作成してください。
-            条件が真（true）の場合は、「2人とも20歳以下です」と出力してください。
-
-          4.四郎が5歳以下か判定するif文を作成してください。
-            条件が真（true）の場合は、「5歳以下です」と出力してください。
-            また、条件が偽（false）の場合は、「5歳未満です」と出力してください。
-        */
-
-      var ichiro = 23;
-      var jiro = 20;
-      var saburo = 17;
-      var shiro = 9;
-
-      // 1.
-       if (ichiro <= 20){
-           console.log("20歳以上です");
-       }
-
-       // 2.
-       if (jiro === 20){
-           console.log("20歳です");
-       }
-
-       // 3.
-       if (20 >= saburo && 20 >= shiro) {
-           console.log("2人とも20歳以下です");
-       }
-
-       // 4.
-       if (5 <= shiro) {
-           console.log("5歳以上です");
-       } else {
-           console.log("5歳未満です");
-       }
-
-  // 2-5_基礎構文 - switch文
-       /*
-        switch (条件) {
-          case 選択肢1:
-            ある条件の結果、選択肢1と等しい場合の処理;
-            break;
-
-          case 選択肢2:
-            ある条件の結果、選択肢2と等しい場合の処理;
-            break;
-
-          case 選択肢3:
-            ある条件の結果、選択肢3と等しい場合の処理;
-            break;
-
-          default:
-            ある条件の結果、等しい選択肢がない場合の処理;
-            break;
-        }
-        */
-
-       var condition3 = "買い物";
-       switch (condition3) {
-          case "買い物":
-            console.log("買い物に行きます。");
-            break;
-
-          case "掃除機":
-            console.log("掃除機をかけます。");
-            break;
-
-          case "料理":
-            console.log("料理を作ります。");
-             break;
-
-          case "お風呂":
-          case "トイレ":
-            console.log("お風呂とトイレを掃除します。");
-            break;
-
-          default:
-            console.log("子供の面倒を見ます");
-            break;
-       }
-
-       /*
-        練習問題
-        以下の変数を作成して、各問題を解いてみましょう。
-        var optionalNumber = 任意の数字;
-
-        以下の条件に合うようにswitch文を作成してください。
-        条件    | 出力する文字
-        1      | 1です
-        2      | 2です
-        3      | 3です
-        4      | 4です
-        5      | 5です
-        1~5以外 | 1~5以外です
-       */
-
-       var optionalNumber = 1 ; // 任意の数字
-       switch (optionalNumber) {
-           case 1:
-             console.log("1です");
-             break;
-           case 2:
-             console.log("2です");
-             break;
-           case 3:
-             console.log("3です");
-             break;
-           case 4:
-             console.log("4です");
-             break;
-           case 5:
-             console.log("5です");
-             break;
-           default:
-             console.log("１〜５以外です");
-             break;
-       }
-
-  // 2-6_基礎構文 - for文
-       /*
-        for(初期化処理; 繰り返し条件式; 更新処理) {
-          処理;
-        }
-        1.初期化処理 = 繰り返し処理が始まる前に一度だけ読み込まれる。
-        2.くり返し条件式 条件がtrueなら3へ進む。条件がfalseなら処理終了。
-        3.処理実行
-        4.更新処理 = 処理が終わるごとに読まれる処理
-
-        for文の中で変数を定義し、繰り返し処理ごとに変数を更新します。
-        繰り返し条件がtrueの間はずっとくり返しが行われ、falseになった時点でfor文の処理が終了します。
-       */
-
-       for (var i = 0; i<= 10; i++) {
-         console.log(i);
-       }
-
-       for (var i = 10; i >= 0;i--) {
-         console.log(i);
-       }
-
-       var times = 5;
-       for (var i = 0; i <= times; i++) {
-         console.log(i);
-       }
-
-       // 1~10までの数字を足していって、合計値が1000を超えるときの数字を出力してください。
-       var amount = 0; // 合計値の初期値
-       for (var i = 1; i <= 100; i++) {
-         amount += i; // =1+2+3+4...
-
-         if (amount > 1000) {
-           console.log("合計値が1000を超えるのは" + i + "の時です");
-           break;
-         }
-       }
-
-       // 1~30までの数字で、3の倍数以外を出力してください。
-       for (var i = 1; i <= 30; i++) {
-         if (i % 3 === 0){
-           continue;
-         }
-         console.log(i);
-       }
-
-       /*
-        練習問題
-        1.1から100まで出力するプログラムを書いてください。
-
-        2.1から100まで出力するプログラムを書いてください。
-          ただし、50を出力したらbreakを使って、処理を中断するようにしてください。
-          （1から50まで出力するようにしてください。）
-
-        3.1から100までの奇数のみ出力するプログラムを書いてください。
-       */
-
-       // 1.
-       for (var i = 1; i <= 100; i++){
-         console.log(i);
-       }
-
-       // 2.
-       for (var i = 1; i <= 100; i++){
-         if (i > 50){
-           break;
-         }
-         console.log(i);
-       }
-
-       // 3.
-       for (var i = 1; i <= 100; i++){
-         if (i % 2 === 0) {
-           continue;
-         }
-         console.log(i);
-       }
-
-  // 2-7_基礎構文 - while文
-       /*
-        初期化処理;
-        while (くり返し条件式) {
-          処理実行;
-          更新処理;
-        }
-        1.初期化処理 = 繰り返し処理が始まる前に一度だけ読み込まれる。
-        2.繰り返し条件式 条件がtrueなら3へ進む。条件がfalseなら処理終了。
-        3.処理実行
-        4.更新処理 = 処理が終わるごとに読まれる処理
-
-        while文の外で変数を定義し、繰り返し処理ごとに変数を更新します。
-        くり返し条件がtrueの間はずっとくり返しが行われ、falseになった時点でwhile文の処理が終了します。
-       */
-
-       var count = 0;
-       while (count <= 10){
-         console.log(count);
-         count++;
-       }
-
-       count = 10;
-       while (count >= 0){
-         console.log(count);
-         count--;
-       }
-
-       count = 0;
-       var max = 5;
-       while (count <= max){
-         console.log(count);
-         count++;
-       }
-
-       /*
-        練習問題
-        1.1から100まで出力するプログラムを書いてください。
-
-        2.1から100まで出力するプログラムを書いてください。
-          ただし、50を出力したらbreakを使って、処理を中断するようにしてください。
-          （1から50まで出力するようにしてください。）
-
-        3.1から100までの奇数のみ出力するプログラムを書いてください。
-       */
-
-       // 1.
-       var j = 1;
-       while (j <= 100){
-         console.log(j);
-         j++;
-       }
-
-       // 2.
-       var j = 1;
-       while (j <= 100){
-         if (j > 50){
-           break;
-         }
-         console.log(j);
-         j++;
-       }
-
-       // 3.
-       var j = 1;
-       while (j <= 100){
-         if (j % 2 === 0){
-           j++;
-           continue;
-         }
-         console.log(j);
-         j++;
-       }
-
-  // 2-8_基礎構文 - 連想配列
-       var array = ["１つ目の値", "２つ目の値"];
-       console.log(array);
-
-       console.log(array[0]);
-       console.log(array[1]);
-       console.log(array[2]); //undefined = 未定義
-
-       array[0] = "１つ目の値を更新しました";
-       console.log(array);
-
-       array.push("３つ目の値"); // 配列の最後に追加できる
-       console.log(array);
-
-       array.splice(2,1); // 配列のx番目からy個、配列から削除できる
-       console.log(array);
-
-       var alpha = ["a","b","c"];
-       console.log(alpha);
-
-       /*
-        配列名.push() = 配列の最後に持たせたい値を記述すると、配列に追加できます。
-        配列名.splice(x,y) = 配列のx番目からy個、配列から削除できます。
-       */
-
-       /*
-        for (単数値をわかりやすく表現した名前 of 配列) {
-          処理
-        }
-       */
-       for (each of array){
-         console.log(each);
-       }
-
-       /*
-        練習問題
-        1.以下の配列を作成してください。
-          配列名 = numbers
-          値 = 1, 5, 10, 15, 20, 25, 30
-
-        2.配列numbersの最後に35を追加してください。
-
-        3.配列numbersの1を0に更新してください。
-
-        4.配列numbersの5を削除してください。
-
-        5.配列numbersを最初から最後の要素まで順番に出力してください。
-       */
-
-       // 1.
-       var numbers = [1,5,10,15,20,25,30];
-
-       // 2.
-       numbers.push(35);
-
-       // 3.
-       numbers[0]= 0;
-
-       // 4.
-       numbers.splice(1, 1);
-       
-       // 5.
-       for (var eachNumber of numbers){
-         console.log(each);
-       }
-
-       // 連想配列について
-       var profile = {age: 23, gender:"male", name:"Ichiro"};
-       console.log(profile);
-       console.log(profile["name"]);
-       console.log(profile["age"]);
-       console.log(profile["gender"]);
-
-       profile["age"] = 30;
-       console.log(profile);
-
-       profile["email"] = "test@gmail.com";
-       console.log(profile);
-       console.log(profile["email"]);
-
-       delete profile["email"];
-       console.log(profile);
-
-       /*
-        delete 連想配列名[key] = 連想配列のkeyを記述すると、keyに対する値を削除追加できます。
-       */
-
-      for (var key in profile) { // 配列profileの中身をkeyというあだ名でひとつひとつを表現
-        console.log("値:" = profile[key]); // ひとつひとつを出力
+// 2-2 基礎構文 - 変数
+      // 変数について
+      var wareki = "平成";
+      console.log(wareki);
+
+      wareki = "令和"; // 上書きするには var は不要
+      console.log(wareki);
+
+      var abc = "abc";
+      console.log(abc);
+
+      /*
+      変数の命名規則
+        ローワーキャメルケース：単語の先頭を大文字にしたもの 最初のの単語の先頭を小文字にする（JavaScriptではローワーキャメルケースがよく使われる）
+          fullName
+        スネークケース：単語をアンダースコアに区切りしたもの
+          full_name
+        アッパーキャメルケース：単語の先頭を大文字にしたもの 最初の単語も大文字にする（別名：パスカルケース）
+          FullName
+      */
+
+      // 変数の応用について(文字列連結・変数に変数を代入)
+      var firstName = "Taro";
+      var lastName = "Yamada";
+      var fullName = firstName + lastName;
+      console.log(fullName);
+
+      /*
+      練習問題
+      以下の変数を作成して、それぞれ出力してみましょう。
+      変数    | 値
+      name   | SeedKun
+      age    | 20歳
+      gender | 男
+      */
+    // Answer
+      var name = "SeedKub";
+      var age = "20歳";
+      var gender = "男";
+      console.log(name);
+      console.log(age);
+      console.log(gender);
+
+// 2-3_基礎構文 - データ型と四則演算
+      /*
+      1.整数型：number
+      2.文字列型：string
+      3.論理型：boolean
+      4.配列型：array
+      */
+
+      // 1.整数型
+      var weight = 50;
+      console.log(weight);
+      console.log(typeof weight);
+
+      // 四則演算
+      console.log(2 + 2);
+      console.log(2 - 2);
+      console.log(2 * 2);
+      console.log(2 / 2);
+      console.log(3 % 2);
+
+      var five = 5;
+      var ten = 10;
+      console.log(five * ten);
+
+      // 2.文字列型
+      weight = "50";
+      console.log(weight);
+      console.log(typeof weight);
+
+      // 3.論理型
+      var boolean = true;
+      console.log(typeof boolean);
+
+      // 4.配列型
+      var array = ["１つ目のデータ", "２つ目のデータ"];
+      console.log(array);
+
+    /* 練習問題
+      以下の変数を作成して、各問題を説いてみましょう。
+      var a = 5;
+      var b = 12;
+      var c = 13;
+      var d = 20;
+
+      1.変数aと変数bと変数cを足した結果を出力してください。
+      2.変数aと変数bを足した結果に変数cを掛けた結果を出力してください。
+      3.変数dから変数aを引いた結果を出力してください。
+      4.変数bと変数cを掛けた結果を出力してください。
+      5.変数dと変数aで割った結果を出力してください。
+      6.変数dを変数cで割った余りを出力してください。
+    */
+
+    // Answer
+      var a = 5;
+      var b = 12;
+      var c = 13;
+      var d = 20;
+      console.log(a + b + c);
+      console.log((a + b) * c);
+      console.log(d - a);
+      console.log(b * c);
+      console.log(d / a);
+      console.log(d % c);
+
+// 2-4_基礎構文 2-4_基礎構文 - if文
+      /*
+      boolean型
+        true false
+      if(boolean型の値){
+          trueの時実行する
+      }
+      */
+      if(true){
+          console.log("条件がtrueだからお米を買いに行きます");
+
+      }
+      if(false){
+          console.log("条件がfalseだったらお米を買いに行きません");
+      }
+
+      /*
+      論理演算子
+        trueはそのままtrue,falseはfalseを表しますが、
+        !は逆の意味を表します
+        !true つまり false
+        !false つまり true
+      */
+
+      var boolean = true;
+      if(boolean){
+        console.log("条件がtrueだからお米を買いに行きます。");
+      }
+      if(!boolean){
+        console.log("条件がfalseだからお米を買いに行きません。");
+      }
+
+      /*
+      else if と else
+
+      if(boolean型の値(条件)){
+        条件がtrueのとき実行する
+      } else if(上とは違う条件){
+        条件がtrueのとき実行する
+      } else{
+        どの条件にも満たない場合の処理
+      }
+
+      if文は一回条件が通れば他のものは読み込まれず次の処理へ移ることを覚えておきましょう。
+      */
+
+      var condition1 = false;
+      var condition2 = false;
+      if(condition1){
+        console.log("差し支えないので、お米を買いに行きます。");
+      } else if(condition2){
+        console.log("買い物は差し支えるので、掃除機をかけます。");
+      } else{
+        console.log("どちらも差し支えるので、子どもの面倒をみます。");
+      }
+
+      /*
+      比較演算子について
+      算数で使っていた、xはyより小さい、xはyより大きいなどの比較演算子をJavaScriptでも使うことができます。
+      x == y    xとyの値が等しい（非推奨）
+      x === y   xとyの値もデータ型も等しい
+      x != y     xとyの値が等しくない（非推奨）
+      x !== y    xとyの値もデータ型も等しくない
+      x < y     xはyより小さい
+      x <= y    xはy以下
+      x > y     xはyより大きい
+      x >= y    xはy以上
+      */
+
+      var number = 10;
+      var string = "10";
+      if (number == string) {
+        console.log("numberとstringは等しい？");
+      }
+      if (number === string) {
+        console.log("numberとstringは等しい？")
+      } else {
+        console.log("numberとstringは等しくない")
+      }
+
+      /*
+        論理積と論理和について
+        複雑な条件を満たす場合のみ実行したい処理がある場合、論理積や論理和を使います。
+        論理積 = && = aの条件がtrueかつbの条件がtrue
+        論理和 = || = aの条件がtrueまたはbの条件がtrue
+      */
+
+      var satoHeight = 160;
+      var tanakaHeight = 170;
+      if (satoHeight < tanakaHeight && tanakaHeight < 180) {
+        console.log("1つめの条件がtrue かつ 2つめの条件がtrueだから実行します。");
+      }
+
+      if (satoHeight < tanakaHeight && tanakaHeight < 160) {
+        console.log("1つめの条件がtrue かつ 2つめの条件がfalseだから無視します。");
+      }
+
+      if (satoHeight < tanakaHeight || tanakaHeight < 160) {
+        console.log("1つめの条件がtrueだから実行します。");
+      }
+
+      if (satoHeight > tanakaHeight || tanakaHeight < 160) {
+        console.log("いずれも条件がfalseだから無視します。");
       }
 
       /*
         練習問題
-        1.以下のような連想配列を作成してください。
-          連想配列名 | scores
-          key      | value
-          english  | 80
-          math     | 70
-          japanese | 90
+        以下の変数を作成して、各問題を解いてみましょう。
+        var ichiro = 23;
+        var jiro = 20;
+        var saburo = 17;
+        var shiro = 9;
 
-        2.連想配列に以下のキーと値を追加してください。
-          science  | 75
+        1.一部が20歳以上か判定するif文を作成してください。
+          条件が真（true）の場合は、「20歳です」と出力してください。
 
-        3.連想配列の以下の値を更新してください。
-          english  | 90
+        2.二郎が20歳か判定するif文を作成してください。
+          条件が真（true）の場合は、「20歳です」と出力してください。
 
-        4.連想配列の以下のキーを削除してください。
-          math     | 70
+        3.三郎が20歳以下かつ、四郎が20歳以下か判定するif文を作成してください。
+          条件が真（true）の場合は、「2人とも20歳以下です」と出力してください。
 
-        5.連想配列を最初から最後の要素（キーと値）まで順番に出力してください。
+        4.四郎が5歳以下か判定するif文を作成してください。
+          条件が真（true）の場合は、「5歳以下です」と出力してください。
+          また、条件が偽（false）の場合は、「5歳未満です」と出力してください。
+      */
+
+    var ichiro = 23;
+    var jiro = 20;
+    var saburo = 17;
+    var shiro = 9;
+
+    // 1.
+      if (ichiro <= 20){
+          console.log("20歳以上です");
+      }
+
+      // 2.
+      if (jiro === 20){
+          console.log("20歳です");
+      }
+
+      // 3.
+      if (20 >= saburo && 20 >= shiro) {
+          console.log("2人とも20歳以下です");
+      }
+
+      // 4.
+      if (5 <= shiro) {
+          console.log("5歳以上です");
+      } else {
+          console.log("5歳未満です");
+      }
+
+// 2-5_基礎構文 - switch文
+      /*
+      switch (条件) {
+        case 選択肢1:
+          ある条件の結果、選択肢1と等しい場合の処理;
+          break;
+
+        case 選択肢2:
+          ある条件の結果、選択肢2と等しい場合の処理;
+          break;
+
+        case 選択肢3:
+          ある条件の結果、選択肢3と等しい場合の処理;
+          break;
+
+        default:
+          ある条件の結果、等しい選択肢がない場合の処理;
+          break;
+      }
+      */
+
+      var condition3 = "買い物";
+      switch (condition3) {
+        case "買い物":
+          console.log("買い物に行きます。");
+          break;
+
+        case "掃除機":
+          console.log("掃除機をかけます。");
+          break;
+
+        case "料理":
+          console.log("料理を作ります。");
+            break;
+
+        case "お風呂":
+        case "トイレ":
+          console.log("お風呂とトイレを掃除します。");
+          break;
+
+        default:
+          console.log("子供の面倒を見ます");
+          break;
+      }
+
+      /*
+      練習問題
+      以下の変数を作成して、各問題を解いてみましょう。
+      var optionalNumber = 任意の数字;
+
+      以下の条件に合うようにswitch文を作成してください。
+      条件    | 出力する文字
+      1      | 1です
+      2      | 2です
+      3      | 3です
+      4      | 4です
+      5      | 5です
+      1~5以外 | 1~5以外です
+      */
+
+      var optionalNumber = 1 ; // 任意の数字
+      switch (optionalNumber) {
+          case 1:
+            console.log("1です");
+            break;
+          case 2:
+            console.log("2です");
+            break;
+          case 3:
+            console.log("3です");
+            break;
+          case 4:
+            console.log("4です");
+            break;
+          case 5:
+            console.log("5です");
+            break;
+          default:
+            console.log("１〜５以外です");
+            break;
+      }
+
+// 2-6_基礎構文 - for文
+      /*
+      for(初期化処理; 繰り返し条件式; 更新処理) {
+        処理;
+      }
+      1.初期化処理 = 繰り返し処理が始まる前に一度だけ読み込まれる。
+      2.くり返し条件式 条件がtrueなら3へ進む。条件がfalseなら処理終了。
+      3.処理実行
+      4.更新処理 = 処理が終わるごとに読まれる処理
+
+      for文の中で変数を定義し、繰り返し処理ごとに変数を更新します。
+      繰り返し条件がtrueの間はずっとくり返しが行われ、falseになった時点でfor文の処理が終了します。
+      */
+
+      for (var i = 0; i<= 10; i++) {
+        console.log(i);
+      }
+
+      for (var i = 10; i >= 0;i--) {
+        console.log(i);
+      }
+
+      var times = 5;
+      for (var i = 0; i <= times; i++) {
+        console.log(i);
+      }
+
+      // 1~10までの数字を足していって、合計値が1000を超えるときの数字を出力してください。
+      var amount = 0; // 合計値の初期値
+      for (var i = 1; i <= 100; i++) {
+        amount += i; // =1+2+3+4...
+
+        if (amount > 1000) {
+          console.log("合計値が1000を超えるのは" + i + "の時です");
+          break;
+        }
+      }
+
+      // 1~30までの数字で、3の倍数以外を出力してください。
+      for (var i = 1; i <= 30; i++) {
+        if (i % 3 === 0){
+          continue;
+        }
+        console.log(i);
+      }
+
+      /*
+      練習問題
+      1.1から100まで出力するプログラムを書いてください。
+
+      2.1から100まで出力するプログラムを書いてください。
+        ただし、50を出力したらbreakを使って、処理を中断するようにしてください。
+        （1から50まで出力するようにしてください。）
+
+      3.1から100までの奇数のみ出力するプログラムを書いてください。
       */
 
       // 1.
-      var scores = {english: 80, math: 70, japanese: 90};
-      console.log(scores);
+      for (var i = 1; i <= 100; i++){
+        console.log(i);
+      }
 
       // 2.
-      scores["science"] = 75;
-      console.log(scores);
+      for (var i = 1; i <= 100; i++){
+        if (i > 50){
+          break;
+        }
+        console.log(i);
+      }
 
       // 3.
-      scores["english"] = 90;
-      console.log(scores);
+      for (var i = 1; i <= 100; i++){
+        if (i % 2 === 0) {
+          continue;
+        }
+        console.log(i);
+      }
+
+// 2-7_基礎構文 - while文
+      /*
+      初期化処理;
+      while (くり返し条件式) {
+        処理実行;
+        更新処理;
+      }
+      1.初期化処理 = 繰り返し処理が始まる前に一度だけ読み込まれる。
+      2.繰り返し条件式 条件がtrueなら3へ進む。条件がfalseなら処理終了。
+      3.処理実行
+      4.更新処理 = 処理が終わるごとに読まれる処理
+
+      while文の外で変数を定義し、繰り返し処理ごとに変数を更新します。
+      くり返し条件がtrueの間はずっとくり返しが行われ、falseになった時点でwhile文の処理が終了します。
+      */
+
+      var count = 0;
+      while (count <= 10){
+        console.log(count);
+        count++;
+      }
+
+      count = 10;
+      while (count >= 0){
+        console.log(count);
+        count--;
+      }
+
+      count = 0;
+      var max = 5;
+      while (count <= max){
+        console.log(count);
+        count++;
+      }
+
+      /*
+      練習問題
+      1.1から100まで出力するプログラムを書いてください。
+
+      2.1から100まで出力するプログラムを書いてください。
+        ただし、50を出力したらbreakを使って、処理を中断するようにしてください。
+        （1から50まで出力するようにしてください。）
+
+      3.1から100までの奇数のみ出力するプログラムを書いてください。
+      */
+
+      // 1.
+      var j = 1;
+      while (j <= 100){
+        console.log(j);
+        j++;
+      }
+
+      // 2.
+      var j = 1;
+      while (j <= 100){
+        if (j > 50){
+          break;
+        }
+        console.log(j);
+        j++;
+      }
+
+      // 3.
+      var j = 1;
+      while (j <= 100){
+        if (j % 2 === 0){
+          j++;
+          continue;
+        }
+        console.log(j);
+        j++;
+      }
+
+// 2-8_基礎構文 - 連想配列
+      var array = ["１つ目の値", "２つ目の値"];
+      console.log(array);
+
+      console.log(array[0]);
+      console.log(array[1]);
+      console.log(array[2]); //undefined = 未定義
+
+      array[0] = "１つ目の値を更新しました";
+      console.log(array);
+
+      array.push("３つ目の値"); // 配列の最後に追加できる
+      console.log(array);
+
+      array.splice(2,1); // 配列のx番目からy個、配列から削除できる
+      console.log(array);
+
+      var alpha = ["a","b","c"];
+      console.log(alpha);
+
+      /*
+      配列名.push() = 配列の最後に持たせたい値を記述すると、配列に追加できます。
+      配列名.splice(x,y) = 配列のx番目からy個、配列から削除できます。
+      */
+
+      /*
+      for (単数値をわかりやすく表現した名前 of 配列) {
+        処理
+      }
+      */
+      for (each of array){
+        console.log(each);
+      }
+
+      /*
+      練習問題
+      1.以下の配列を作成してください。
+        配列名 = numbers
+        値 = 1, 5, 10, 15, 20, 25, 30
+
+      2.配列numbersの最後に35を追加してください。
+
+      3.配列numbersの1を0に更新してください。
+
+      4.配列numbersの5を削除してください。
+
+      5.配列numbersを最初から最後の要素まで順番に出力してください。
+      */
+
+      // 1.
+      var numbers = [1,5,10,15,20,25,30];
+
+      // 2.
+      numbers.push(35);
+
+      // 3.
+      numbers[0]= 0;
 
       // 4.
-      delete scores["math"];
-      console.log(scores);
-
+      numbers.splice(1, 1);
+      
       // 5.
-      for (var key in scores) {
-        console.log(key);
-        console.log(scores[key]);
+      for (var eachNumber of numbers){
+        console.log(each);
       }
-  // 2-9_基礎構文 - 関数
-        // アロー関数
-        const num = (x, y) => {
-          if (x < y) {
-            return y;
-          }
+
+      // 連想配列について
+      var profile = {age: 23, gender:"male", name:"Ichiro"};
+      console.log(profile);
+      console.log(profile["name"]);
+      console.log(profile["age"]);
+      console.log(profile["gender"]);
+
+      profile["age"] = 30;
+      console.log(profile);
+
+      profile["email"] = "test@gmail.com";
+      console.log(profile);
+      console.log(profile["email"]);
+
+      delete profile["email"];
+      console.log(profile);
+
+      /*
+      delete 連想配列名[key] = 連想配列のkeyを記述すると、keyに対する値を削除追加できます。
+      */
+
+    for (var key in profile) { // 配列profileの中身をkeyというあだ名でひとつひとつを表現
+      console.log("値:" = profile[key]); // ひとつひとつを出力
+    }
+
+    /*
+      練習問題
+      1.以下のような連想配列を作成してください。
+        連想配列名 | scores
+        key      | value
+        english  | 80
+        math     | 70
+        japanese | 90
+
+      2.連想配列に以下のキーと値を追加してください。
+        science  | 75
+
+      3.連想配列の以下の値を更新してください。
+        english  | 90
+
+      4.連想配列の以下のキーを削除してください。
+        math     | 70
+
+      5.連想配列を最初から最後の要素（キーと値）まで順番に出力してください。
+    */
+
+    // 1.
+    var scores = {english: 80, math: 70, japanese: 90};
+    console.log(scores);
+
+    // 2.
+    scores["science"] = 75;
+    console.log(scores);
+
+    // 3.
+    scores["english"] = 90;
+    console.log(scores);
+
+    // 4.
+    delete scores["math"];
+    console.log(scores);
+
+    // 5.
+    for (var key in scores) {
+      console.log(key);
+      console.log(scores[key]);
+    }
+// 2-9_基礎構文 - 関数
+    /*
+      関数とは
+      決められたルールに従って受け取った値を別の値に変換するもの
+
+      いつ使えば良いのか
+      何度も同じ計算（処理）をしていたら、その処理を関数にしていつでも呼び出せるようにする
+
+      関数の作り方
+      1.アロー関数式（新しい関数の作り方、モダンなJavaScriptではこの作り方が主流）
+      2.関数式
+      3.関数宣言（まだまだ使われている）
+
+      引数とは
+      関数が変換する前の値
+
+      返り値とは
+      関数が変換した後の値
+    */
+
+      // 1.アロー関数
+      const max = (x, y) => { // 関数を変数maxに代入（変数は再代入不可の変数 = 定数という）x,yは引数、関数が変換する前の値
+        if (x < y) {
+          return y; // 返り値がy,returnするとそこで関数の処理が終了する
+        }
+        return x;
+      }
+      // この関数は、「2つの値の掛け合わせ」から「大きい方の値」に変換する処理をしています
+      console.log(max(10, 2));
+      console.log(typeof max);
+
+      // 2.関数式
+      const min = function(x, y){
+        if (x < y){
           return x;
         }
-        console.log(num(10, 2));
-        console.log(typeof num);
+        return y;
+      }
+      console.log(min(10, 2));
 
-        // 関数式
-        const min = function(x, y){
-          if (x < y){
-            return x;
-          }
-          return y;
+      // 3.関数宣言
+      function avg(x, y){
+        return (x + y) / 2;
+      }
+      console.log(avg(10,2));
+
+      const sayHi = () => {
+        console.log("Hello World");
+      }
+      sayHi();
+
+      /*
+      練習問題
+      年齢を渡して、
+      3歳以下は「あかちゃん」
+      18歳以下は「こども」
+      65歳未満は「大人」
+      65歳以上は「高齢者」
+      と出力する関数をアロー関数式で作ってください。
+      出力例）console.log(ageToType(65)); == 高齢者 が出力されること
+    */
+      const ageToType = (age) => {
+        if (age <= 3){
+          return "あかちゃん";
+        } else if (age <= 18) {
+          return "子ども";
+        } else if (age < 65) {
+          return "大人";
+        } else {
+          return "高齢者";
         }
-        console.log(min(1, 2));
+      }
+      console.log(ageToType(3));
 
-        // 関数宣言
-        function avg(x, y){
-          return ( x + y) / 2;
+      console.log(ageToType(max(20, 80)));
+      console.log(ageToType(min(20, 80)));
+
+      /*
+        練習問題
+        1~50の数字を返す変数を作ってください。
+        ただし、
+        3で割り切れる場合は、数字の代わりに「Fizz」
+        5で割り切れる場合は、数字の代わりに「Buzz」
+        3と5で割り切れる場合は、数字の代わりに「FizzBuzz」を返してください。
+        出力例）console.log(fizzBuzz(i));
+        1
+        2
+        Fizz
+        4
+        Buzz
+        Fizz
+        ・・・・
+        13
+        14
+        FizzBuzz
+      */
+      const fizzBuzz = (number) => {
+        switch (true){
+          case number % 15 === 0:
+            return "FizzBuzz";
+            break;
+
+          case number % 3 === 0:
+            return "Fizz";
+            break;
+
+          case number % 5 === 0:
+            return "Buzz";
+            break;
+
+          default:
+            return number;
+            break;
         }
-        console.log(avg(10,2));
+      }
+      for (var i = 1; i<= 50; i++){
+        console.log(fizzBuzz(i));
+      }
 
-        const sayHi = () => {
-          console.log("Hello World");
-        }
-        sayHi();
-
-        const ageToType = (age) => {
-          if (age <= 3){
-            return "あかちゃん";
-          } else if (age <= 18){
-            return "子ども";
-          } else if (age < 65) {
-            return "大人";
-          } else {
-            return "高齢者";
-          }
-        }
-        console.log(ageToType(30));
-
-        console.log(ageToType(num(20, 80)));
-        console.log(ageToType(min(20, 80)));
-
-        const fizzBuzz = (number) => {
-          switch (true){
-            case number % 15 === 0:
-              return "FizzBuzz";
-              break;
-            case number % 3 === 0:
-              return "Fizz";
-              break;
-            case number % 5 === 0:
-              return "Buzz";
-              break;
-            default:
-              return number;
-              break;
-          }
-        }
-        for (var i = 1; i<= 50; i++){
-          console.log(fizzBuzz(i));
-        }
-
-
-    </script>
-    <script src="script.js"></script>
+  </script>
 </body>
 </html>
