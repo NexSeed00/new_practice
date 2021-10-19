@@ -61,27 +61,4 @@ $(function(){
   // 5.
   let text5 = $("#text5");
   $(text5).css("font-size", "50px");
-  
-
-  // $("#updateTarget").on("mouseover", function(){
-  //   $(this).text("マウスオーバーしました")
-  // });
-
-  // $("#updateTarget").on("click", function(){
-  //   $(this).text("クリックしました")
-  // });
-
-  // on関数 = addEventListerでイベント発火する
-  $("#but1").on("mouseover", function(){
-    $("#updateTarget").text("ボタンがマウスオーバーされました");
-  });
-
-  $("#but2").on("click", function(){
-    $("#updateTarget").text("ボタンが押されました");
-  });
-
-  $("#but3").on("dblclick", function(){
-    $("#updateTarget").text("ボタンがダブルクリックされました");
-  });
-
 });
