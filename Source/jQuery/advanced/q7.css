@@ -1,7 +1,0 @@
-.x-scroll{
-  width: 500px;
-  padding: 30px 30px;
-  background-color: gray;
-  overflow-x:scroll;
-  white-space: nowrap;
-}
