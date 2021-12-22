@@ -1,32 +1,29 @@
 <?php
-  // スーパーグローバル変数 $_POSTなど、連想配列でデータが送られてくる
   // var_dump($_POST);
   // echo $_POST["nickname"];
   // <script>alert("入力されたjavascriptによる攻撃")</script>
+  // echo htmlspecialchars($_POST['nickname'], ENT_QUOTES, 'UTF-8'); // サニタイジング
   // htmlspecialchars() = HTMLタグなど特殊な文字を無害な文字列に変換する
 
-  // サニタイジング
-  $nickname = htmlspecialchars($_POST["nickname"], ENT_QUOTES, "UTF-8");
-  $email = htmlspecialchars($_POST["email"], ENT_QUOTES, "UTF-8");
-  $content = htmlspecialchars($_POST["content"], ENT_QUOTES, "UTF-8");
+  $nickname = htmlspecialchars($_POST['nickname'], ENT_QUOTES, 'UTF-8');
+  $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+  $content = htmlspecialchars($_POST['content'], ENT_QUOTES, 'UTF-8');
 
-  // バリデーション
-  if ($nickname === "") {
-    $nickname_result = "入力されていません。";
+  if ($nickname === '') {
+    $nickname_result = '入力されていません。';
   } else {
     $nickname_result = $nickname;
   }
-  if ($email === "") {
-    $email_result = "入力されていません。";
+  if ($email === '') {
+    $email_result = '入力されていません。';
   } else {
     $email_result = $email;
   }
-  if ($content === "") {
-    $content_result = "入力されていません。";
+  if ($content === '') {
+    $content_result = '入力されていません。';
   } else {
     $content_result = $content;
   }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,15 +39,14 @@
   <p>お問い合わせ内容：<?php echo $content_result; ?></p>
 
   <form method="POST" action="./thanks.php">
-  <!-- ユーザーに入力させずに、確認画面から完了画面に値を渡すにはtype = hiddenを使う。 -->
-    <input type="hidden" name="nickname" value="<?php echo $nickname ?>">
-    <input type="hidden" name="email" value="<?php echo $email ?>">
-    <input type="hidden" name="content" value="<?php echo $content ?>">
+    <input type="hidden" name="nickname" value="<?php echo $nickname; ?>">
+    <input type="hidden" name="email" value="<?php echo $email; ?>">
+    <input type="hidden" name="content" value="<?php echo $content; ?>">
 
     <button type="button" onclick="history.back()">戻る</button>
-    <!-- onclick="history.back() = JavaScript ブラウザバックと同じ -->
+    <!-- onclick="history.back()" = JavaScript ブラウザバックと同じ効果 -->
 
-    <?php if($nickname !== "" && $email !== "" && $content !== ""): ?>
+    <?php if($nickname !== '' && $email !== '' && $content !== ''): ?>
       <input type="submit" value="送信">
     <?php endif ?>
   </form>

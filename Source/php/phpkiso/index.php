@@ -8,9 +8,7 @@
 </head>
 <body>
   <h1>お問合せ情報入力</h1>
-  <!-- 個人情報を入力するformにはPOST送信を使用する -->
-  <!-- GETではURLに記入内容が反映されてしまう。検索フォームに使うことが多い -->
-  <!-- action = 宛て先を意味している -->
+
   <form method="POST" action="./check.php">
     <div>
       ニックネーム<br>

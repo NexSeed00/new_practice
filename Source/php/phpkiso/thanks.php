@@ -1,20 +1,17 @@
 <?php 
   // echo $_POST["nickname"];
-  // サニタイジング（JavaScriptからの攻撃を防止するため）
-  $nickname = htmlspecialchars($_POST["nickname"], ENT_QUOTES, "UTF-8");
-  $email = htmlspecialchars($_POST["email"], ENT_QUOTES, "UTF-8");
-  $content = htmlspecialchars($_POST["content"], ENT_QUOTES, "UTF-8");
+  $nickname = htmlspecialchars($_POST['nickname'], ENT_QUOTES, 'UTF-8');
+  $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+  $content = htmlspecialchars($_POST['content'], ENT_QUOTES, 'UTF-8');
 
   // データベースに接続
-  $dsn = "mysql:dbname=phpkiso;host=localhost";'charset=utf8';
-  $user = "root";
-  $password = "";
+  $dsn = 'mysql:dbname=phpkiso;host=localhost';
+  $user = 'root';
+  $password = '';
   $dbh = new PDO($dsn, $user, $password);
-  // 変数dbnを呼び出すためにアロー演算子を使う
-  $dbh -> query("SET NAMES UTF8MB4");
+  $dbh -> query('SET NAMES UTF8MB4');
 
-  // ? = プレースホルダー、SQLを使うときはこれで実装する
-  $stmt = $dbh->prepare("INSERT INTO survey SET nickname=?,email=?,content=?");
+  $stmt = $dbh->prepare('INSERT INTO survey SET nickname=?, email=?, content=?');
   $stmt->execute([$nickname, $email, $content]);
 ?>
 
@@ -35,6 +32,5 @@
   <p>お問い合わせ内容：<?php echo $content; ?></p>
 
   <a href="./index.php">入力画面へ戻る</a>
-
 </body>
 </html>

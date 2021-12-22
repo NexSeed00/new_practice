@@ -1,4 +1,17 @@
 <?php
+/*
+    練習問題
+    1. 「User」というクラスを作成してください。
+
+    2. Userクラスに、privateのアクセス修飾子で「$name」と「$email」というプロパティを作成してください
+*/
+
+/*
+    練習問題
+    3. Userクラスに、「コンストラクタ」を作成してください。
+
+    4. コンストラクタに引数を持たせて、$nameと$emailというプロパティに代入してください。
+*/
 
 class User {
   private $name;
@@ -12,15 +25,12 @@ class User {
   function create() {
     echo '新規登録ページ<br>';
   }
-  // データベースに保存する時に使用される
+
   function store() {
     echo $this->name.' '.$this->email;
   }
-
 }
 
 $user = new User('田中', 'test@gmail.com');
 $user->create();
 $user->store();
-
-?>

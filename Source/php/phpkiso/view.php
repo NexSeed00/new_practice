@@ -1,11 +1,12 @@
 <?php
-  $dsn = "mysql:dbname=phpkiso;host=localhost";'charset=utf8';
-  $user = "root";
-  $password = "";
+  // データベースに接続
+  $dsn = 'mysql:dbname=phpkiso;host=localhost';
+  $user = 'root';
+  $password = '';
   $dbh = new PDO($dsn, $user, $password);
-  $dbh -> query("SET NAMES UTF8MB4");
-  
-  $sql = "SELECT * FROM survey";
+  $dbh -> query('SET NAMES UTF8MB4');
+    
+  $sql = 'SELECT * FROM survey';
   $stmt = $dbh->prepare($sql);
   $stmt->execute();
   $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -24,9 +25,9 @@
   <h1>お問い合わせ情報一覧</h1>
   <hr>
   <?php foreach ($records as $record): ?>
-    <p>ニックネーム：<?php echo $record["nickname"] ?></p>
-    <p>メールアドレス：<?php echo $record["email"] ?></p>
-    <p>お問い合わせ内容：<?php echo $record["content"] ?></p>
+    <p>ニックネーム：<?php echo $record['nickname']; ?></p>
+    <p>メールアドレス：<?php echo $record['email']; ?></p>
+    <p>お問い合わせ内容：<?php echo $record['content']; ?></p>
   <hr>
   <?php endforeach ?>
   <a href="./index.php">入力画面に戻る</a>
