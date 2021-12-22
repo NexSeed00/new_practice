@@ -24,7 +24,7 @@
         /*
             練習問題
             以下の変数を作成して、各問題を解いてみましょう。
-            $optinal_number = 任意の数字;
+            $optional_number = 任意の数字;
 
             以下の条件に合うようにswitch文を作成してください。
             条件    | 出力する文字
@@ -35,8 +35,8 @@
             5      | 5です
             1~5以外 | 1~5以外です
         */
-        $optinal_number = 1;
-        switch ($optinal_number) {
+        $optional_number = 1;
+        switch ($optional_number) {
             case 1:
                 echo '1です';
                 break;
