@@ -286,11 +286,11 @@
     例
         
     ```
-    message = createSelfIntroductionText("NexSeed");
+    message = createSelfIntroductionText("taro");
     System.out.println(message);
         
     // 実行結果
-    私の名前はNexSeedです
+    私の名前はtaroです
     ```
 	
     <details><summary>回答例</summary><div>
@@ -299,7 +299,7 @@
     // ファイル内のコード
     public class Practice {
         public static void main(String[] args) {
-            message = createSelfIntroductionText("NexSeed");
+            message = createSelfIntroductionText("taro");
             System.out.println(message);
         }
 
@@ -370,9 +370,9 @@
 
     ```
     ファイル名：Practice.java
-    メソッド名：isSeedKun  
+    メソッド名：isTaro  
     引数1：任意の文字列  
-    処理内容：引数で渡された文字列が「SeedKun」の場合は true、そうでない場合は false を返す。
+    処理内容：引数で渡された文字列が「taro」の場合は true、そうでない場合は false を返す。
     ```
 	
     <details><summary>回答例</summary><div>
@@ -381,12 +381,12 @@
     // ファイル内のコード
     public class Practice {
         public static void main(String[] args) {
-            result = isSeedKun("SeedKun");
+            result = isTaro("taro");
             System.out.println(result);
         }
 
-        public static boolean isSeedKun(String str) {
-            if (str == "SeedKun") {
+        public static boolean isTaro(String str) {
+            if (str == "taro") {
                 return true;
             } else {
                 return false;
