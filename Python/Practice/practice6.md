@@ -1,9 +1,8 @@
 # メソッド
 
-1. 以下のメソッドを作成して、作成したメソッドを実行してください。
+1. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：printHoge  
     処理内容：「Hoge」と出力する
     ```
@@ -11,24 +10,10 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            printHoge();
-        }
+    def printHoge():
+       print("Hoge")
 
-        public static printHoge() {
-            System.out.println("Hoge");
-        }
-
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    Hoge
+    printHoge()
     ```
             
     </div></details>
@@ -36,10 +21,9 @@
 
     <br>
 	
-2. 以下のメソッドを作成して、作成したメソッドを実行してください。
+2. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：printNum  
     引数：1つの数値  
     処理内容：引数で受け取った数値を出力する
@@ -48,24 +32,10 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            printNum(4);
-        }
+    def printNum(num):
+        print(num)
 
-        public static printNum(int num) {
-            System.out.println(num);
-        }
-
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    4
+    printNum(4)
     ```
             
     </div></details>
@@ -73,10 +43,9 @@
 
     <br>
 	
-3. 以下のメソッドを作成して、作成したメソッドを実行してください。
+3. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：printKuku  
     引数：1つの数値  
     処理内容：引数で受け取った数値の九九（1から9までかけた数）を出力する
@@ -85,34 +54,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            printKuku(4);
-        }
+    def printKuku(num):
+        for i in range(1, 10):
+            print(num * i)
 
-        public static printKuku(int num) {
-            for (int i = 1; i <= 9; i++) {
-                System.out.println(num * i);
-            }
-        }
-
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    4
-    8
-    12
-    16
-    20
-    24
-    28
-    32
-    36
+    printKuku(4)
     ```
             
     </div></details>
@@ -120,10 +66,9 @@
 
     <br>
 	
-4. 以下のメソッドを作成して、作成したメソッドを実行してください。
+4. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：printIsEven  
     引数：1つの数値  
     処理内容：引数で受け取った数値が偶数の場合は「偶数です」と出力し、奇数の場合は「奇数です」と出力する
@@ -132,38 +77,22 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            printIsEven(3);
-        }
+    def printIsEven(num):
+        if num % 2 == 0:
+            print("偶数です")
+        else:
+            print("奇数です")
 
-        public static printIsEven(int num) {
-            if (int num % 2 == 0) {
-                System.out.println("偶数です");
-            } else {
-                System.out.println("奇数です");
-            }
-        }
-
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    奇数です
+    printIsEven(3);
     ```
             
     </div></details>
         
     <br>
 	
-5. 以下のメソッドを作成して、作成したメソッドを実行してください。
+5. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：printMessage  
     引数1：1つの文字列  
     引数2：1つの数字  
@@ -173,7 +102,7 @@
     例
         
     ```
-    printMessage("ABC", 3);
+    printMessage("ABC", 3)
         
     // 実行結果
     ABC
@@ -184,28 +113,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            printMessage("ABC", 3);
-        }
+    def printMessage(str, count):
+        for i in range(0, count):
+            print(str)
 
-        public static printMessage(String str, int count) {
-            for (int i = 0; i < count; i++) {
-                System.out.println(str);
-            }
-        }
-
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    ABC
-    ABC
-    ABC
+    printMessage("ABC", 3)
     ```
             
     </div></details>
@@ -213,10 +125,9 @@
 
     <br>
 	
-6. 以下のメソッドを作成して、作成したメソッドを実行してください。
+6. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：printMaxNum  
     引数1：1つの数値  
     引数2：1つの数値  
@@ -227,30 +138,15 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            printMaxNum(4, 5);
-        }
+    def printMaxNum(num1, num2):
+        if num1 > num2:
+            print(num1)
+        elif num1 < num2:
+            print(num2)
+        else:
+            print("同じ")
 
-        public static printMaxNum(int num1, int num2) {
-            if (num1 > num2) {
-                System.out.println(num1);
-            } elseif (num1 < num2) {
-                System.out.println(num2);
-            } else {
-                System.out.println('同じ');
-            }
-        }
-
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    5
+    printMaxNum(4, 5)
     ```
             
     </div></details>
@@ -258,10 +154,9 @@
 
     <br>
 	
-7. 以下のメソッドを作成して、作成したメソッドを実行してください。
+7. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：getSquared  
     引数1：1つの数値  
     処理内容：引数で受け取った数値の2乗を計算し返す
@@ -270,8 +165,8 @@
     例
 	
     ```
-    result = getSquared(4);
-    System.out.println(result);
+    result = getSquared(4)
+    print(result)
         
     // 実行結果
     16
@@ -280,24 +175,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            result = get Squared(4);
-            System.out.println(result);
-        }
+    def getSquared(num):
+        return num * num
 
-        public static int getSquared(int num) {
-            return num * num;
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    16
+    result = getSquared(4)
+    print(result)
     ```
             
     </div></details>
@@ -305,10 +187,9 @@
 
     <br>
 	
-8. 以下のメソッドを作成して、作成したメソッドを実行してください。
+8. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：createSelfIntroductionText  
     引数1：1つの文字列  
     処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
@@ -317,8 +198,8 @@
     例
         
     ```
-    message = createSelfIntroductionText("taro");
-    System.out.println(message);
+    message = createSelfIntroductionText("taro")
+    print(message)
         
     // 実行結果
     私の名前はtaroです
@@ -327,35 +208,21 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            message = createSelfIntroductionText("taro");
-            System.out.println(message);
-        }
+    def createSelfIntroductionText(name):
+        msg = "私の名前は" + name + "です"
+        return msg
 
-        public static String createSelfIntroductionText(String name) {
-            msg = '私の名前は' + name + 'です';
-            return msg;
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    私の名前はtaroです
+    message = createSelfIntroductionText("taro")
+    print(message)
     ```
             
     </div></details>
         
     <br>
 	
-9. 以下のメソッドを作成して、作成したメソッドを実行してください。
+9. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：isEvenNumber  
     引数1：1つの数値  
     処理内容：引数で渡された値が偶数の場合は true、そうでない場合は false を返す。
@@ -364,8 +231,8 @@
     例
         
     ```
-    result = isEvenNumber(3);
-    System.out.println(result);
+    result = isEvenNumber(3)
+    print(result)
         
     // 実行結果
     false
@@ -374,28 +241,14 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            result = isEvenNumber(3);
-            System.out.println(result);
-        }
+    def isEvenNumber(num):
+        if (num % 2 == 0):
+            return "true"
+        else:
+            return "false"
 
-        public static boolean isEvenNumber(int num) {
-            if (num % 2 == 0) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    false
+    result = isEvenNumber(3)
+    print(result)
     ```
             
     </div></details>
@@ -403,10 +256,9 @@
 
     <br>
 	
-10. 以下のメソッドを作成して、作成したメソッドを実行してください。
+10. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    ファイル名：Practice.java
     メソッド名：isTaro  
     引数1：任意の文字列  
     処理内容：引数で渡された文字列が「taro」の場合は true、そうでない場合は false を返す。
@@ -415,28 +267,14 @@
     <details><summary>回答例</summary><div>
             
     ```
-    // ファイル内のコード
-    public class Practice {
-        public static void main(String[] args) {
-            result = isTaro("taro");
-            System.out.println(result);
-        }
+    def isTaro(str):
+        if str == "taro":
+            return "true"
+        else:
+            return "false"
 
-        public static boolean isTaro(String str) {
-            if (str == "taro") {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    true
+    result = isTaro("taro");
+    print(result)
     ```
             
     </div></details>

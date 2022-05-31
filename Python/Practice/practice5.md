@@ -5,9 +5,8 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 10; i++) {
-        System.out.println("hoge");
-    }
+    for i in range(10):
+        print("hoge")
     ```
             
     </div></details>
@@ -15,14 +14,13 @@
 
     <br>
 	
-2. 1から10までの数字を出力するプログラムを作成してください。
+2. 0から9までの数字を出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 10; i++) {
-        System.out.println(i);
-    }
+    for i in range(10):
+        print(i)
     ```
             
     </div></details>
@@ -30,14 +28,13 @@
 
     <br>
 	
-3. 九九、二の段を表示するプログラムを作成してください。
+3. 九九、二の段を出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i < 10; i++) {
-        System.out.println(i * 2);
-    }
+    for i in range(1, 9):
+        print(i * 2)
     ```
             
     </div></details>
@@ -50,11 +47,9 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (i = 1; i <= 100; i++) {
-        if (i % 2 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in range(1, 100):
+        if i % 2 == 0:
+            print(i)
     ```
             
     </div></details>
@@ -68,14 +63,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 2 != 0) {
-            echo '奇数です';
-            System.out.println("奇数です");
-        } else {
-            System.out.println(i);
-        }
-    }
+    for i in range(1, 100):
+        if i % 2 != 0:
+            print("奇数です")
+        else:
+            print(i)
     ```
             
     </div></details>
@@ -88,11 +80,9 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in range(1, 100):
+        if i % 3 == 0:
+            print(i)
     ```
             
     </div></details>
@@ -105,11 +95,9 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 5 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in range(1, 100):
+        if i % 5 == 0:
+            print(i)
     ```
             
     </div></details>
@@ -122,11 +110,9 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in range(1, 100):
+        if i % 3 == 0 and i % 5 == 0:
+            print(i)
     ```
             
     </div></details>
@@ -140,13 +126,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (i = 1; i <= 100; i++) {
-        if (i % 3 === 0) {
-            System.out.println("Fizz");
-        } else {
-            System.out.println(i);
-        }
-    }
+    for i in range(1, 100):
+        if i % 3 == 0:
+            print("Fizz")
+        else:
+            print(i)
     ```
             
     </div></details>
@@ -160,18 +144,15 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            System.out.println("FizzBuzz");
-        } else if (i % 5 == 0) {
-            System.out.println("Buzz");
-        } else if (i % 3 == 0) {
-            System.out.println("Fizz");
-        } else {
-            System.out.println(i);
-        }
-    }
-
+    for i in range(1, 100):
+        if i % 15 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)
     ```
             
     </div></details>

@@ -1,7 +1,7 @@
 # 制御文
 
 1. 変数 x、y にそれぞれ任意の数値を代入し、x が y より大きい（超過）場合に、  
-「xはyより大きい」という文を表示するプログラムを作成してください。
+「xはyより大きい」という文を出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
@@ -19,7 +19,7 @@
     <br>
 
 2. 変数 x、y にそれぞれ任意の数値を代入し、x が y より小さい（超過）場合に、  
-「xはyより小さい」という文を表示するプログラムを作成してください。
+「xはyより小さい」という文を出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
@@ -37,19 +37,18 @@
 
 	
 3.  変数 x、y にそれぞれ任意の数値を代入し、x が ｙ 以上の場合には「xはy以上」、  
-x が y より小さい（未満）場合には「xはyより小さい」と表示するプログラムを作成してください。
+x が y より小さい（未満）場合には「xはyより小さい」と出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    int x = 10;
-    int y = 20;
+    x = 10
+    y = 20
 
-    if (x >= y) {
-    　　System.out.println(x + 'は' + y + '以上');
-    } else {
-    　　System.out.println(x + 'は' + y + 'より小さい');
-    }
+    if x >= y:
+        print("xはy以上")
+    else:
+        print("xはyより小さい")
     ```
             
     </div></details>
@@ -58,21 +57,20 @@ x が y より小さい（未満）場合には「xはyより小さい」と表�
     <br>
 	
 4.  変数 x、y にそれぞれ任意の数値を代入し、x が ｙ より大きい（超過）場合には「xはyより大きい」、  
-x が y より小さい（未満）場合には「xはyより小さい」、x と y が等しい場合には「xとyは等しい」と表示するプログラムを作成してください。
+x が y より小さい（未満）場合には「xはyより小さい」、x と y が等しい場合には「xとyは等しい」と出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    int x = 10;
-    int y = 10;
+    x = 10
+    y = 10
 
-    if (x > y) {
-    　　System.out.println(x . 'は' . $y . 'より大きい');
-    } else if (x == y) {
-    　　System.out.println(x + 'と' + y + 'は等しい');
-    } else {
-    　　System.out.println(x + 'は' + y + 'より小さい');
-    }
+    if x > y:
+        print("xはyより大きい")
+    elif x == y:
+        print("xとyは等しい")
+    else:
+        print("xはyより小さい")
     ```
             
     </div></details>
@@ -81,18 +79,17 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 5. 変数xに任意の数値を代入し、それが偶数か奇数かを判定するプログラムを作成してください。   
-奇数の場合は、「奇数です」、偶数の場合は「偶数です」と出力してください。
+ただし、奇数の場合は、「奇数です」、偶数の場合は「偶数です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    int x = 10;
-
-    if (x % 2 == 0) {
-    　　System.out.println('偶数です');
-    } else {
-    　　System.out.println('奇数です');
-    }
+    x = 10
+    
+    if x % 2 == 0:
+        print("偶数です")
+    else:
+        print("奇数です")
     ```
             
     </div></details>
@@ -101,20 +98,19 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 6. 変数xに任意の数値を代入し、それが3の倍数か5の倍数かを判定するプログラムを作成してください。   
-3の倍数の場合は、「3の倍数です」、5の倍数の場合は「5の倍数です」、それ以外の場合は、「3と5の倍数以外です」と出力してください。
+ただし、3の倍数の場合は、「3の倍数です」、5の倍数の場合は「5の倍数です」、それ以外の場合は、「3と5の倍数以外です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    int x = 4;
-            
-    if (x % 3 == 0) {
-    　　System.out.println('3の倍数です');
-    } else if ($x % 5 == 0) {
-    　　System.out.println('5の倍数です');
-    } else {
-    　　System.out.println('3と5の倍数以外です');
-    }
+    x = 4
+
+    if x % 3 == 0:
+        print("3の倍数です")
+    elif x % 5 == 0:
+        print("5の倍数です")
+    else:
+        print("3と5の倍数以外です")
     ```
             
     </div></details>
@@ -123,16 +119,15 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 7. 変数xに任意の数値を代入し、それが10以上かつ20以下かを判定するプログラムを作成してください。   
-10以上かつ20以下の場合は、「10以上かつ20以下です」と出力してください。
+ただし、10以上かつ20以下の場合は、「10以上かつ20以下です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    int x = 14;
-        
-    if (10 <= x && x <= 20) {
-    　　System.out.println('10以上かつ20以下です');
-    }
+    x = 14
+    
+    if 10 <= x and x <= 20:
+        print("10以上かつ20以下です")
     ```
             
     </div></details>
@@ -140,17 +135,16 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
 
     <br>
 	
-8. 変数xに任意の数値を代入し、それが100以上または10以下かを判定するプログラムを作成してください。   
-100以上または10以下の場合は、「100以上または10以下です」と出力してください。
+8. 【発展】変数xに任意の数値を代入し、それが100以上または10以下かを判定するプログラムを作成してください。   
+ただし、100以上または10以下の場合は、「100以上または10以下です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
-    int x = 111;
-        
-    if (100 <= x || x <= 10) {
-    　　System.out.println('100以上または10以下です');
-    }
+    x = 111
+
+    if 100 <= x or x <= 10:
+        print("100以上または10以下です")
     ```
             
     </div></details>
@@ -169,33 +163,14 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <details><summary>回答例</summary><div>
             
     ```
-    // if文を使った方法
+    x = "女"
 
-    int x = "女";
-        
-    if (x == "男") {
-        System.out.println("male");
-    } else if (x == "女") {
-        System.out.println("female");
-    } else {
-        System.out.println("???");
-    }
-
-    // switch文を使った方法(動画内では解説していませんが、気になる方は調べてみると良いでしょう)
-
-    int x = "女";
-
-    switch (x) {
-        case "男":
-            System.out.println('male');
-            break;
-        case "女":
-            System.out.println('female');
-            break;
-        default:
-            System.out.println('???');
-            break;
-    }
+    if x == "男":
+        print("male")
+    elif x == "女"
+        print("female")
+    else:
+        print("???")
     ```
             
     </div></details>
@@ -224,83 +199,34 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <details><summary>回答例</summary><div>
             
     ```
-    // if文を使った方法
+    x = 4
 
-    int x = 4;
-
-    if (x == 1) {
-        System.out.println("January");
-    } else if (x == 2) {
-        System.out.println("February");
-    } else if (x == 3) {
-        System.out.println("March");
-    } else if (x == 4) {
-        System.out.println("April");
-    } else if (x == 5) {
-        System.out.println("May");
-    } else if (x == 6) {
-        System.out.println("June");
-    } else if (x == 7) {
-        System.out.println("July");
-    } else if (x == 8) {
-        System.out.println("August");
-    } else if (x == 9) {
-        System.out.println("September");
-    } else if (x == 10) {
-        System.out.println("October");
-    } else if (x == 11) {
-        System.out.println("November");
-    } else if (x == 12) {
-        System.out.println("December");
-    } else {
-        System.out.println("月が存在しません");
-    }
-
-    // switch文を使った方法(動画内では解説していませんが、気になる方は調べてみると良いでしょう)
-
-    int x = 4;
-
-    switch (x) {
-        case 1:
-            System.out.println("January");
-            break;
-        case 2:
-            System.out.println("February");
-            break;
-        case 3:
-            System.out.println("March");
-            break;
-        case 4:
-            System.out.println("April");
-            break;
-        case 5:
-            System.out.println("May");
-            break;
-        case 6:
-            System.out.println("June");
-            break;
-        case 7:
-            System.out.println("July");
-            break;
-        case 8:
-            System.out.println("August");
-            break;
-        case 9:
-            System.out.println("September");
-            break;
-        case 10:
-            System.out.println("October");
-            break;
-        case 11:
-            System.out.println("November");
-            break;
-        case 12:
-            System.out.println("December");
-            break;
-        default:
-            System.out.println("月が存在しません");
-            break;
-        }
+    if x == 1:
+        print("January")
+    elif x == 2:
+        print("February")
+    elif x == 3:
+        print("March")
+    elif x == 4:
+        print("April")
+    elif x == 5:
+        print("May")
+    elif x == 6:
+        print("June")
+    elif x == 7:
+        print("July")
+    elif x == 8:
+        print("August")
+    elif x == 9:
+        print("September")
+    elif x == 10:
+        print("October")
+    elif x == 11:
+        print("November")
+    elif x == 12:
+        print("December")
+    else:
+        print("月が存在しません")
     ```
             
     </div></details>
