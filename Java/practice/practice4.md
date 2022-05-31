@@ -60,7 +60,7 @@ x が y より小さい（未満）場合には「xはyより小さい」と表�
     <br>
 	
 4.  変数 x、y にそれぞれ任意の数値を代入し、x が ｙ より大きい（超過）場合には「xはyより大きい」、  
-x が y より小さい（未満）場合には「xはyより小さい」、x と y が等しい場合には「xとyは等しい」と表示するプログラムを作成しなさい。
+x が y より小さい（未満）場合には「xはyより小さい」、x と y が等しい場合には「xとyは等しい」と表示するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
@@ -69,7 +69,7 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     int y = 10;
 
     if (x > y) {
-    　　System.out.println($x . 'は' . $y . 'より大きい');
+    　　System.out.println(x . 'は' . $y . 'より大きい');
     } else if (x == y) {
     　　System.out.println(x + 'と' + y + 'は等しい');
     } else {
@@ -198,7 +198,6 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
             System.out.println('???');
             break;
     }
-
     ```
             
     </div></details>

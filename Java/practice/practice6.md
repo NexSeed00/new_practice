@@ -26,6 +26,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    Hoge
     ```
             
     </div></details>
@@ -60,6 +63,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    4
     ```
             
     </div></details>
@@ -96,6 +102,17 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    4
+    8
+    12
+    16
+    20
+    24
+    28
+    32
+    36
     ```
             
     </div></details>
@@ -134,6 +151,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    奇数です
     ```
             
     </div></details>
@@ -181,6 +201,11 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    ABC
+    ABC
+    ABC
     ```
             
     </div></details>
@@ -223,6 +248,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    5
     ```
             
     </div></details>
@@ -267,6 +295,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    16
     ```
             
     </div></details>
@@ -312,6 +343,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    私の名前はtaroです
     ```
             
     </div></details>
@@ -359,6 +393,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    false
     ```
             
     </div></details>
@@ -397,6 +434,9 @@
     // コマンドライン操作
     $ javac Practice.java
     $ java Practice
+
+    // 出力
+    true
     ```
             
     </div></details>
