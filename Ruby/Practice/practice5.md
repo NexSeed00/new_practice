@@ -29,22 +29,7 @@
         
 
     <br>
-	
-3. 九九、二の段を表示するプログラムを作成してください。
-
-    <details><summary>回答例</summary><div>
-            
-    ```
-    for (int i = 1; i < 10; i++) {
-        System.out.println(i * 2);
-    }
-    ```
-            
-    </div></details>
-        
-
-    <br>
-	
+		
 4. 1から100までの数字の中から偶数のみを出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
@@ -179,3 +164,25 @@
 
     <br>
 	
+10. 【発展】下記の配列を用意し、それぞれの要素の値をfor文を使って出力するプログラムを作成してください。
+
+    | 配列名  | 値               |
+    | ------- | ---------------- |
+    | animals | dog, fox, monkey |
+
+
+    <details><summary>回答例</summary><div>
+            
+    ```
+    animals = [ "dog", "fox", "monkey" ]
+
+    for animal in animals
+        puts animal 
+    end
+    ```
+            
+    </div></details>
+        
+
+    <br>
+
