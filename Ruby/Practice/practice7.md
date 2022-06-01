@@ -5,26 +5,15 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            System.out.println(test(1));
-        }
+    def test(num)
+        if num > 10
+            return 0
+        else
+            return test(num + 1) + num
+        end
+    end
 
-        public static int test(int num) {
-            if (num > 10) {
-                return 0;
-            } else {
-                return test(num + 1) + num;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    55
+    puts test(1)
 	```
 		
 	</div></details>
@@ -37,57 +26,35 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            System.out.println(test(1));
-        }
+    def test(num)
+        if num > 10
+            return 0
+        else
+            return test(num + 1) - num
+        end
+    end
 
-        public static int test(int num) {
-            if (num > 10) {
-                return 0;
-            } else {
-                return test(num + 1) - num;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    -55
+    puts test(1)
 	```
 		
 	</div></details>
 
 	<br>
 
-3. 0から10までの整数を掛け合わせた数を求めるプログラムを再起処理を用いて作成し、実行してください。
+3. 1から10までの整数を掛け合わせた数を求めるプログラムを再起処理を用いて作成し、実行してください。
 
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            System.out.println(test(1));
-        }
+    def test(num)
+        if num > 10
+            return 1
+        else
+            return test(num + 1) * num
+        end
+    end
 
-        public static int test(int num) {
-            if (num > 10) {
-                return 1;
-            } else {
-                return test(num + 1) * num;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    3628800
+    puts test(1)
 	```
 	
 	</div></details>
@@ -99,27 +66,15 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String args[]){
-            int num1 = 3;
-            int num2 = 3;
-            System.out.println(test(num1, num2));
-        }
-        public static int test(int num1, int num2){
-            if (num2 == 0) {
-                return 1;
-            } else {
-                return num1 * test(num1, num2 - 1);
-            }
-        }
-    }
+    def test(num1, num2)
+        if num2 == 0
+            return 1
+        else
+            return num1 * test(num1, num2 - 1)
+        end
+    end
 
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    27
+    puts test(3, 3)
 	```
 		
 	</div></details>
@@ -139,31 +94,22 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            int count = 10;
-            for (int i = 1; i <= count; i++) {
-                int fibonacciNumber = test(i);
-                System.out.print(fibonacciNumber + " ");
-            }
-        }
+    def test(num)
+        if num == 0
+            return 0
+        elsif num == 1
+            return 1
+        else
+            return test(num - 1) + test(num - 2)
+        end
+    end
 
-        public static int test(int num) {
-            if (num == 0)
-                return 0;
-            else if (num == 1)
-                return 1;
-            else
-                return test(num - 1) + test(num - 2);
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    1 1 2 3 5 8 13 21 34 55 
+    count = 10
+    for i in 1..count
+        fibonacci_number = test(i)
+        print fibonacci_number
+        print " "
+    end
 	```
 		
 	</div></details>

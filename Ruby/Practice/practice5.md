@@ -5,9 +5,9 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 10; i++) {
-        System.out.println("hoge");
-    }
+    for i in 1..10
+        puts "hoge"
+    end
     ```
             
     </div></details>
@@ -20,9 +20,9 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 10; i++) {
-        System.out.println(i);
-    }
+    for i in 1..10
+        puts i
+    end
     ```
             
     </div></details>
@@ -35,11 +35,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (i = 1; i <= 100; i++) {
-        if (i % 2 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 2 == 0
+            puts i
+        end
+    end
     ```
             
     </div></details>
@@ -53,14 +53,13 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 2 != 0) {
-            echo '奇数です';
-            System.out.println("奇数です");
-        } else {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 2 != 0
+            puts "奇数です"
+        else 
+            puts i
+        end
+    end
     ```
             
     </div></details>
@@ -73,11 +72,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 3 == 0
+            puts i
+        end
+    end
     ```
             
     </div></details>
@@ -90,11 +89,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 5 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 5 == 0
+            puts i
+        end
+    end
     ```
             
     </div></details>
@@ -107,11 +106,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 3 == 0 && i % 5 == 0
+            puts i
+        end
+    end
     ```
             
     </div></details>
@@ -125,13 +124,13 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (i = 1; i <= 100; i++) {
-        if (i % 3 === 0) {
-            System.out.println("Fizz");
-        } else {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 3 === 0
+            puts "Fizz"
+        else
+            puts i
+        end
+    end
     ```
             
     </div></details>
@@ -145,17 +144,17 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            System.out.println("FizzBuzz");
-        } else if (i % 5 == 0) {
-            System.out.println("Buzz");
-        } else if (i % 3 == 0) {
-            System.out.println("Fizz");
-        } else {
-            System.out.println(i);
-        }
-    }
+    for i in 1..100
+        if i % 3 == 0 && i % 5 == 0
+            puts "FizzBuzz"
+        elsif i % 5 == 0
+            puts "Buzz"
+        elsif i % 3 == 0
+            puts "Fizz"
+        else
+            puts i
+        end
+    end
     ```
             
     </div></details>
