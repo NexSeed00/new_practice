@@ -5,7 +5,7 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	System.out.println("Hello World");
+	puts "Hello World"
 	```
 		
 	</div></details>
@@ -18,8 +18,8 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	String name = "taro";
-	System.out.println(name);
+	name = "taro"
+	puts name
 	```
 		
 	</div></details>
@@ -32,8 +32,8 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int age = 20;
-	System.out.println(age);
+	age = 20
+	puts age
 	```
 		
 	</div></details>
@@ -52,8 +52,8 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	String name = "taro";
-    System.out.println("変数nameの中身：" + name);
+	name = "taro"
+	puts "変数nameの中身：" + name
 	```
 		
 	</div></details>
@@ -66,13 +66,13 @@
 	変数lastNameと変数firstNameを作成し、任意の文字列を代入してください。
 	そして、変数lastNameと変数firstNameを結合し、結果を表示してください。
 	```
-
+	
 	<details><summary>回答例</summary><div>
 		
 	```
-	String lastName = "山田";
-	String firstName = "太郎";
-	System.out.println(lastName + firstName);
+	lastName = "山田"
+	firstName = "太郎"
+	puts lastName + firstName
 	```
 		
 	</div></details>

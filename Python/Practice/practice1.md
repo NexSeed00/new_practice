@@ -1,6 +1,6 @@
 # 変数
 
-1. 「Hello World」と表示するプログラムを作成してください。
+1. 「Hello World」と出力するプログラムを作成してください。
 
 	<details><summary>回答例</summary><div>
 		

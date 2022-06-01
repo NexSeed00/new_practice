@@ -1,4 +1,4 @@
-# 制御文
+# 制御文・条件文
 
 1. 変数 x、y にそれぞれ任意の数値を代入し、x が y より大きい（超過）場合に、  
 「xはyより大きい」という文を出力するプログラムを作成してください。
@@ -8,9 +8,10 @@
     ```
     x = 10
     y = 2
-
-    if x > y:
-        print("xはyより大きい")
+        
+    if x > y
+        puts "xはyより大きい"
+    end
     ```
             
     </div></details>
@@ -24,11 +25,12 @@
     <details><summary>回答例</summary><div>
             
     ```
-    x = 2
-    y = 10
-
-    if x < y:
-        print("xはyより小さい")
+    x = 10
+    y = 2
+        
+    if x < y
+        puts "xはyより小さい"
+    end
     ```
             
     </div></details>
@@ -45,10 +47,11 @@ x が y より小さい（未満）場合には「xはyより小さい」と出�
     x = 10
     y = 20
 
-    if x >= y:
-        print("xはy以上")
-    else:
-        print("xはyより小さい")
+    if x >= y
+        puts "xはy以上"
+    else 
+        puts "xはyより小さい"
+    end
     ```
             
     </div></details>
@@ -65,12 +68,13 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     x = 10
     y = 10
 
-    if x > y:
-        print("xはyより大きい")
-    elif x == y:
-        print("xとyは等しい")
-    else:
-        print("xはyより小さい")
+    if x > y
+        puts "xはyより大きい"
+    elsif x == y
+        puts "xとyは等しい"
+    else
+        puts "xはyより小さい"
+    end
     ```
             
     </div></details>
@@ -79,17 +83,18 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 5. 変数xに任意の数値を代入し、それが偶数か奇数かを判定するプログラムを作成してください。   
-ただし、奇数の場合は、「奇数です」、偶数の場合は「偶数です」と出力してください。
+奇数の場合は、「奇数です」、偶数の場合は「偶数です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
     x = 10
-    
-    if x % 2 == 0:
-        print("偶数です")
-    else:
-        print("奇数です")
+
+    if x % 2 == 0
+        puts "偶数です"
+    else
+        puts "奇数です"
+    end
     ```
             
     </div></details>
@@ -98,19 +103,20 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 6. 変数xに任意の数値を代入し、それが3の倍数か5の倍数かを判定するプログラムを作成してください。   
-ただし、3の倍数の場合は、「3の倍数です」、5の倍数の場合は「5の倍数です」、それ以外の場合は、「3と5の倍数以外です」と出力してください。
+3の倍数の場合は、「3の倍数です」、5の倍数の場合は「5の倍数です」、それ以外の場合は、「3と5の倍数以外です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
     x = 4
-
-    if x % 3 == 0:
-        print("3の倍数です")
-    elif x % 5 == 0:
-        print("5の倍数です")
-    else:
-        print("3と5の倍数以外です")
+            
+    if x % 3 == 0
+        puts "3の倍数です"
+    elsif x % 5 == 0
+        puts "5の倍数です"
+    else
+        puts "3と5の倍数以外です"
+    end
     ```
             
     </div></details>
@@ -119,15 +125,16 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 7. 変数xに任意の数値を代入し、それが10以上かつ20以下かを判定するプログラムを作成してください。   
-ただし、10以上かつ20以下の場合は、「10以上かつ20以下です」と出力してください。
+10以上かつ20以下の場合は、「10以上かつ20以下です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
     x = 14
-    
-    if 10 <= x and x <= 20:
-        print("10以上かつ20以下です")
+        
+    if 10 <= x && x <= 20
+        puts "10以上かつ20以下です"
+    end
     ```
             
     </div></details>
@@ -135,16 +142,17 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
 
     <br>
 	
-8. 【発展】変数xに任意の数値を代入し、それが100以上または10以下かを判定するプログラムを作成してください。   
-ただし、100以上または10以下の場合は、「100以上または10以下です」と出力してください。
+8. 変数xに任意の数値を代入し、それが100以上または10以下かを判定するプログラムを作成してください。   
+100以上または10以下の場合は、「100以上または10以下です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
     ```
     x = 111
-
-    if 100 <= x or x <= 10:
-        print("100以上または10以下です")
+        
+    if 100 <= x || x <= 10
+        puts "100以上または10以下です"
+    end
     ```
             
     </div></details>
@@ -163,14 +171,30 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <details><summary>回答例</summary><div>
             
     ```
+    // if文を使った方法
+
+    x = "女"
+        
+    if x == "男"
+        puts "male"
+    elsif x == "女"
+        puts "female"
+    else
+        puts "???"
+    end
+
+    // case文を使った方法
+
     x = "女"
 
-    if x == "男":
-        print("male")
-    elif x == "女":
-        print("female")
-    else:
-        print("???")
+    case x 
+    when "男"
+        puts "male"
+    when "女"
+        puts "female"
+    else
+        puts "???"
+    end
     ```
             
     </div></details>
@@ -199,34 +223,70 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <details><summary>回答例</summary><div>
             
     ```
+    // if文を使った方法
+
     x = 4
 
-    if x == 1:
-        print("January")
-    elif x == 2:
-        print("February")
-    elif x == 3:
-        print("March")
-    elif x == 4:
-        print("April")
-    elif x == 5:
-        print("May")
-    elif x == 6:
-        print("June")
-    elif x == 7:
-        print("July")
-    elif x == 8:
-        print("August")
-    elif x == 9:
-        print("September")
-    elif x == 10:
-        print("October")
-    elif x == 11:
-        print("November")
-    elif x == 12:
-        print("December")
-    else:
-        print("月が存在しません")
+    if x == 1
+        puts "January"
+    elsif x == 2
+        puts "February"
+    elsif x == 3
+        puts "March"
+    elsif x == 4
+        puts "April"
+    elsif x == 5
+        puts "May"
+    elsif x == 6
+        puts "June"
+    elsif x == 7
+        puts "July"
+    elsif x == 8
+        puts "August"
+    elsif x == 9
+        puts "September"
+    elsif x == 10
+        puts "October"
+    elsif x == 11
+        puts "November"
+    elsif x == 12
+        puts "December"
+    else
+        puts "月が存在しません"
+    end
+
+    // case文を使った方法
+
+    x = 4
+
+    case x
+    when 1
+        puts "January"
+    when 2
+        puts "February"
+    when 3
+        puts "March"
+    when 4
+        puts "April"
+    when 5
+        puts "May"
+    when 6
+        puts "June"
+    when 7
+        puts "July"
+    when 8
+        puts "August"
+    when 9
+        puts "September"
+    when 10
+        puts "October"
+    when 11
+        puts "November"
+    when 12
+        puts "December"
+    else
+        puts "月が存在しません"
+    end
     ```
             
     </div></details>

@@ -5,7 +5,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     ```
             
     </div></details>
@@ -18,7 +18,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    System.out.println(array[3]);
+    puts array[3]
     ```
             
     </div></details>
@@ -31,7 +31,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    String[] array = {"A", "B", "C", "D", "E"};
+    array = ["A", "B", "C", "D", "E"]
     ```
             
     </div></details>
@@ -44,7 +44,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    System.out.println(array[4]);
+    puts array[4]
     ```
             
     </div></details>
@@ -53,7 +53,8 @@
     <br>
 
 	
-5. 下記の表に合う配列を定義するプログラムを作成してください。
+5. 以下の表に合う配列を定義するプログラムを作成してください。
+
     | 配列名  | 値               |
     | ------- | ---------------- |
     | animals | dog, fox, monkey |
@@ -61,7 +62,7 @@
     <details><summary>回答例</summary><div>
 
     ```
-    String[] animals = {"dog", "fox", "monkey"};
+    animals = ["dog", "fox", "monkey"]
     ```
         
     </div></details>
@@ -74,7 +75,7 @@
     <details><summary>回答例</summary><div>
 
     ```
-    animals[1] = "cat";
+    animals[1] = "cat"
     ```
         
     </div></details>
@@ -82,7 +83,7 @@
 
     <br>
 
-7. 2次元配列fruitsに下記を代入するプログラムを作成してください。
+7. 2次元配列fruitsに下記を代入し、それぞれの値を出力するプログラムを作成してください。
     ```
     ・0番目の要素の中の0番目の要素にapple, 1番目の要素の中に100円
     ・1番目の要素の中の0番目の要素にbanana, 1番目の要素の中に120円
@@ -91,7 +92,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    String[][] fruits = { { "apple", "100円" }, { "banana", "110円" } };
+    fruits = [ [ "apple", "100円" ], [ "banana", "110円" ] ]
     ```
             
     </div></details>
@@ -104,7 +105,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    System.out.println(fruits[1][0]);
+    puts fruits[1][0]
     ```
             
     </div></details>
@@ -117,7 +118,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    System.out.println(fruits[1][1]);
+    puts fruits[1][1]
     ```
             
     </div></details>
@@ -135,7 +136,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    String[][][] members = { { {"suzuki"}, {"165cm", "65kg"} }, { {"tanaka"}, {"170cm", "70kg"} } };
+    members = [ [ ["suzuki"], ["165cm", "65kg"] ], [ ["tanaka"], ["170cm", "70kg"] ] ]
     ```
             
     </div></details>

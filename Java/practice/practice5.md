@@ -30,7 +30,7 @@
 
     <br>
 	
-3. 九九、二の段を表示するプログラムを作成してください。
+3. 九九、二の段を出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
@@ -50,7 +50,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (i = 1; i <= 100; i++) {
+    for (int i = 1; i <= 100; i++) {
         if (i % 2 == 0) {
             System.out.println(i);
         }
@@ -70,7 +70,6 @@
     ```
     for (int i = 1; i <= 100; i++) {
         if (i % 2 != 0) {
-            echo '奇数です';
             System.out.println("奇数です");
         } else {
             System.out.println(i);
@@ -140,8 +139,8 @@
     <details><summary>回答例</summary><div>
             
     ```
-    for (i = 1; i <= 100; i++) {
-        if (i % 3 === 0) {
+    for (int i = 1; i <= 100; i++) {
+        if (i % 3 == 0) {
             System.out.println("Fizz");
         } else {
             System.out.println(i);
@@ -171,7 +170,6 @@
             System.out.println(i);
         }
     }
-
     ```
             
     </div></details>

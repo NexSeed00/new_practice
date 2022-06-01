@@ -1,6 +1,6 @@
 # メソッド
 
-1. 下記の条件を満たすプログラムを作成してください。
+1. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -17,9 +17,10 @@
             printHoge();
         }
 
-        public static void printHoge() {
+        public static printHoge() {
             System.out.println("Hoge");
         }
+
     }
 
     // コマンドライン操作
@@ -35,7 +36,7 @@
 
     <br>
 	
-2. 下記の条件を満たすプログラムを作成してください。
+2. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -53,9 +54,10 @@
             printNum(4);
         }
 
-        public static void printNum(int num) {
+        public static printNum(int num) {
             System.out.println(num);
         }
+
     }
 
     // コマンドライン操作
@@ -71,7 +73,7 @@
 
     <br>
 	
-3. 下記の条件を満たすプログラムを作成してください。
+3. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -89,11 +91,12 @@
             printKuku(4);
         }
 
-        public static void printKuku(int num) {
+        public static printKuku(int num) {
             for (int i = 1; i <= 9; i++) {
                 System.out.println(num * i);
             }
         }
+
     }
 
     // コマンドライン操作
@@ -117,7 +120,7 @@
 
     <br>
 	
-4. 下記の条件を満たすプログラムを作成してください。
+4. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -135,13 +138,14 @@
             printIsEven(3);
         }
 
-        public static void printIsEven(int num) {
-            if (num % 2 == 0) {
+        public static printIsEven(int num) {
+            if (int num % 2 == 0) {
                 System.out.println("偶数です");
             } else {
                 System.out.println("奇数です");
             }
         }
+
     }
 
     // コマンドライン操作
@@ -156,7 +160,7 @@
         
     <br>
 	
-5. 下記の条件を満たすプログラムを作成してください。
+5. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -186,11 +190,12 @@
             printMessage("ABC", 3);
         }
 
-        public static void printMessage(String str, int count) {
+        public static printMessage(String str, int count) {
             for (int i = 0; i < count; i++) {
                 System.out.println(str);
             }
         }
+
     }
 
     // コマンドライン操作
@@ -208,7 +213,7 @@
 
     <br>
 	
-6. 下記の条件を満たすプログラムを作成してください。
+6. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -228,15 +233,16 @@
             printMaxNum(4, 5);
         }
 
-        public static void printMaxNum(int num1, int num2) {
+        public static printMaxNum(int num1, int num2) {
             if (num1 > num2) {
                 System.out.println(num1);
-            } else if (num1 < num2) {
+            } elseif (num1 < num2) {
                 System.out.println(num2);
             } else {
-                System.out.println("同じ");
+                System.out.println('同じ');
             }
         }
+
     }
 
     // コマンドライン操作
@@ -252,7 +258,7 @@
 
     <br>
 	
-7. 下記の条件を満たすプログラムを作成してください。
+7. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -264,7 +270,7 @@
     例
 	
     ```
-    int result = getSquared(4);
+    result = getSquared(4);
     System.out.println(result);
         
     // 実行結果
@@ -277,7 +283,7 @@
     // ファイル内のコード
     public class Practice {
         public static void main(String[] args) {
-            int result = getSquared(4);
+            result = get Squared(4);
             System.out.println(result);
         }
 
@@ -299,7 +305,7 @@
 
     <br>
 	
-8. 下記の条件を満たすプログラムを作成してください。
+8. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -311,7 +317,7 @@
     例
         
     ```
-    String message = createSelfIntroductionText("taro");
+    message = createSelfIntroductionText("taro");
     System.out.println(message);
         
     // 実行結果
@@ -324,12 +330,12 @@
     // ファイル内のコード
     public class Practice {
         public static void main(String[] args) {
-            String message = createSelfIntroductionText("taro");
+            message = createSelfIntroductionText("taro");
             System.out.println(message);
         }
 
         public static String createSelfIntroductionText(String name) {
-            String msg = "私の名前は" + name + "です";
+            msg = '私の名前は' + name + 'です';
             return msg;
         }
     }
@@ -346,7 +352,7 @@
         
     <br>
 	
-9. 下記の条件を満たすプログラムを作成してください。
+9. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -358,7 +364,7 @@
     例
         
     ```
-    boolean result = isEvenNumber(3);
+    result = isEvenNumber(3);
     System.out.println(result);
         
     // 実行結果
@@ -371,7 +377,7 @@
     // ファイル内のコード
     public class Practice {
         public static void main(String[] args) {
-            boolean result = isEvenNumber(3);
+            result = isEvenNumber(3);
             System.out.println(result);
         }
 
@@ -397,7 +403,7 @@
 
     <br>
 	
-10. 下記の条件を満たすプログラムを作成してください。
+10. 以下のメソッドを作成して、作成したメソッドを実行してください。
 
     ```
     ファイル名：Practice.java
@@ -412,7 +418,7 @@
     // ファイル内のコード
     public class Practice {
         public static void main(String[] args) {
-            boolean result = isTaro("taro");
+            result = isTaro("taro");
             System.out.println(result);
         }
 

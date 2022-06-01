@@ -1,50 +1,38 @@
 # データ型・四則演算
 
-1. 下記の条件を満たす変数を定義するプログラムを作成してください。
-
-	| 変数名 | データ型 | 値 |
-	| ------- | ------ | ----- |
-	| x | byte | 120 |
-
+1. 変数xの中に1を代入し、変数xに格納された値のデータ型を確認するプログラムを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	byte x = 120;
+	x = 1
+	puts x.class
 	```
 
 	</div></details>
 
 	<br>
 
-2. 下記の条件を満たす変数を定義するプログラムを作成してください。
-
-	| 変数名 | データ型 | 値 |
-	| ------- | ------ | ----- |
-	| x | float | 1.56 | 
-
+2. 変数xの中に"1"を代入し、変数xに格納された値のデータ型を確認するプログラムを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	float x = 1.56f;
+	x = "1"
+	puts x.class
 	```
 		
 	</div></details>
 	
 	<br>
 
-3. 下記の条件を満たす変数を定義するプログラムを作成してください。
-
-	| 変数名 | データ型 | 値 |
-	| ------- | ------ | ----- |
-	| x | char | a | 
-
+3. 変数xの中に1.142を代入し、変数xに格納された値のデータ型を確認するプログラムを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	char x = 'a';
+	x = 1.142
+	puts x.class
 	```
 		
 	</div></details>
@@ -53,14 +41,13 @@
 
 
 
-4. 変数 x、y に数値 10、2 を代入し、x、yの和を計算し、結果を出力するプログラムを作成してください。
+4. 変数xの中にtrueを代入し、変数xに格納された値のデータ型を確認するプログラムを作成してください。
 
 	<details><summary>回答例</summary><div>
 			
 	```
-	int x = 10;
-	int y = 2;
-	System.out.println(x + y);
+	x = true
+	puts x.class
 	```
 			
 	</div></details>
@@ -72,9 +59,9 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int x = 10;
-	int y = 2;
-	System.out.println(x - y);
+	x = 10
+	y = 2
+	puts x - y
 	```
 		
 	</div></details>
@@ -86,9 +73,9 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int x = 10;
-	int y = 2;
-	System.out.println(x * y);
+	x = 10
+	y = 2
+	puts x * y
 	```
 		
 	</div></details>
@@ -100,9 +87,9 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int x = 10;
-	int y = 2;
-	System.out.println(x / y);
+	x = 10
+	y = 2
+	puts x / y
 	```
 		
 	</div></details>
@@ -114,9 +101,9 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int x = 10;
-	int y = 3;
-	System.out.println(x % y);
+	x = 10
+	y = 3
+	puts x % y
 	```
 		
 	</div></details>
@@ -128,10 +115,10 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int x = 11;
-	int y = 13;
-	int z = x * y;
-	System.out.println(z);
+	x = 11
+	y = 13
+	z = x * y
+	puts z
 	```
 		
 	</div></details>
@@ -143,15 +130,10 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	int x = 2;
-	System.out.println(x);
-	System.out.println(x * x);
-	System.out.println(x * x * x);
-
-    // 下記の方法でも表示することができます。
-  	System.out.println(Math.pow(x, 1));
-	System.out.println(Math.pow(x, 2));
-   	System.out.println(Math.pow(x, 3));
+	x = 2
+	puts x
+	puts x * x
+	puts x * x * x
 	```
 		
 	</div></details>
