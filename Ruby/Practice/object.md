@@ -19,8 +19,10 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User:
-		def __init__(self):
+	class User
+	  def initialize(name)
+	  end
+	end	
 	```
 		
 	</div></details>
@@ -34,9 +36,9 @@
 		
 	```
 	class User
-		def initialize(name)
-			@name = name
-		end
+	  def initialize(name)
+	    @name = name
+	  end
 	end	
 	```
 		
@@ -51,12 +53,12 @@
 		
 	```
 	class User
-		def initialize(name)
-			@name = name
-		end
+	  def initialize(name)
+	    @name = name
+	  end
 
-		def login
-		end
+	  def login
+	  end
 	end	
 	```
 		
@@ -70,13 +72,13 @@
 		
 	```
 	class User
-		def initialize(name)
-			@name = name
-		end
+	  def initialize(name)
+	    @name = name
+	  end
 
-		def login
-			puts "#{@name}がログインしました"
-		end
+	  def login
+	    puts "#{@name}がログインしました"
+	  end
 	end	
 	```
 		
@@ -90,13 +92,13 @@
 		
 	```
 	class User
-		def initialize(name)
-			@name = name
-		end
+	  def initialize(name)
+	    @name = name
+	  end
 
-		def login
-			puts "#{@name}がログインしました"
-		end
+	  def login
+	    puts "#{@name}がログインしました"
+	  end
 	end
 
 	tanaka = User.new("tanaka")
@@ -113,18 +115,18 @@
 		
 	```
 	class User
-		def initialize(name)
-			@name = name
-		end
+	  def initialize(name)
+	    @name = name
+	  end
 
-		def login
-			puts "#{@name}がログインしました"
-		end
+	  def login
+	    puts "#{@name}がログインしました"
+	  end
 
-		private
-		def is_name
-			return @name
-		end
+	  private
+	  def is_name
+	    return @name
+	  end
 	end
 	```
 		
@@ -138,20 +140,20 @@
 		
 	```
 	class User
-		def initialize(name, age, weight)
-			@name = name
-			@age = age
-			@weight = weight
-		end
+	  def initialize(name, age, weight)
+	    @name = name
+	    @age = age
+	    @weight = weight
+	  end
 
-		def login
-			puts "#{@name}がログインしました"
-		end
+	  def login
+	    puts "#{@name}がログインしました"
+	  end
 
-		private
-		def is_name
-			return @name
-		end
+	  private
+	  def is_name
+	    return @name
+	  end
 	end
 	```
 		
@@ -165,22 +167,22 @@
 		
 	```
 	class User
-		attr_accessor: :weight
+	  attr_accessor: :weight
 
-		def initialize(name, age, weight)
-			@name = name
-			@age = age
-			@weight = weight
-		end
+	  def initialize(name, age, weight)
+	    @name = name
+	    @age = age
+	    @weight = weight
+	  end
 
-		def login
-			puts "#{@name}がログインしました"
-		end
+	  def login
+	    puts "#{@name}がログインしました"
+	  end
 
-		private
-		def is_name
-			return @name
-		end
+	  private
+	  def is_name
+	    return @name
+	  end
 	end
 	```
 		
@@ -194,23 +196,23 @@
 		
 	```
 	class User
-		attr_accessor :weight
-		attr_reader :age
+	  attr_accessor :weight
+	  attr_reader :age
 
-		def initialize(name, age, weight)
-			@name = name
-			@age = age
-			@weight = weight
-		end
+	  def initialize(name, age, weight)
+	    @name = name
+	    @age = age
+	    @weight = weight
+	  end
 
-		def login
-			puts "#{@name}がログインしました"
-		end
+	  def login
+	    puts "#{@name}がログインしました"
+	  end
 
-		private
-		def is_name
-			return @name
-		end
+	  private
+	  def is_name
+	    return @name
+	  end
 	end
 	```
 		
