@@ -5,7 +5,8 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User:
+	class User
+	end
 	```
 		
 	</div></details>
