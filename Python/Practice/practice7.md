@@ -5,26 +5,13 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            System.out.println(test(1));
-        }
-
-        public static int test(int num) {
-            if (num > 10) {
-                return 0;
-            } else {
-                return test(num + 1) + num;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    55
+    def test(num):
+        if num > 10:
+            return 0
+        else:
+            return test(num + 1) + num
+    
+    print(test(1))
 	```
 		
 	</div></details>
@@ -37,26 +24,13 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            System.out.println(test(1));
-        }
+    def test(num):
+        if num > 10:
+            return 0
+        else:
+            return test(num + 1) - num
 
-        public static int test(int num) {
-            if (num > 10) {
-                return 0;
-            } else {
-                return test(num + 1) - num;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    -55
+    print(test(1))
 	```
 		
 	</div></details>
@@ -68,26 +42,13 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            System.out.println(test(1));
-        }
+    def test(num):
+        if num > 10:
+            return 1
+        else:
+            return test(num + 1) * num
 
-        public static int test(int num) {
-            if (num > 10) {
-                return 1;
-            } else {
-                return test(num + 1) * num;
-            }
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    3628800
+    print(test(1))
 	```
 	
 	</div></details>
@@ -99,27 +60,13 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String args[]){
-            int num1 = 3;
-            int num2 = 3;
-            System.out.println(test(num1, num2));
-        }
-        public static int test(int num1, int num2){
-            if (num2 == 0) {
-                return 1;
-            } else {
-                return num1 * test(num1, num2 - 1);
-            }
-        }
-    }
+    def test(num1, num2):
+        if num2 == 0:
+            return 1
+        else:
+            return num1 * test(num1, num2 - 1)
 
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    27
+    print(test(3, 5))
 	```
 		
 	</div></details>
@@ -139,31 +86,18 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-    public class Practice {
-        public static void main(String[] args) {
-            int count = 10;
-            for (int i = 1; i <= count; i++) {
-                int fibonacciNumber = test(i);
-                System.out.print(fibonacciNumber + " ");
-            }
-        }
+    def test(num):
+        if num == 0:
+            return 0
+        elif num == 1:
+            return 1
+        else:
+            return test(num - 1) + test(num - 2)
 
-        public static int test(int num) {
-            if (num == 0)
-                return 0;
-            else if (num == 1)
-                return 1;
-            else
-                return test(num - 1) + test(num - 2);
-        }
-    }
-
-    // コマンドライン操作
-    $ javac Practice.java
-    $ java Practice
-
-    // 出力
-    1 1 2 3 5 8 13 21 34 55 
+    count = 11
+    for i in range(1, count):
+        fibonacci_number = test(i)
+        print(fibonacci_number, end=" ")
 	```
 		
 	</div></details>
