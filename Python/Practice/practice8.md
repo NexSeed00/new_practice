@@ -59,7 +59,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-![nameの作成](https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif)
+	![nameの作成](https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif)
 		
 	</div></details>
 
