@@ -140,8 +140,7 @@
 	
 	<br>
 	
-7. 1で作成したクラス内にアクセス修飾子をprivateとし、インスタンス変数nameの値を戻り値として返す、is_nameメソッドを作成してください。
-kdkdkdkdkdkd
+7. 1で作成したクラス内にアクセス修飾子をprivateとし、インスタンス変数nameの値を戻り値として返す、isNameメソッドを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -162,8 +161,8 @@ kdkdkdkdkdkd
 			System.out.println("ログインしました");
 		}
 
-		private static String isName() {
-			return name;
+		private String isName() {
+			return this.name;
 		}
 	}
 	```
