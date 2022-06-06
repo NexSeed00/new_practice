@@ -156,7 +156,7 @@
 	
 	<br>
 	
-10. 8で作成したインスタンス変数weightをクラス外からでも変更ができるようにしてください。
+10. 8で作成したprivate変数weightをクラス外からでも変更ができるようにしてください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -175,7 +175,6 @@
 			return self.__weight 
 		def __isName(self):
 			return self.name
-
 
 	taro = User("taro", 20, 70)
 	print(taro.setWeight(65))
