@@ -1,10 +1,10 @@
-# SQL操作
+# SQL
 
 1. DBeaverを使ってPracticeテーブルを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
-    ![データベースの作成](https://user-images.githubusercontent.com/75789463/170972798-7f1c81e1-f9df-4daa-8555-7b27021f8b2f.gif)
+	![データベースの作成](https://user-images.githubusercontent.com/75789463/172137822-b3cda933-e5b1-47fa-b197-69864652e479.gif)
 		
 	</div></details>
 	
@@ -15,7 +15,7 @@
 
 	<details><summary>回答例</summary><div>
 		
-	![テーブルの作成](https://user-images.githubusercontent.com/75789463/172100055-1e3ea86f-8e7e-4dbe-9f02-f16a106b36a3.gif)
+	![usersテーブルの作成](https://user-images.githubusercontent.com/75789463/172140174-02990020-9a53-462e-9172-c980d50ba56d.gif)
 		
 	</div></details>
 
@@ -32,7 +32,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![id](https://user-images.githubusercontent.com/75789463/172100186-d329b222-bcb3-4d1a-8587-9e601e70e4b2.gif)
+	![idの作成](https://user-images.githubusercontent.com/75789463/172140229-6170c361-79d8-4457-8dfd-39c881bdffc4.gif)
 		
 	</div></details>
 
@@ -42,7 +42,7 @@
 
 	<details><summary>回答例</summary><div>
 		
-	![primary_key](https://user-images.githubusercontent.com/75789463/172099774-812f848a-4939-449a-870c-4e667f3a1e67.gif)
+	![primary_keyの作成](https://user-images.githubusercontent.com/75789463/172140826-3703e24c-8a21-4fef-a9d6-0d3b04e6f6c9.gif)
 		
 	</div></details>
 
@@ -59,7 +59,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![nameの作成](https://user-images.githubusercontent.com/75789463/172091194-6285640a-ffe5-45b7-960b-e68a9331a0c2.gif)
+	![nameの作成](https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif)
 		
 	</div></details>
 
@@ -76,7 +76,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![ageの作成](https://user-images.githubusercontent.com/75789463/172091266-68d9b99d-e19e-47f7-a823-be1e39a673dc.gif)
+	![ageの作成](https://user-images.githubusercontent.com/75789463/172144801-4ebb105e-79b4-48ee-8962-b5a6e11c1d0f.gif)
 		
 	</div></details>
 
@@ -110,7 +110,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![introduce](https://user-images.githubusercontent.com/75789463/172099302-295a7ba5-35d5-4907-9bd3-91a8a48a7d28.gif)
+	![introduceの作成](https://user-images.githubusercontent.com/75789463/172145497-2fb85ae8-a184-49f6-bf97-c1d0946bc554.gif)
 		
 	</div></details>
 
@@ -119,7 +119,9 @@
 9. 1~6までで行った変更を保存してください。
 
 	<details><summary>回答例</summary><div>
-		
+	
+	![保存](https://user-images.githubusercontent.com/75789463/172147055-de09df6a-cbaa-4425-b9ed-3a851cff4985.gif)
+
 	</div></details>
 
 	<br>
