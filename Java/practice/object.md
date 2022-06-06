@@ -5,8 +5,11 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	end
+	public class User {
+		public static void main(String[] args) {
+
+		}
+	}
 	```
 		
 	</div></details>
@@ -19,10 +22,15 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name)
-	  end
-	end	
+	public class User {
+		public static void main(String[] args) {
+
+		}
+
+		User() {
+
+		}
+	}
 	```
 		
 	</div></details>
@@ -35,11 +43,17 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name)
-	    @name = name
-	  end
-	end	
+	public class User {
+		public String name;
+
+		public static void main(String[] args) {
+
+		}
+
+		User(String value1) {
+			name = value1;
+		}
+	}
 	```
 		
 	</div></details>
@@ -47,39 +61,52 @@
 
 	<br>
 
-4. 1で作成したクラス内で新たにloginメソッドを作成してください。
+4. 1で作成したクラス内で新たにインスタンス化しないと使えず、戻り値を返さないloginメソッドを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name)
-	    @name = name
-	  end
+	public class User {
+		public String name;
 
-	  def login
-	  end
-	end	
+		public static void main(String[] args) {
+
+		}
+
+		User(String value1) {
+			name = value1;
+		}
+
+		public void login() {
+
+		}
+	}
 	```
 		
 	</div></details>
 
 	<br>
 
-5. 4で作成したloginメソッドにインスタンス変数nameの値を使って「〜がログインしました」と出力する処理を加えてください。
+5. 4で作成したloginメソッドに「ログインしました」と出力する処理を加えてください。
 	
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name)
-	    @name = name
-	  end
+	public class User {
+		public String name;
 
-	  def login
-	    puts "#{@name}がログインしました"
-	  end
-	end	
+		public static void main(String[] args) {
+
+		}
+
+		User(String value1) {
+			name = value1;
+		}
+
+		public void login() {
+			System.out.println("ログインしました");
+		}
+	}
 	```
 		
 	</div></details>
@@ -91,18 +118,22 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name)
-	    @name = name
-	  end
+	public class User {
+		public String name;
 
-	  def login
-	    puts "#{@name}がログインしました"
-	  end
-	end
+		public static void main(String[] args) {
+			User taro =  new User("taro");
+			taro.login();
+		}
 
-	tanaka = User.new("tanaka")
-	tanaka.login
+		User(String value1) {
+			name = value1;
+		}
+
+		public void login() {
+			System.out.println("ログインしました");
+		}
+	}
 	```
 		
 	</div></details>
@@ -110,24 +141,31 @@
 	<br>
 	
 7. 1で作成したクラス内にアクセス修飾子をprivateとし、インスタンス変数nameの値を戻り値として返す、is_nameメソッドを作成してください。
+kdkdkdkdkdkd
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name)
-	    @name = name
-	  end
+	public class User {
+		public String name;
 
-	  def login
-	    puts "#{@name}がログインしました"
-	  end
+		public static void main(String[] args) {
+			User taro =  new User("taro");
+			taro.login();
+		}
 
-	  private
-	  def is_name
-	    return @name
-	  end
-	end
+		User(String value1) {
+			name = value1;
+		}
+
+		public void login() {
+			System.out.println("ログインしました");
+		}
+
+		private static String isName() {
+			return name;
+		}
+	}
 	```
 		
 	</div></details>
@@ -139,81 +177,104 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  def initialize(name, age, weight)
-	    @name = name
-	    @age = age
-	    @weight = weight
-	  end
+	public class User {
+		public String name;
+		public int age;
+		public int weight;
 
-	  def login
-	    puts "#{@name}がログインしました"
-	  end
+		public static void main(String[] args) {
+			User taro =  new User("taro", 20, 70);
+			taro.login();
+		}
 
-	  private
-	  def is_name
-	    return @name
-	  end
-	end
+		User(String value1, int value2, int value3) {
+			name = value1;
+			age = value2;
+			weight = value3;
+		}
+
+		public void login() {
+			System.out.println("ログインしました");
+		}
+	}
 	```
 		
 	</div></details>
 	
 	<br>
 	
-9. 8で作成したインスタンス変数weightをクラス外からでも参照と変更ができるようにしてください。
+9. 【発展】8で作成したインスタンス変数ageをクラス外からでも参照ができるようにしてください。(本講座では扱っていませんが、「getter」についてご自身で調べて問題を解いてください)
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  attr_accessor: :weight
+	public class User {
+		public String name;
+		public int age;
+		public int weight;
 
-	  def initialize(name, age, weight)
-	    @name = name
-	    @age = age
-	    @weight = weight
-	  end
+		public static void main(String[] args) {
+			User taro =  new User("taro", 20, 70);
+			taro.login();
+			System.out.println(taro.getAge());
+		}
 
-	  def login
-	    puts "#{@name}がログインしました"
-	  end
+		User(String value1, int value2, int value3) {
+			name = value1;
+			age = value2;
+			weight = value3;
+		}
 
-	  private
-	  def is_name
-	    return @name
-	  end
-	end
+		public void login() {
+			System.out.println("ログインしました");
+		}
+
+		public int getAge() {
+			return this.age;
+		}
+	}
 	```
 		
 	</div></details>
 	
 	<br>
 	
-10. 8で作成したインスタンス変数ageをクラス外からでも参照ができるようにしてください。
+10. 【発展】8で作成したインスタンス変数ageをクラス外からでも参照ができるようにしてください。(本講座では扱っていませんが、「setter」についてご自身で調べて問題を解いてください)
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	class User
-	  attr_accessor :weight
-	  attr_reader :age
+	public class User {
+		public String name;
+		public int age;
+		public int weight;
 
-	  def initialize(name, age, weight)
-	    @name = name
-	    @age = age
-	    @weight = weight
-	  end
+		public static void main(String[] args) {
+			User taro =  new User("taro", 20, 70);
+			taro.login();
+			System.out.println(taro.getAge());
+			System.out.println(taro.setWeight(65));
+		}
 
-	  def login
-	    puts "#{@name}がログインしました"
-	  end
+		User(String value1, int value2, int value3) {
+			name = value1;
+			age = value2;
+			weight = value3;
+		}
 
-	  private
-	  def is_name
-	    return @name
-	  end
-	end
+		public void login() {
+			System.out.println("ログインしました");
+		}
+
+		public int getAge() {
+			return this.age;
+		}
+		
+		public int setWeight(int weight) {
+			this.weight = weight;
+			return this.weight;
+		}
+	}
 	```
 		
 	</div></details>
