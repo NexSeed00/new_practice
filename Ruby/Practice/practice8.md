@@ -1,6 +1,6 @@
 # SQL操作
 
-1. DBeaverを使ってPracticeテーブルを作成しましょう。
+1. DBeaverを使ってPracticeテーブルを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -11,7 +11,7 @@
 
 	<br>
 
-2. Practiceテーブル内でusersテーブルを作成しましょう。
+2. Practiceテーブル内でusersテーブルを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -21,7 +21,7 @@
 
 	<br>
 
-3. usersテーブル内に下記の条件を満たすカラムを作成しましょう。
+3. usersテーブル内に下記の条件を満たすカラムを作成してください。
 
 	```
 	カラム名：id
@@ -38,7 +38,7 @@
 
 	<br>
 
-4. 3で作成したカラムにPRIMARY KEYを設定しましょう。
+4. 3で作成したカラムにPRIMARY KEYを設定してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -48,7 +48,7 @@
 
 	<br>
 
-5. usersテーブル内に下記の条件を満たすカラムを作成しましょう。
+5. usersテーブル内に下記の条件を満たすカラムを作成してください。
 
 	```
 	カラム名：name
@@ -65,7 +65,7 @@
 
 	<br>
 
-6. usersテーブル内に下記の条件を満たすカラムを作成しましょう。
+6. usersテーブル内に下記の条件を満たすカラムを作成してください。
 
 	```
 	カラム名：age
@@ -82,7 +82,7 @@
 
 	<br>
 
-7. usersテーブル内に下記の条件を満たすカラムを作成しましょう。
+7. usersテーブル内に下記の条件を満たすカラムを作成してください。
 
 	```
 	カラム名：introduce
@@ -99,7 +99,7 @@
 
 	<br>
 
-7. usersテーブル内に下記の条件を満たすカラムを作成しましょう。
+8. usersテーブル内に下記の条件を満たすカラムを作成してください。
 
 	```
 	カラム名：introduce
@@ -116,7 +116,7 @@
 
 	<br>
 
-7. 1~6までで行った変更を保存してください。
+9. 1~6までで行った変更を保存してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -124,7 +124,7 @@
 
 	<br>
 
-8. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
+10. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
 
 	```
 	name：田中
@@ -143,7 +143,7 @@
 	<br>
 
 
-9. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
+11. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
 
 	```
 	name：佐藤
@@ -161,7 +161,7 @@
 
 	<br>
 
-10. DBeaver内でSQL文を使ってusersテーブル内に保存されているデータを全て取得してください。
+12. DBeaver内でSQL文を使ってusersテーブル内に保存されているデータを全て取得してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -173,7 +173,7 @@
 
 	<br>
 
-11. DBeaver内でSQL文を使ってusersテーブル内に保存されているidが1のデータを取得してください。
+13. DBeaver内でSQL文を使ってusersテーブル内に保存されているidが1のデータを取得してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -185,7 +185,7 @@
 
 	<br>
 
-12. DBeaver内でSQL文を使ってusersテーブル内に保存されている全てのデータを削除してください。
+14. DBeaver内でSQL文を使ってusersテーブル内に保存されている全てのデータを削除してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -197,7 +197,7 @@
 
 	<br>
 
-13. DBeaver内でSQL文を使ってusersテーブル内に一括で下記のデータを作成してください。
+15. DBeaver内でSQL文を使ってusersテーブル内に一括で下記のデータを作成してください。
 
 	| id  | name | age | introduce |
 	| --- | --- | --- | ---------- |
@@ -214,42 +214,6 @@
 	(2, '田代', '22', '私の名前は田代で、年齢は22歳です'),
 	(3, '倉持', '30', '私の名前は倉持で、年齢は30歳です'),
 	(4, '関根', '34', '私の名前は関根で、年齢は34歳です');
-	```
-		
-	</div></details>
-
-	<br>
-
-14. DBeaver内でSQL文を使ってusersテーブル内に保存されている全てのnameカラムとageカラムのデータを取得してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-	SELECT name, age FROM users;
-	```
-		
-	</div></details>
-
-	<br>
-
-14. DBeaver内でSQL文を使ってusersテーブル内に保存されているidが3以上のnameカラムとageカラムのデータを全て取得してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-	SELECT name, age FROM users WHERE id >= 3;
-	```
-		
-	</div></details>
-
-	<br>
-
-15. DBeaver内でSQL文を使ってusersテーブル内に保存されているageが30以上のnameカラムのデータを全て取得してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-	SELECT name FROM users WHERE age >= 30;
 	```
 		
 	</div></details>
@@ -284,7 +248,7 @@
 
 	<br>
 
-17. DBeaver内でSQL文を使ってusersテーブル内に保存されているnameが田代のデータを下記の内容に変更してください。
+18. DBeaver内でSQL文を使ってusersテーブル内に保存されているnameが田代のデータを下記の内容に変更してください。
 
 	```
 	name：田辺
@@ -302,17 +266,6 @@
 
 	<br>
 
-18. DBeaver内でSQL文を使ってusersテーブル内に保存されているageが20のデータを削除してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-	DELETE FROM users WHERE age=20;
-	```
-		
-	</div></details>
-
-	<br>
 
 19. DBeaver内でSQL文を使ってusersテーブル内に保存されている名前が関根のデータを削除してください。
 
