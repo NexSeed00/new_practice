@@ -59,7 +59,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![nameの作成](https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif)
+![nameの作成](https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif)
 		
 	</div></details>
 
@@ -93,30 +93,13 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![introduce](https://user-images.githubusercontent.com/75789463/172099302-295a7ba5-35d5-4907-9bd3-91a8a48a7d28.gif)
-		
-	</div></details>
-
-	<br>
-
-8. usersテーブル内に下記の条件を満たすカラムを作成してください。
-
-	```
-	カラム名：introduce
-	データ・タイプ：varchar[100]
-	NOT NULL：無効
-	オートインクリメント：無効
-	```
-
-	<details><summary>回答例</summary><div>
-	
 	![introduceの作成](https://user-images.githubusercontent.com/75789463/172145497-2fb85ae8-a184-49f6-bf97-c1d0946bc554.gif)
 		
 	</div></details>
 
 	<br>
 
-9. 1~6までで行った変更を保存してください。
+8. 1~7までで行った変更を保存してください。
 
 	<details><summary>回答例</summary><div>
 	
@@ -126,7 +109,7 @@
 
 	<br>
 
-10. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
+9. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
 
 	```
 	name：田中
@@ -145,7 +128,7 @@
 	<br>
 
 
-11. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
+10. DBeaver内でSQL文を使ってusersテーブル内に下記のデータを作成してください。
 
 	```
 	name：佐藤
@@ -163,7 +146,7 @@
 
 	<br>
 
-12. DBeaver内でSQL文を使ってusersテーブル内に保存されているデータを全て取得してください。
+11. DBeaver内でSQL文を使ってusersテーブル内に保存されているデータを全て取得してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -175,7 +158,7 @@
 
 	<br>
 
-13. DBeaver内でSQL文を使ってusersテーブル内に保存されているidが1のデータを取得してください。
+12. DBeaver内でSQL文を使ってusersテーブル内に保存されているidが1のデータを取得してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -187,7 +170,7 @@
 
 	<br>
 
-14. DBeaver内でSQL文を使ってusersテーブル内に保存されている全てのデータを削除してください。
+13. DBeaver内でSQL文を使ってusersテーブル内に保存されている全てのデータを削除してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -199,7 +182,7 @@
 
 	<br>
 
-15. DBeaver内でSQL文を使ってusersテーブル内に一括で下記のデータを作成してください。
+14. DBeaver内でSQL文を使ってusersテーブル内に一括で下記のデータを作成してください。
 
 	| id  | name | age | introduce |
 	| --- | --- | --- | ---------- |
@@ -216,6 +199,18 @@
 	(2, '田代', '22', '私の名前は田代で、年齢は22歳です'),
 	(3, '倉持', '30', '私の名前は倉持で、年齢は30歳です'),
 	(4, '関根', '34', '私の名前は関根で、年齢は34歳です');
+	```
+		
+	</div></details>
+
+	<br>
+
+15. DBeaver内でSQL文を使ってusersテーブル内に保存されているageが30以上のデータを全て取得してください。
+
+	<details><summary>回答例</summary><div>
+
+	```
+	SELECT * FROM users WHERE age >= 30;
 	```
 		
 	</div></details>
