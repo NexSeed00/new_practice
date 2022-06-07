@@ -82,8 +82,7 @@
 	```
 		
 	<details><summary>回答例</summary><div>
-		
-		
+	![topページ](https://user-images.githubusercontent.com/75789463/172346149-e09893ae-98f2-48d2-affa-1cc7e373a79e.gif)
 	</div></details>
 
 	<br>
@@ -230,7 +229,7 @@
 	```
     rails g controller posts index
     ```
-    
+    ![投稿一覧ページ](https://user-images.githubusercontent.com/75789463/172346360-fcfd855e-5d6a-4427-a72f-c77ebc5652bc.gif)
 	</div></details>
 	
 	<br>
@@ -462,10 +461,7 @@
 30. 下記の見本通りの挙動になっているか確認してください。
 
 	<details><summary>回答例</summary><div>
-
-	```
-    ```
-    
+    ![投稿機能](https://user-images.githubusercontent.com/75789463/172346612-90e1026d-723a-40e4-8761-ce88e180ba49.gif)
 	</div></details>
 	
 	<br>
