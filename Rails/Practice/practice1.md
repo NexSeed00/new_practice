@@ -267,7 +267,7 @@
 	
 	<br>
 
-19. rails consoleを使って、contentカラムの値が「2回目の投稿です」というデータをpostsテーブルに保存してください。
+20. rails consoleを使って、contentカラムの値が「2回目の投稿です」というデータをpostsテーブルに保存してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -281,7 +281,7 @@
 	
 	<br>
 
-20. rails consoleを使って、contentカラムの値が「3回目の投稿です」というデータをpostsテーブルに保存してください。
+21. rails consoleを使って、contentカラムの値が「3回目の投稿です」というデータをpostsテーブルに保存してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -295,7 +295,7 @@
 	
 	<br>
 
-21. rails consoleを使って、postsテーブルのデータを全て取得してください。
+22. rails consoleを使って、postsテーブルのデータを全て取得してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -308,7 +308,7 @@
 	
 	<br>
 
-22. postsコントローラーのindexアクション内に下記のインスタンス変数を加えてください。
+23. postsコントローラーのindexアクション内に下記のインスタンス変数を加えてください。
 
     ```
     インスタンス変数名：posts
@@ -329,7 +329,7 @@
 	
 	<br>
 
-23. views/posts/index.html.erbでpostsテーブルのcontentカラムに格納されたデータを全て表示させてください。
+24. views/posts/index.html.erbでpostsテーブルのcontentカラムに格納されたデータを全て表示させてください。
 
 	<details><summary>回答例</summary><div>
 
@@ -343,7 +343,7 @@
 	
 	<br>
 
-24. postsコントローラーに新たにnewアクションを加えてください。
+25. postsコントローラーに新たにnewアクションを加えてください。
 
 	<details><summary>回答例</summary><div>
 
@@ -362,7 +362,7 @@
 	
 	<br>
 
-25. 24で作成したnewアクション内にインスタンス変数postを定義し、空のインスタンスを代入してください。
+26. 24で作成したnewアクション内にインスタンス変数postを定義し、空のインスタンスを代入してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -382,7 +382,7 @@
 	
 	<br>
 
-26. app/views/posts配下にnew.html.erbを作成し、下記のコードを貼り付けてください。
+27. app/views/posts配下にnew.html.erbを作成し、下記のコードを貼り付けてください。
 
 	<details><summary>回答例</summary><div>
 
@@ -400,7 +400,7 @@
 	
 	<br>
 
-27. postsコントローラーに新たにcreateアクションを加えてください。
+28. postsコントローラーに新たにcreateアクションを加えてください。
 
 	<details><summary>回答例</summary><div>
 
@@ -423,7 +423,7 @@
 	
 	<br>
 
-28. 27で加えたcreateアクションに下記を加えてください。
+29. 27で加えたcreateアクションに下記を加えてください。
 
     ```
     ・データを新規登録するためのインスタンス
@@ -455,3 +455,20 @@
 	
 	<br>
 
+30. 下記の見本通りの挙動になっているか確認してください。
+
+	<details><summary>回答例</summary><div>
+
+	```
+    <%= form_with model: @post, local: true do |form| %>
+        <p><%= form.label :title %></p>
+        <p><%= form.text_field :title %></p>
+        <p><%= form.label :body %></p>
+        <p><%= form.text_area :body %></p>
+        <p><%= form.submit %></p>
+    <% end %>
+    ```
+    
+	</div></details>
+	
+	<br>
