@@ -162,7 +162,7 @@
 13. 下記のコードを貼り付けた部分テンプレートファイルを用意してください。ただし、ファイル名は「_header.html.erb」と「_footer.html.erb」とします。
 
     ```html
-    _header.html.erb
+    <!-- _header.html.erb -->
 
     <header>
         <div class="header-left">
@@ -178,7 +178,7 @@
     ```
 
     ```html
-    _footer.html.erb
+    <!-- _footer.html.erb -->
 
     <footer>
         <small>Copyright &copy; IT人材 .inc</small>
@@ -368,7 +368,7 @@
 	
 	<br>
 
-26. 24で作成したnewアクション内にインスタンス変数postを定義し、空のインスタンスを代入してください。
+26. 25で作成したnewアクション内にインスタンス変数postを定義し、空のインスタンスを代入してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -427,7 +427,7 @@
 	
 	<br>
 
-29. 27で加えたcreateアクションに下記を加えてください。
+29. 28で加えたcreateアクションに下記を加えてください。
 
     ```
     ・データを新規登録するためのインスタンス
