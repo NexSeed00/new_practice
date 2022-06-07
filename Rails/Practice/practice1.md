@@ -78,24 +78,6 @@
             <li>ソダテク</li>
         </ul>
         </section>
-        <section id="programming">
-        <h2>プログラミング</h2>
-        <div class="contents">
-            <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed laboriosam perspiciatis facilis molestias dolorem nihil adipisci at quae voluptas, cumque corporis quisquam et iste maxime natus error quaerat ut!
-            </p>
-            <img src="./assets/img/programming.png" alt="programming">
-        </div>
-        </section>
-        <section id="engineer">
-        <h2>エンジニア</h2>
-        <div class="contents">
-            <img src="../assets/img/programming.png" alt="engineer">
-            <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed laboriosam perspiciatis facilis molestias dolorem nihil adipisci at quae voluptas, cumque corporis quisquam et iste maxime natus error quaerat ut!
-            </p>
-        </div>
-        </section>
     </main>
 	```
 		
@@ -144,8 +126,8 @@
 
 	```ruby:routes.rb
     Rails.application.routes.draw do
-        get "top" => "home#top"
-        get "about" => "home#about"
+        get "top", to: "home#top"
+        get "about", to: "home#about"
     end
 	```
     
@@ -177,18 +159,32 @@
 	
 	<br>
 
-13. 下記のコードを貼り付けた部分テンプレートファイルを用意してください。ただし、ファイル名は「_header.html.erb」とします。
+13. 下記のコードを貼り付けた部分テンプレートファイルを用意してください。ただし、ファイル名は「_header.html.erb」と「_footer.html.erb」とします。
 
-    ```
+    ```html
+    _header.html.erb
+
     <header>
-    <div class="header-logo">
-        TweetApp
-    </div>
-    <ul class="header-menus">
-        <li>TweetAppとは</li>
-    </ul>
+        <div class="header-left">
+        <%= image_tag "logo_st.png", class: "logo", alt: "logo" %>
+        </div>
+        <div class="header-right">
+        <ul class="nav">
+            <li><a href="#programming">プログラミング</a></li>
+            <li><a href="#engineer">エンジニア</a></li>
+        </ul>
+        </div>
     </header>
     ```
+
+    ```html
+    _footer.html.erb
+
+    <footer>
+        <small>Copyright &copy; IT人材 .inc</small>
+    </footer>
+    ```
+
 
 	<details><summary>回答例</summary><div>
 
@@ -206,8 +202,8 @@
 
 	```ruby:config/routes.rb
     Rails.application.routes.draw do
-        get "/" => "home#top"
-        get "about" => "home#about"
+        root "home#top"
+        get "about", to: "home#about"
     end
 	```
     
@@ -396,12 +392,10 @@
 
 	<details><summary>回答例</summary><div>
 
-	```
+	```html:
     <%= form_with model: @post, local: true do |form| %>
-        <p><%= form.label :title %></p>
-        <p><%= form.text_field :title %></p>
-        <p><%= form.label :body %></p>
-        <p><%= form.text_area :body %></p>
+        <p><%= form.label :content %></p>
+        <p><%= form.text_area :content %></p>
         <p><%= form.submit %></p>
     <% end %>
     ```
@@ -454,9 +448,9 @@
         end
 
         def create
-            @post = Post.new(content: params[:content])
+            @post = Post.new(content: params[:post][:content])
             @post.save
-            redirect_to root
+            redirect_to root_path
         end
     end
     ```
@@ -470,13 +464,6 @@
 	<details><summary>回答例</summary><div>
 
 	```
-    <%= form_with model: @post, local: true do |form| %>
-        <p><%= form.label :title %></p>
-        <p><%= form.text_field :title %></p>
-        <p><%= form.label :body %></p>
-        <p><%= form.text_area :body %></p>
-        <p><%= form.submit %></p>
-    <% end %>
     ```
     
 	</div></details>
