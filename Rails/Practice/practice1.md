@@ -26,18 +26,18 @@
 
 	<br>
 
-3. 下記のファイルをダウンロードし、app/assets/imagesフォルダ内に追加してください。
+3. 下記のファイルをダウンロードし、app/assets/imagesフォルダ内にそれぞれのファイルを追加してください。
 
 	```
     ファイルリンク
-
+    https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true
     ```
 
-4. 下記のファイルをダウンロードし、app/assets/stylesheetsフォルダ内に追加してください。
+4. 下記のファイルをダウンロードし、app/assets/stylesheets/application.cssと入れ替えてください。
 
 	```
     ファイルリンク
-
+    https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true
     ```
 
 5. 「test_app」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
