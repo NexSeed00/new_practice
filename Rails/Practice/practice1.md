@@ -42,10 +42,16 @@
 
 5. 「test_app」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
 
-
+	<details><summary>回答例</summary><div>
+		
 	```
 	rails s
 	```
+		
+	</div></details>
+	
+
+	<br>
 
 6. 「test_app」にhomeコントローラーを作成してください。この時、topアクションも一緒に生成するようにしてください。
 
