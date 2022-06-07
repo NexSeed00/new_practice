@@ -264,7 +264,7 @@
 	<br>
 
 
-19. DBeaver内でSQL文を使ってusersテーブル内に保存されている名前が関根のデータを削除してください。
+19. DBeaver内でSQL文を使ってusersテーブル内に保存されているnameが関根のデータを削除してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -276,7 +276,7 @@
 
 	<br>
 
-20. DBeaver内でSQL文を使ってusersテーブル内に保存されている年齢が30歳以上の全てのデータを取得し、削除してください。
+20. DBeaver内でSQL文を使ってusersテーブル内に保存されているageが30歳以上の全てのデータを取得し、削除してください。
 
 	<details><summary>回答例</summary><div>
 
