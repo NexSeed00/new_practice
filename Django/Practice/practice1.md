@@ -30,9 +30,6 @@
     ・時刻設定：'Asia/Tokyo'
     ・言語設定：'ja'
     ・静的ファイルのパス設定：
-    ```
-
-    ```python:
     import os  # ファイル先頭に追加
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # 追加
     ```
