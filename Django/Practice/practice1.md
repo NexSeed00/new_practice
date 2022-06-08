@@ -17,7 +17,9 @@
 2. DBeaverを使ってデータベースの新規作成を行ってください。ただし、データベース名は「testappdb」とします。
 
 	<details><summary>回答例</summary><div>
-    ![testappdbの作成](https://user-images.githubusercontent.com/75789463/172562320-1226b5be-fd56-494a-8e3e-e5e145062534.gif)
+    	
+	![testappdbの作成](https://user-images.githubusercontent.com/75789463/172562320-1226b5be-fd56-494a-8e3e-e5e145062534.gif)
+	
 	</div></details>
 	
 	<br>
