@@ -191,10 +191,16 @@
 
 	<details><summary>回答例</summary><div>
 	
+	```
 	Buttonの位置とサイズ調整
+	```
+	
 	![Buttonの位置とサイズ調整](https://user-images.githubusercontent.com/75789463/172620503-23523a2a-513c-4753-8bb1-81b2dd3eb587.gif)
-
+	
+	```
 	Buttonの文字変更
+	```
+	
 	![Buttonの文字変更](https://user-images.githubusercontent.com/75789463/172621597-0c51c74c-c0e6-48a7-a294-809368d4d293.gif)
 
 		
@@ -226,7 +232,7 @@
 	Animationビューの表示
 	```
 	
-	![Animationビューの表示](https://user-images.githubusercontent.com/75789463/172625018-ee00e8a1-40a4-4312-8145-80262bac8448.gif)]
+	![Animationビューの表示](https://user-images.githubusercontent.com/75789463/172625018-ee00e8a1-40a4-4312-8145-80262bac8448.gif)
 
 	```
 	マウスがhoverしている間、大きさを変えるPropertyを追加
