@@ -221,18 +221,29 @@
 	```
 
 	<details><summary>回答例</summary><div>
+	
+	```
 	Animationビューの表示
+	```
+	
 	![Animationビューの表示](https://user-images.githubusercontent.com/75789463/172625018-ee00e8a1-40a4-4312-8145-80262bac8448.gif)]
 
-
+	```
 	マウスがhoverしている間、大きさを変えるPropertyを追加
+	```
+	
 	![大きさを変えるProperty](https://user-images.githubusercontent.com/75789463/172626279-834bdd7a-2699-4119-9056-6d264e381f3c.gif)
 
-
+	```
 	0:30フレームの際にx軸方向、y軸方向に大きさを3倍する
+	```
+	
 	![x軸、y軸方向の大きさ3倍](https://user-images.githubusercontent.com/75789463/172627789-d0b88dcc-4e8c-4851-9975-7fd4c00d27f5.gif)
-
+	
+	```
 	挙動
+	```
+	
 	![挙動](https://user-images.githubusercontent.com/75789463/172630509-5f158f70-dc1f-4555-83a2-d8262ba1efd4.gif)
 
 	</div></details>
