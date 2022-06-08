@@ -159,3 +159,42 @@
 	
 	<br>
 
+10. 「testsns」内にテンプレートとしてindex.htmlを作成し、下記のコードを貼り付けてください。
+
+    ```html:
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testsns</title>
+    </head>
+    <body>
+        <h1>ようこそ！<h1>
+    <body>
+    </html>
+    ```
+
+	<details><summary>回答例</summary><div>
+		
+	```html:
+	<!-- testapp/testsns/templates/testsns/index.html -->
+
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testsns</title>
+    </head>
+    <body>
+        <h1>ようこそ！<h1>
+    <body>
+    </html>
+	```
+		
+	</div></details>
+	
+	<br>
