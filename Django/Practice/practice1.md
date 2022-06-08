@@ -22,17 +22,7 @@
 	
 	<br>
 
-3. DBeaverを使ってデータベースの新規作成を行ってください。ただし、データベース名は「testappdb」とします。
-
-	<details><summary>回答例</summary><div>
-		
-		
-	</div></details>
-	
-
-	<br>
-
-4. 「testapp」に対して下記の設定を行ってください。
+3. 「testapp」に対して下記の設定を行ってください。
 
     ・時刻設定：'Asia/Tokyo'
     ・言語設定：'ja'
@@ -47,7 +37,7 @@
 
     ```python:
     # manage.py
-    
+
     import pymsql  # 追加
     pymysql.install_as_MySQLdb()  # 追加
     ```
@@ -65,7 +55,7 @@
     }
     ```
 
-5. 「testapp」フォルダ内に個別のアプリである「testsns」を作成してください。
+4. 「testapp」フォルダ内に個別のアプリである「testsns」を作成してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -77,7 +67,7 @@
 	
 	<br>
 
-6. 「testsns」のviewの中に「Hello World!!」を返すindexメソッドを作成してください。
+5. 「testsns」のviewの中に「Hello World!!」を返すindexメソッドを作成してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -95,7 +85,7 @@
 	
 	<br>
 
-7. プロジェクト全体でtestsns/urls.pyを利用できるようにルーティングを設定してください。
+6. プロジェクト全体でtestsns/urls.pyを利用できるようにルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -115,7 +105,7 @@
 	
 	<br>
 
-8. 「testsns」のトップページにアクセスした際に、viewのindexメソッドが処理されるようにルーティングを設定してください。
+7. 「testsns」のトップページにアクセスした際に、viewのindexメソッドが処理されるようにルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -134,7 +124,7 @@
 	
 	<br>
 
-9. testapp/testsns/apps.pyに記載されているTestsnsConfigクラスをtestapp/settings.pyに登録してください。
+8. testapp/testsns/apps.pyに記載されているTestsnsConfigクラスをtestapp/settings.pyに登録してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -156,7 +146,7 @@
 	
 	<br>
 
-10. 「test_app」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
+9. 「testapp」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -167,3 +157,4 @@
 	</div></details>
 	
 	<br>
+
