@@ -49,9 +49,9 @@
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': ' myappdb',
-            'USER': ' root',
-            'PASSWORD': ' pass',
+            'NAME': 'testappdb',
+            'USER': 'root',
+            'PASSWORD': '',
         }
     }
     ```
@@ -190,7 +190,7 @@
         <title>testsns</title>
     </head>
     <body>
-        <h1>ようこそ！<h1>
+        <h1>Hello Django！<h1>
     <body>
     </html>
 	```
@@ -198,3 +198,346 @@
 	</div></details>
 	
 	<br>
+
+11. 10で作成したindex.htmlをトップページで表示させるルーティングを設定してください。
+
+	<details><summary>回答例</summary><div>
+		
+    ```python:
+    # testsns/views.py
+
+    from django.shortcuts import render
+    from django.http import HttpResponse
+
+    def index(request):
+        # return HttpResponse("Hello World!!")
+        return render(request,"testsns/index.html")
+    ```
+		
+	</div></details>
+	
+	<br>
+
+12. localhost:8000/testsnsにアクセスして、下記のように表示されているか確認してください。
+
+
+13. 「testsns」のviewから下記のデータをindex.htmlに受け渡してください。
+
+    ```
+    変数名：context
+    キー：message
+    値：初めてのDjangoアプリ作成
+    ```
+
+	<details><summary>回答例</summary><div>
+		
+    ```python:
+    # testsns/views.py
+
+    from django.shortcuts import render
+    from django.http import HttpResponse
+
+    def index(request):
+        context = {"message": "初めてのDjangoアプリ作成"}
+        return render(request,"testsns/index.html", context)
+    ```
+		
+	</div></details>
+	
+	<br>
+
+14. 「testsns」のindex.htmlに13で送ったデータを表示させてください。
+
+	<details><summary>回答例</summary><div>
+		
+	```html:
+	<!-- testapp/testsns/templates/testsns/index.html -->
+
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testsns</title>
+    </head>
+    <body>
+        <h1>Hello Django！<h1>
+        <div>{{ message }}</div>
+    <body>
+    </html>
+	```
+		
+	</div></details>
+	
+	<br>
+
+15. localhost:8000/testsnsにアクセスして、下記のように表示されているか確認してください。
+
+
+16. 「testsns」のviewのindexメソッド内で定義されている変数contextに下記のデータを新たに加え、index.htmlに受け渡してください。
+
+    ```
+    キー：members
+    値：Suguru, Robin, Terry
+    ```
+
+	<details><summary>回答例</summary><div>
+		
+    ```python:
+    # testsns/views.py
+
+    from django.shortcuts import render
+    from django.http import HttpResponse
+
+    def index(request):
+        context = {
+            "message": "初めてのDjangoアプリ作成"
+            "members": ["Suguru", "Robin", "Terry"]
+        }
+        return render(request,"testsns/index.html", context)
+    ```
+		
+	</div></details>
+	
+	<br>
+
+17. 「testsns」のindex.htmlに16で送ったデータを元に「〜さんこんにちは！！」と全て表示させてください。
+
+	<details><summary>回答例</summary><div>
+		
+	```html:
+	<!-- testapp/testsns/templates/testsns/index.html -->
+
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testsns</title>
+    </head>
+    <body>
+        <h1>Hello Django！<h1>
+        <div>{{ message }}</div>
+        <div>
+            {% for member in members %}
+            <p>{{ member }}さんこんにちは！！</p>
+            {% endfor %}
+        </div>
+    <body>
+    </html>
+	```
+		
+	</div></details>
+	
+	<br>
+
+18. mysns/models.pyで下記のデータの定義を行なってください。
+
+    ```
+    クラス名：Posts
+    カラム：content
+    制限：contentに入れられる文字列の長さは最大で200
+    ```
+
+    <details><summary>回答例</summary><div>
+		
+    ```python:
+    from django.db import models
+
+    class Posts(models.Model):
+        content = models.CharField(max_length=200)
+
+        def __str__(self):
+            return self.content
+    ```
+		
+	</div></details>
+	
+	<br>
+
+19. 18で作成したモデルを元にマイグレーションファイルを作成してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```terminal:
+    python3 manage.py makemigrations testsns
+    ```
+		
+	</div></details>
+	
+	<br>
+
+20. 19で作成したマイグレーションファイルの内容をデータベースへ反映させてください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```terminal:
+    python3 manage.py migrate
+    ```
+		
+	</div></details>
+	
+	<br>
+
+21. ターミナルでスーパーユーザーと呼ばれる管理ユーザーを作成してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```terminal:
+    python3 manage.py createsuperuser
+
+    ユーザー名：任意のユーザー名
+    メールアドレス：任意のメールアドレス
+    Password：任意のパスワード
+    ```
+		
+	</div></details>
+	
+	<br>
+
+22. Djangoの管理サイトにアクセスしてください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```
+    localhost:8000/admin
+    ```
+		
+	</div></details>
+	
+	<br>
+
+23. postsテーブルのデータ管理を行えるようにtestsns/admin.pyを編集してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```python:
+    from django.contrib import admin
+    from .models import Posts
+
+    admin.site.register(Posts)
+    ```
+		
+	</div></details>
+	
+	<br>
+
+24. Djangoの管理サイトから「Hello world!」というデータをpostsテーブルに追加してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ![postsの追加1](https://user-images.githubusercontent.com/75789463/172581176-f72090c3-cff9-44f4-bc48-cfebca42b521.gif)
+		
+	</div></details>
+	
+	<br>
+
+25. Djangoの管理サイトから「Hello python!」というデータをpostsテーブルに追加してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ![postsの追加2](https://user-images.githubusercontent.com/75789463/172584628-f492a5f9-2754-4f66-a1af-66cd47e64db9.gif)
+		
+	</div></details>
+	
+	<br>
+
+26. Djangoの管理サイトから「Hello Django!!!」というデータをpostsテーブルに追加してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ![postsの追加3](https://user-images.githubusercontent.com/75789463/172584727-9e66fe4b-8c2b-45be-a6ac-44798d3bf5ca.gif)
+		
+	</div></details>
+	
+	<br>
+
+27. DBeaverからpostsテーブルに格納されているデータを確認してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ![postsの全てのデータ確認](https://user-images.githubusercontent.com/75789463/172585603-09acdb38-b146-41ca-8010-89b3f456cd52.gif)
+		
+	</div></details>
+	
+	<br>
+
+28. 「testsns」のviewのindexメソッドに新たに変数postsを定義し、Postsクラスのオブジェクトのデータを全て代入してください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```python:
+    # testsns/views.py
+
+    from django.shortcuts import render
+    from django.http import HttpResponse
+    from .models import Posts  # 追加
+
+    def index(request):
+        posts = Posts.objects.all()  # 追加
+        context = {"message": "初めてのDjangoアプリ作成"}
+        members = ["Suguru", "Robin", "Terry"]
+        return render(request,"testsns/index.html", context)
+    ```
+    	
+	</div></details>
+	
+	<br>
+
+29. 「testsns」のviewのindexメソッド内で定義されている変数contextのmembersキーを削除し、28で定義した変数postsを変数contextに加えてください。
+
+    <details><summary>回答例</summary><div>
+		
+    ```python:
+    # testsns/views.py
+
+    from django.shortcuts import render
+    from django.http import HttpResponse
+    from .models import Posts
+
+    def index(request):
+        posts = Posts.objects.all()
+        context = {
+            "message": "初めてのDjangoアプリ作成",
+            "posts": posts,
+        }
+        return render(request,"testsns/index.html", context)
+    ```
+    	
+	</div></details>
+	
+	<br>
+
+30. 「testsns」のindex.htmlに29で送ったデータを元にpostsテーブルのデータを全て表示させてください。
+
+    <details><summary>回答例</summary><div>
+		
+	```html:
+	<!-- testapp/testsns/templates/testsns/index.html -->
+
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testsns</title>
+    </head>
+    <body>
+        <h1>Hello Django！<h1>
+        <div>{{ message }}</div>
+        <div>
+            {% for post in posts %}
+            <p>{{ post }}</p>
+            {% endfor %}
+        </div>
+    <body>
+    </html>
+	```
+    	
+	</div></details>
+	
+	<br>
+
