@@ -1,11 +1,11 @@
 # 練習問題
 
-1. 「test_app」という名前のアプリケーションを作成してください。ただし、Laravelのバージョンは7系を指定してください。
+1. 「test」という名前のアプリケーションをxamppのhtdocs配下に作成してください。ただし、Laravelのバージョンは7系を指定してください。
 
 	<details><summary>回答例</summary><div>
 		
 	```
-	composer create-project --prefer-dist laravel/laravel test_app "7.*"
+	composer create-project --prefer-dist laravel/laravel test "7.*"
 	```
 		
 	</div></details>
@@ -25,7 +25,7 @@
 
 	<br>
 
-3. 「test_app」のデータベースを作成してください。
+3. 「test」のデータベースを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -37,7 +37,7 @@
 
 	<br>
 
-4. 「test_app」のアプリケーションキーにランダムな文字列を設定してください。
+4. 「test」のアプリケーションキーにランダムな文字列を設定してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -49,21 +49,21 @@
 	
 	<br>
 
-3. 下記のファイルをダウンロードし、app/assets/imagesフォルダ内にそれぞれのファイルを追加してください。
+5. 下記のファイルをダウンロードし、app/assets/imagesフォルダ内にそれぞれのファイルを追加してください。
 
 	```
     ファイルリンク
     https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true
     ```
 
-5. 下記のファイルをダウンロードし、app/assets/stylesheets/application.cssと入れ替えてください。
+6. 下記のファイルをダウンロードし、app/assets/stylesheets/application.cssと入れ替えてください。
 
 	```
     ファイルリンク
     https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true
     ```
 
-6. 「test_app」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
+7. 「test」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -76,7 +76,7 @@
 
 	<br>
 
-7. 認証機能を追加してください。
+8. 認証機能を追加してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -89,7 +89,7 @@
 	
 	<br>
 
-8. 7で追加した認証機能の見た目をnpmを使って整えてください。
+9. 7で追加した認証機能の見た目をnpmを使って整えてください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -102,7 +102,7 @@
 	
 	<br>
 
-8. Postモデルとマイグレーションファイルを作成してください。
+10. Postモデルとマイグレーションファイルを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -114,7 +114,7 @@
 	
 	<br>
 
-8. Postモデルとマイグレーションファイルを作成してください。
+11. Postモデルとマイグレーションファイルを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -126,7 +126,7 @@
 	
 	<br>
 
-9. 8で作成したマイグレーションファイルに以下の情報を加えてください。
+12. 8で作成したマイグレーションファイルに以下の情報を加えてください。
 
     ```php:
     $table->text('title');
@@ -179,7 +179,7 @@
 	
 	<br>
 
-10. マイグレーションファイルの内容をデータベースに反映させてください。
+13. マイグレーションファイルの内容をデータベースに反映させてください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -191,7 +191,7 @@
 	
 	<br>
 
-11. Postコントローラーを作成してください。
+14. Postコントローラーを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -203,299 +203,315 @@
 	
 	<br>
 
-
-
-12. 「test_app」にhomeコントローラーを作成してください。この時、topアクションも一緒に生成するようにしてください。
+15. Postコントローラーにindexメソッドを追加してください。
 
 	<details><summary>回答例</summary><div>
 		
+	```php:
+    <?php
+
+    namespace App\Http\Controllers;
+
+    use Illuminate\Http\Request;
+
+    class PostsController extends Controller
+    {
+        public function index()
+        {
+            
+        }
+    }
 	```
-	rails g controller home top
-	```
+		
+	</div></details>
+	
+
+	<br>
+
+16. 11で加えたindexメソッドに下記の処理を加えてください。
+
+    ```
+    ・変数postsを定義し、postsテーブルのデータを全て代入する
+    ・テンプレートファイルとしてindex.blade.phpを、テンプレートに渡すデータとして変数postsを指定する
+    ```
+
+	<details><summary>回答例</summary><div>
+
+        ```php:
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class PostsController extends Controller
+        {
+            public function index()
+            {
+                $posts = Post::all();
+                return view('post/index', [
+                    'posts' => $posts
+                ]);
+            }
+        }
+        ```
+
+	</div></details>
+
+	<br>
+
+17. resources/views/posts/index.blade.phpを作成し、postsテーブルに格納されている全てのbodyカラムのデータを表示させるようにコードを記述してください。
+
+	<details><summary>回答例</summary><div>
+		
+    ```html:
+    @foreach($posts as $post)
+        <p>{{ $post->title }}</p>
+        <p>{{ $post->body }}</p>
+    @endforeach
+    ```
 		
 	</div></details>
 	
-
 	<br>
 
-13. app/views/home/top.html.erbに下記のコードを貼り付けて、localhost:3000/home/topにアクセスしてください。
+18. localhost:3000/postsのURLでPostコントローラーのindexメソッドが処理されるようにルーティングを設定してください。
 
-	```html:app/views/home/top.html.erb
-    <main>
-        <section class="welcome">
-        <h1 class="title">Welcome to sodatech</h1>
-        <ul class="guideline">
-            <li>育てる</li>
-            <li>テクノロジー人材</li>
-            <li>ソダテク</li>
-        </ul>
-        </section>
-    </main>
+	<details><summary>回答例</summary><div>
+
+	```php:
+    Route::get('/posts', 'PostController@index')->name('Post.index');
 	```
+    
+	</div></details>
+	
+	<br>
+
+19. Postコントローラーにcreateメソッドを追加してください。
+
+	<details><summary>回答例</summary><div>
+
+        ```php:
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class PostsController extends Controller
+        {
+            public function index()
+            {
+                $posts = Post::all();
+                return view('post/index', [
+                    'posts' => $posts
+                ]);
+            }
+
+            public function create()
+            {
+
+            }
+        }
+        ```
+
+	</div></details>
+	
+	<br>
+
+20. 15で加えたcreateメソッドに下記の処理を加えてください。
+
+    ```
+    ・テンプレートファイルとしてcreate.blade.phpを返す
+    ```
+
+	<details><summary>回答例</summary><div>
+
+	```php:
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class PostsController extends Controller
+        {
+            public function index()
+            {
+                $posts = Post::all();
+                return view('post/index', [
+                    'posts' => $posts
+                ]);
+            }
+
+            public function create()
+            {
+                return view('post.create');
+            }
+        }
+	```
+    
+	</div></details>
+	
+	<br>
+
+
+21. resources/views/posts/create.blade.phpを作成し、下記のコードを貼り付けてください。
+
+	<details><summary>回答例</summary><div>
 		
-	<details><summary>回答例</summary><div>
-	![topページ](https://user-images.githubusercontent.com/75789463/172346149-e09893ae-98f2-48d2-affa-1cc7e373a79e.gif)
-	</div></details>
+    ```html:
+    <form action="{{ route('posts.store') }}" method="post">
+    @csrf
+    <div>
+        タイトル：<br>
+        <input type="text" name="title">
 
-	<br>
-
-14. localhost:3000/topのURLでトップページが表示されるように、config/routes.rb内に記載されているtopアクションのルーティングを変更してください。
-
-	<details><summary>回答例</summary><div>
-
-	```ruby:routes.rb
-    Rails.application.routes.draw do
-        get "top" => "home#top"
-    end
-	```
-    
-	</div></details>
-	
-	<br>
-
-15. homeコントローラーにaboutアクションを追加してください。
-
-	<details><summary>回答例</summary><div>
-
-	```ruby:app/controllers/home_controller.rb
-    class HomeController < ApplicationController
-        def top
-        end
-        
-        def about
-        end
-    end
-	```
-    
-	</div></details>
-	
-	<br>
-
-16. localhost:3000/aboutのリンクでaboutアクションが呼び出されるように、config/routes.rb内にルーティングを作成してください。
-
-	<details><summary>回答例</summary><div>
-
-	```ruby:routes.rb
-    Rails.application.routes.draw do
-        get "top", to: "home#top"
-        get "about", to: "home#about"
-    end
-	```
-    
-	</div></details>
-	
-	<br>
-
-17. homeコントローラーのaboutアクションに対応するビューを作成してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    app/views/home内にabout.html.erbファイルを追加
-	```
-    
-	</div></details>
-	
-	<br>
-
-18. about.html.erbに下記のコードを貼り付け、localhost:3000/aboutにアクセスし、正しく表示がされているか確認してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    app/views/home内にabout.html.erbファイルを追加
-	```
-    
-	</div></details>
-	
-	<br>
-
-19. 下記のコードを貼り付けた部分テンプレートファイルを用意してください。ただし、ファイル名は「_header.html.erb」と「_footer.html.erb」とします。
-
-    ```html
-    <!-- _header.html.erb -->
-
-    <header>
-        <div class="header-left">
-        <%= image_tag "logo_st.png", class: "logo", alt: "logo" %>
-        </div>
-        <div class="header-right">
-        <ul class="nav">
-            <li><a href="#programming">プログラミング</a></li>
-            <li><a href="#engineer">エンジニア</a></li>
-        </ul>
-        </div>
-    </header>
+        内容：<br>
+        <input type="textarea" name="body">
+    </div>
+    <input type="submit" value="投稿">
+    </form>
     ```
+		
+	</div></details>
+	
+	<br>
 
-    ```html
-    <!-- _footer.html.erb -->
 
-    <footer>
-        <small>Copyright &copy; IT人材 .inc</small>
-    </footer>
-    ```
-
+22. localhost:3000/posts/createのURLでPostコントローラーのcreateメソッドが処理されるようにルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 
-	```
-    app/views/layouts/内に_header.html.erbファイルを追加
+	```php:
+    Route::get('/posts/create', 'PostController@create')->name('post.create');
 	```
     
 	</div></details>
 	
 	<br>
 
-20. localhost:3000にアクセスした際にトップページが表示されるようにルーティングを設定してください。
+23. Postコントローラーにstoreメソッドを追加してください。
 
 	<details><summary>回答例</summary><div>
 
-	```ruby:config/routes.rb
-    Rails.application.routes.draw do
-        root "home#top"
-        get "about", to: "home#about"
-    end
-	```
-    
+        ```php:
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class PostsController extends Controller
+        {
+            public function index()
+            {
+                $posts = Post::all();
+                return view('post/index', [
+                    'posts' => $posts
+                ]);
+            }
+
+            public function create()
+            {
+                return view('post.create');
+            }
+
+            public function store()
+            {
+
+            }
+        }
+        ```
+
 	</div></details>
 	
 	<br>
 
-21. 「test_app」にpostsコントローラーを作成してください。この時、indexアクションも一緒に生成するようにしてください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails g controller posts index
-    ```
-    
-	</div></details>
-	
-	<br>
-
-22. app/views/posts/index.html.erbに下記のコードを貼り付け、localhost:3000/posts/indexにアクセスしてください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails g controller posts index
-    ```
-    ![投稿一覧ページ](https://user-images.githubusercontent.com/75789463/172346360-fcfd855e-5d6a-4427-a72f-c77ebc5652bc.gif)
-	</div></details>
-	
-	<br>
-
-23. 「test_app」にPostモデルを作成してください。この時、データ型がtextのcontentカラムもマイグレーションファイルに追加するようにしてください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails g model Post content:text
-    ```
-    
-	</div></details>
-	
-	<br>
-
-24. 17で作成されたマイグレーションファイルの内容をデータベースに反映させてください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails db:migrate
-    ```
-    
-	</div></details>
-	
-	<br>
-
-25. rails consoleを使って、contentカラムの値が「初めての投稿です」というデータをpostsテーブルに保存してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails console
-    post = Post.new(content: "初めての投稿です")
-    post.save
-    ```
-    
-	</div></details>
-	
-	<br>
-
-26. rails consoleを使って、contentカラムの値が「2回目の投稿です」というデータをpostsテーブルに保存してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails console
-    post = Post.new(content: "2回目の投稿です")
-    post.save
-    ```
-    
-	</div></details>
-	
-	<br>
-
-27. rails consoleを使って、contentカラムの値が「3回目の投稿です」というデータをpostsテーブルに保存してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails console
-    post = Post.new(content: "3回目の投稿です")
-    post.save
-    ```
-    
-	</div></details>
-	
-	<br>
-
-28. rails consoleを使って、postsテーブルのデータを全て取得してください。
-
-	<details><summary>回答例</summary><div>
-
-	```
-    rails console
-    Post.all
-    ```
-    
-	</div></details>
-	
-	<br>
-
-29. postsコントローラーのindexアクション内に下記のインスタンス変数を加えてください。
+24. 18で加えたstoreメソッドに下記の処理を加えてください。
 
     ```
-    インスタンス変数名：posts
-    値：postsテーブルに格納されている全てのデータ
+    ・ブラウザから送られてくるデータを引数に持つ
+    ・変数$postを定義し、送られてきたデータを代入する
+    ・$postのデータをpostsテーブルに保存する
+    ・トップページに戻る
     ```
 
 	<details><summary>回答例</summary><div>
 
-	```ruby:app/controllers/posts_controller.rb
-    class PostsController < ApplicationController
-        def index
-            @posts = Post.all
-        end
-    end
-    ```
+    	```php:
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class PostsController extends Controller
+        {
+            public function index()
+            {
+                $posts = Post::all();
+                return view('post/index', [
+                    'posts' => $posts
+                ]);
+            }
+
+            public function create()
+            {
+                return view('post.create');
+            }
+
+            public function store(Request $request)
+            {
+                $post = new Post();
+                $post->title = $request->title;
+                $post->body = $request->body;
+                $post->user_id = Auth::id();
+
+                $post->save();
+                return redirect()->route('posts.index');
+            }
+        }
+	    ```
     
 	</div></details>
 	
 	<br>
 
-30. views/posts/index.html.erbでpostsテーブルのcontentカラムに格納されたデータを全て表示させてください。
+25. POST送信でlocalhost:8000/postsのURLにアクセスした際にPostコントローラーのstoreメソッドが処理されるようにルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 
+	```php:
+    Route::post('/posts', 'PostController@store')->name('post.store');
 	```
-    <% @posts.each do |post| %>
-        <%= post.content %>
-    <% end %>
-    ```
     
 	</div></details>
 	
 	<br>
+
+26. localhost:8000/posts/createにアクセスし、下記のデータを投稿してください。
+
+    ```
+    title：1回目
+    body：初めての投稿です
+    ```
+
+27. localhost:8000/posts/createにアクセスし、下記のデータを投稿してください。
+
+    ```
+    title：2回目
+    body：2回目の投稿です
+    ```
+
+28. localhost:8000/posts/createにアクセスし、下記のデータを投稿してください。
+
+    ```
+    title：3回目
+    body：3回目の投稿です
+    ```
+
+29. localhost:8000/postsにアクセスし、postsテーブルのデータが一覧で全て表示されているか確認してください。
+
+
+30. 下記の見本通りの挙動になっているか確認してください。

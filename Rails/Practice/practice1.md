@@ -389,8 +389,6 @@
 
 27. app/views/posts配下にnew.html.erbを作成し、下記のコードを貼り付けてください。
 
-	<details><summary>回答例</summary><div>
-
 	```html:
     <%= form_with model: @post, local: true do |form| %>
         <p><%= form.label :content %></p>
@@ -399,9 +397,6 @@
     <% end %>
     ```
     
-	</div></details>
-	
-	<br>
 
 28. postsコントローラーに新たにcreateアクションを加えてください。
 
