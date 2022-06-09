@@ -1,6 +1,6 @@
 # 練習問題
 
-1. 「test_app」という名前のアプリケーションを作成してください。ただし、データベースにはMySQLを指定してください。
+1. 「test_app」という名前のアプリケーションを作成してください。ただし、データベースにはMySQLを使用してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -13,7 +13,8 @@
 
 	<br>
 
-2. 「test_app」のデータベースを作成してください。
+2. 「test_app」アプリケーションで使用するデータベースをRailsコマンドを使用して作成してください。
+
 
 	<details><summary>回答例</summary><div>
 		
@@ -33,12 +34,25 @@
     https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true
     ```
 
+    + app
+        + assets
+            + images
+                + background.png  # 追加
+                + logo_st.png     # 追加
+                + programming.png # 追加
+
+
 4. 下記のファイルをダウンロードし、app/assets/stylesheets/application.cssと入れ替えてください。
 
 	```
     ファイルリンク
     https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true
     ```
+
+    + app
+        + assets
+            + stylesheets
+                + application.css  # 入れ替え
 
 5. 「test_app」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
 
@@ -53,7 +67,8 @@
 
 	<br>
 
-6. 「test_app」にhomeコントローラーを作成してください。この時、topアクションも一緒に生成するようにしてください。
+6. 「test_app」にhomeコントローラーを作成してください。この時、topアクションも同時に生成してください。
+
 
 	<details><summary>回答例</summary><div>
 		
@@ -82,12 +97,15 @@
 	```
 		
 	<details><summary>回答例</summary><div>
+    
 	![topページ](https://user-images.githubusercontent.com/75789463/172346149-e09893ae-98f2-48d2-affa-1cc7e373a79e.gif)
+
 	</div></details>
 
 	<br>
 
-8. localhost:3000/topのURLでトップページが表示されるように、config/routes.rb内に記載されているtopアクションのルーティングを変更してください。
+8. localhost:3000/topのURLにアクセスするとトップページが表示されるように、config/routes.rb内に記載されているtopアクションのルーティングを変更してください。
+
 
 	<details><summary>回答例</summary><div>
 
@@ -147,11 +165,52 @@
 	<br>
 
 12. about.html.erbに下記のコードを貼り付け、localhost:3000/aboutにアクセスし、正しく表示がされているか確認してください。
+    ```html:
+    <main>
+        <section id="programming">
+        <h2>プログラミング</h2>
+        <div class="contents">
+            <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed laboriosam perspiciatis facilis molestias dolorem nihil adipisci at quae voluptas, cumque corporis quisquam et iste maxime natus error quaerat ut!
+            </p>
+            <%= image_tag 'programming.png' %>
+        </div>
+        </section>
+        <section id="engineer">
+        <h2>エンジニア</h2>
+        <div class="contents">
+            <%= image_tag 'programming.png' %>
+            <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed laboriosam perspiciatis facilis molestias dolorem nihil adipisci at quae voluptas, cumque corporis quisquam et iste maxime natus error quaerat ut!
+            </p>
+        </div>
+        </section>
+    </main>
+    ```
 
 	<details><summary>回答例</summary><div>
 
-	```
-    app/views/home内にabout.html.erbファイルを追加
+	```html:app/views/home/about.html.erb
+    <main>
+        <section id="programming">
+        <h2>プログラミング</h2>
+        <div class="contents">
+            <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed laboriosam perspiciatis facilis molestias dolorem nihil adipisci at quae voluptas, cumque corporis quisquam et iste maxime natus error quaerat ut!
+            </p>
+            <%= image_tag 'programming.png' %>
+        </div>
+        </section>
+        <section id="engineer">
+        <h2>エンジニア</h2>
+        <div class="contents">
+            <%= image_tag 'programming.png' %>
+            <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed laboriosam perspiciatis facilis molestias dolorem nihil adipisci at quae voluptas, cumque corporis quisquam et iste maxime natus error quaerat ut!
+            </p>
+        </div>
+        </section>
+    </main>
 	```
     
 	</div></details>
@@ -189,6 +248,7 @@
 
 	```
     app/views/layouts/内に_header.html.erbファイルを追加
+    app/views/layouts/内に_footer.html.erbファイルを追加
 	```
     
 	</div></details>
