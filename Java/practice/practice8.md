@@ -4,7 +4,7 @@
 
 	<details><summary>回答例</summary><div>
 		
-	![データベースの作成](https://user-images.githubusercontent.com/75789463/172137822-b3cda933-e5b1-47fa-b197-69864652e479.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172137822-b3cda933-e5b1-47fa-b197-69864652e479.gif" alt="データベースの作成">
 		
 	</div></details>
 	
@@ -15,7 +15,7 @@
 
 	<details><summary>回答例</summary><div>
 		
-	![usersテーブルの作成](https://user-images.githubusercontent.com/75789463/172140174-02990020-9a53-462e-9172-c980d50ba56d.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172140174-02990020-9a53-462e-9172-c980d50ba56d.gif" alt="usersテーブルの作成">
 		
 	</div></details>
 
@@ -32,7 +32,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![idの作成](https://user-images.githubusercontent.com/75789463/172140229-6170c361-79d8-4457-8dfd-39c881bdffc4.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172140229-6170c361-79d8-4457-8dfd-39c881bdffc4.gif" alt="idの作成">
 		
 	</div></details>
 
@@ -42,7 +42,7 @@
 
 	<details><summary>回答例</summary><div>
 		
-	![primary_keyの作成](https://user-images.githubusercontent.com/75789463/172140826-3703e24c-8a21-4fef-a9d6-0d3b04e6f6c9.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172140826-3703e24c-8a21-4fef-a9d6-0d3b04e6f6c9.gif" alt="primary_keyの作成">
 		
 	</div></details>
 
@@ -59,7 +59,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![nameの作成](https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172147465-65818d9b-fedd-42d3-9bbf-378235865ce9.gif" alt="nameの作成">
 		
 	</div></details>
 
@@ -76,7 +76,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![ageの作成](https://user-images.githubusercontent.com/75789463/172144801-4ebb105e-79b4-48ee-8962-b5a6e11c1d0f.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172144801-4ebb105e-79b4-48ee-8962-b5a6e11c1d0f.gif" alt="ageの作成">
 		
 	</div></details>
 
@@ -93,7 +93,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![introduceの作成](https://user-images.githubusercontent.com/75789463/172145497-2fb85ae8-a184-49f6-bf97-c1d0946bc554.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172145497-2fb85ae8-a184-49f6-bf97-c1d0946bc554.gif" alt="introduceの作成">
 		
 	</div></details>
 
@@ -103,7 +103,7 @@
 
 	<details><summary>回答例</summary><div>
 	
-	![保存](https://user-images.githubusercontent.com/75789463/172147055-de09df6a-cbaa-4425-b9ed-3a851cff4985.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172147055-de09df6a-cbaa-4425-b9ed-3a851cff4985.gif" alt="保存">
 
 	</div></details>
 

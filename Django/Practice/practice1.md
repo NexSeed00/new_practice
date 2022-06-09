@@ -18,7 +18,7 @@
 
 	<details><summary>回答例</summary><div>
     	
-	![testappdbの作成](https://user-images.githubusercontent.com/75789463/172562320-1226b5be-fd56-494a-8e3e-e5e145062534.gif)
+	<img src="https://user-images.githubusercontent.com/75789463/172562320-1226b5be-fd56-494a-8e3e-e5e145062534.gif" alt="testappdbの作成">
 	
 	</div></details>
 	
@@ -428,7 +428,7 @@
 
     <details><summary>回答例</summary><div>
 		
-    ![postsの追加1](https://user-images.githubusercontent.com/75789463/172581176-f72090c3-cff9-44f4-bc48-cfebca42b521.gif)
+    <img src="https://user-images.githubusercontent.com/75789463/172581176-f72090c3-cff9-44f4-bc48-cfebca42b521.gif" alt="postsの追加1">
 		
 	</div></details>
 	
@@ -438,7 +438,7 @@
 
     <details><summary>回答例</summary><div>
 		
-    ![postsの追加2](https://user-images.githubusercontent.com/75789463/172584628-f492a5f9-2754-4f66-a1af-66cd47e64db9.gif)
+    <img src="https://user-images.githubusercontent.com/75789463/172584628-f492a5f9-2754-4f66-a1af-66cd47e64db9.gif" alt="postsの追加2">
 		
 	</div></details>
 	
@@ -448,7 +448,7 @@
 
     <details><summary>回答例</summary><div>
 		
-    ![postsの追加3](https://user-images.githubusercontent.com/75789463/172584727-9e66fe4b-8c2b-45be-a6ac-44798d3bf5ca.gif)
+    <img src="https://user-images.githubusercontent.com/75789463/172584727-9e66fe4b-8c2b-45be-a6ac-44798d3bf5ca.gif" alt="postsの追加3">
 		
 	</div></details>
 	
@@ -458,7 +458,7 @@
 
     <details><summary>回答例</summary><div>
 		
-    ![postsの全てのデータ確認](https://user-images.githubusercontent.com/75789463/172585603-09acdb38-b146-41ca-8010-89b3f456cd52.gif)
+    <img src="https://user-images.githubusercontent.com/75789463/172585603-09acdb38-b146-41ca-8010-89b3f456cd52.gif" alt="postsの全てのデータ確認">
 		
 	</div></details>
 	
