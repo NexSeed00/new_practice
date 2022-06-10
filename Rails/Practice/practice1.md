@@ -13,7 +13,7 @@
 
 	<br>
 
-2. 「test_app」アプリケーションで使用するデータベースをRailsコマンドを使用して作成してください。
+2. アプリケーションで使用するデータベースをRailsコマンドを使用して作成してください。
 
 
 	<details><summary>回答例</summary><div>
@@ -29,10 +29,8 @@
 
 3. 下記のファイルをダウンロードし、app/assets/imagesフォルダ内にそれぞれのファイルを追加してください。
 
-	```
-    ファイルリンク
-    https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true
-    ```
+    ダウンロードリンクは
+    [こちら](https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true)
 
     + app
         + assets
@@ -44,17 +42,16 @@
 
 4. 下記のファイルをダウンロードし、app/assets/stylesheets/application.cssと入れ替えてください。
 
-	```
-    ファイルリンク
-    https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true
-    ```
+    ダウンロードリンクは
+    [こちら](https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true)
+
 
     + app
         + assets
             + stylesheets
                 + application.css  # 入れ替え
 
-5. 「test_app」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
+5. ローカル環境のブラウザで表示させるためにビルトインサーバーを起動してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -67,7 +64,7 @@
 
 	<br>
 
-6. 「test_app」にhomeコントローラーを作成してください。この時、topアクションも同時に生成してください。
+6. homeコントローラーを作成してください。この時、topアクションも同時に生成してください。
 
 
 	<details><summary>回答例</summary><div>
@@ -98,7 +95,7 @@
 		
 	<details><summary>回答例</summary><div>
     
-	<img src="https://user-images.githubusercontent.com/75789463/172346149-e09893ae-98f2-48d2-affa-1cc7e373a79e.gif" alt="topページ">
+	<img src="https://user-images.githubusercontent.com/75789463/173013651-5ae65715-ca78-4e4d-b5d3-ab9b46b93153.gif" alt="topページ">
 
 	</div></details>
 
@@ -111,7 +108,7 @@
 
 	```ruby:routes.rb
     Rails.application.routes.draw do
-        get "top" => "home#top"
+        get "top", to: "home#top"
     end
 	```
     
@@ -261,7 +258,7 @@
 
 	```ruby:config/routes.rb
     Rails.application.routes.draw do
-        root "home#top"
+        root to: "home#top"
         get "about", to: "home#about"
     end
 	```
@@ -270,7 +267,7 @@
 	
 	<br>
 
-15. 「test_app」にpostsコントローラーを作成してください。この時、indexアクションも一緒に生成するようにしてください。
+15. postsコントローラーを作成してください。この時、indexアクションも一緒に生成するようにしてください。
 
 	<details><summary>回答例</summary><div>
 
@@ -294,7 +291,7 @@
 	
 	<br>
 
-17. 「test_app」にPostモデルを作成してください。この時、データ型がtextのcontentカラムもマイグレーションファイルに追加するようにしてください。
+17. Postモデルを作成してください。この時、データ型がtextのcontentカラムもマイグレーションファイルに追加するようにしてください。
 
 	<details><summary>回答例</summary><div>
 
@@ -377,7 +374,7 @@
 
     ```
     インスタンス変数名：posts
-    値：postsテーブルに格納されている全てのデータ
+                 値：postsテーブルに格納されている全てのデータ
     ```
 
 	<details><summary>回答例</summary><div>
@@ -427,7 +424,7 @@
 	
 	<br>
 
-26. 25で作成したnewアクション内にインスタンス変数postを定義し、空のインスタンスを代入してください。
+26. 25で作成したnewアクション内にインスタンス変数postを定義し、空のPostモデルインスタンスを代入してください。
 
 	<details><summary>回答例</summary><div>
 
