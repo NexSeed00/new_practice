@@ -31,7 +31,7 @@
 	<details><summary>回答例</summary><div>
 		
 	```
-	x = 1.142
+	x = 1.234
 	print(x)
 	```
 		
@@ -46,7 +46,7 @@
 	<details><summary>回答例</summary><div>
 			
 	```
-	x = 1.142
+	x = 1.234
 	print(int(x))
 	```
 			

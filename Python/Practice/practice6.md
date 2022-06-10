@@ -96,7 +96,7 @@
     メソッド名：print_message  
     引数1：1つの文字列  
     引数2：1つの数字  
-    処理内容：引数で受け取った文字列を、引数で受け取った数値分繰り返し出力する
+    処理内容：引数で受け取った文字列を、その数値分繰り返し出力する
     ```
 	
     例
@@ -198,7 +198,7 @@
     例
         
     ```
-    message = create_self_introduction_text("taro")
+    message = profile("taro")
     print(message)
         
     // 実行結果
@@ -208,11 +208,11 @@
     <details><summary>回答例</summary><div>
             
     ```
-    def create_self_introduction_text(name):
+    def profile(name):
         msg = "私の名前は" + name + "です"
         return msg
 
-    message = create_self_introduction_text("taro")
+    message = profile("taro")
     print(message)
     ```
             
