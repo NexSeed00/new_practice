@@ -1,7 +1,7 @@
 # 制御文・条件文
 
 1. 変数 x、y にそれぞれ任意の数値を代入し、x が y より大きい（超過）場合に、  
-「xはyより大きい」という文を出力するプログラムを作成してください。
+xはyより大きいと出力するプログラムを作成してください。
 
     <details><summary>回答例</summary><div>
             
@@ -160,40 +160,40 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
 
     <br>
 	
-9. 変数xに「男」または「女」を代入し、以下の表通り出力するプログラムを作成してください。   
+9. 変数xに「dog」または「cat」を代入し、以下の表通り出力するプログラムを作成してください。   
 
     | xの値    | 出力内容 |
     | -------- | -------- |
-    | 男       | male     |
-    | 女       | female   |
-    | 上記以外 | ???      |
+    | dog       | 犬     |
+    | cat       | 猫   |
+    | 上記以外 | 犬と猫以外      |
 
     <details><summary>回答例</summary><div>
             
     ```
     // if文を使った方法
 
-    x = "女"
+    x = "cat"
         
-    if x == "男"
-        puts "male"
-    elsif x == "女"
-        puts "female"
+    if x == "dog"
+        puts "犬"
+    elsif x == "cat"
+        puts "猫"
     else
-        puts "???"
+        puts "犬と猫以外"
     end
 
     // case文を使った方法
 
-    x = "女"
+    x = "cat"
 
     case x 
-    when "男"
-        puts "male"
-    when "女"
-        puts "female"
+    when "dog"
+        puts "犬"
+    when "cat"
+        puts "猫"
     else
-        puts "???"
+        puts "犬と猫以外"
     end
     ```
             

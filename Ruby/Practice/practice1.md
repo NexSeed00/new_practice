@@ -64,7 +64,7 @@
 
 	```
 	変数lastNameと変数firstNameを作成し、任意の文字列を代入してください。
-	そして、変数lastNameと変数firstNameを結合し、結果を表示してください。
+	次に、変数lastNameと変数firstNameを結合し、結果を表示してください。
 	```
 	
 	<details><summary>回答例</summary><div>

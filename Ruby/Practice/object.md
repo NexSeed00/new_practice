@@ -109,7 +109,7 @@
 	
 	<br>
 	
-7. 1で作成したクラス内にアクセス修飾子をprivateとし、インスタンス変数nameの値を戻り値として返す、is_nameメソッドを作成してください。
+7. 1で作成したクラス内にアクセス修飾子をprivateとして記述し、インスタンス変数nameの値を戻り値として返す、is_nameメソッドを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -167,7 +167,7 @@
 		
 	```
 	class User
-	  attr_accessor: :weight
+	  attr_accessor :weight
 
 	  def initialize(name, age, weight)
 	    @name = name
