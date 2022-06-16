@@ -52,7 +52,7 @@
     }
     ```
 
-    ```python:
+    ```python
     # manage.py
 
     import pymsql  # 追加
