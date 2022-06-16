@@ -1,6 +1,6 @@
 # 練習問題
 
-1. 「testapp」という名前のアプリケーションを作成してください。
+1. 「testapp」というプロジェクトを作成してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -26,25 +26,21 @@
 
 3. 「testapp」に対して下記の設定を行ってください。
     
-    ```
-    ・時刻設定：'Asia/Tokyo'
-    ・言語設定：'ja'
-    ・静的ファイルのパス設定：
-    import os  # ファイル先頭に追加
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # 追加
-    ```
-
-    ・データベース接続設定：
-
-    ```python:
-    # manage.py
-
-    import pymsql  # 追加
-    pymysql.install_as_MySQLdb()  # 追加
-    ```
-
-    ```python:
+    ```python
     # settings.py
+
+    import os  # ファイル先頭に追加
+
+    # 省略
+
+    LANGUAGE_CODE = "ja"  # 変更
+    TIME_ZONE = "Asia/Tokyo"  # 変更
+
+    # 省略
+
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # 追加
+
+    # 省略
 
     DATABASES = {
         'default': {
@@ -56,7 +52,14 @@
     }
     ```
 
-4. 「testapp」フォルダ内に個別のアプリである「testsns」を作成してください。
+    ```python:
+    # manage.py
+
+    import pymsql  # 追加
+    pymysql.install_as_MySQLdb()  # 追加
+    ```
+
+4. 「testapp」プロジェクト内に「testsns」というアプリを作成してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -147,7 +150,7 @@
 	
 	<br>
 
-9. 「testapp」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
+9. 「testapp」をローカル環境のブラウザで表示するためにサーバーを起動してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -199,7 +202,7 @@
 	
 	<br>
 
-11. 10で作成したindex.htmlをトップページで表示させるルーティングを設定してください。
+11. 10で作成したindex.htmlをトップページで表示するためのルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -246,7 +249,7 @@
 	
 	<br>
 
-14. 「testsns」のindex.htmlに13で送ったデータを表示させてください。
+14. 「testsns」のindex.htmlに13で送ったデータを表示してください。
 
 	<details><summary>回答例</summary><div>
 		
@@ -369,7 +372,7 @@
 	
 	<br>
 
-20. 19で作成したマイグレーションファイルの内容をデータベースへ反映させてください。
+20. 19で作成したマイグレーションファイルの内容をデータベースへ反映してください。
 
     <details><summary>回答例</summary><div>
 		
@@ -510,7 +513,7 @@
 	
 	<br>
 
-30. 「testsns」のindex.htmlに29で送ったデータを元にpostsテーブルのデータを全て表示させてください。
+30. 「testsns」のindex.htmlに29で送ったデータを元にpostsテーブルのデータを全て表示してください。
 
     <details><summary>回答例</summary><div>
 		
