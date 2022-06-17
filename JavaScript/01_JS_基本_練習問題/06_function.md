@@ -13,7 +13,6 @@
 	}
 	
 	printHoge();
-
 	```
 		
 	</div></details>
@@ -198,7 +197,7 @@
 	console.log(message);
 	
 	// 実行結果
-	私の名前はNexSeedです
+	私の名前は太郎です
 	```
 	
 	<details><summary>回答例</summary><div>
@@ -209,7 +208,7 @@
 	    return msg;
 	}
 	
-	var message = createSelfIntroductionText("NexSeed");
+	var message = createSelfIntroductionText("太郎");
 	console.log(message);
 	```
 		
@@ -256,22 +255,22 @@
 	
 60. 以下の関数を作成して、作成した関数を実行してください。
 
-	関数名：isSeedKun  
+	関数名：isTaro
 	引数1：任意の文字列  
-	処理内容：引数で渡された文字列が「SeedKun」の場合は true、そうでない場合は false を返す。
+	処理内容：引数で渡された文字列が「Taro」の場合は true、そうでない場合は false を返す。
 	
 	<details><summary>回答例</summary><div>
 		
 	```
-	function isSeedKun(str) {
-	    if (str == "SeedKun") {
+	function isTaro(str) {
+	    if (str == "Taro") {
 	        return true;
 	    } else {
 	        return false;
 	    }
 	}
 	
-	var result = isSeedKun("SeedKun");
+	var result = isTaro("Taro");
 	console.log(result);
 	```
 		
