@@ -34,17 +34,16 @@ git基本操作の復習です。<br>
 </div></details>
 
 #### ローカルリポジトリの作成
-[![Image from Gyazo](https://i.gyazo.com/23a27fb7e8f9c10ec152e16264f868c4.gif)](https://gyazo.com/23a27fb7e8f9c10ec152e16264f868c4)
+<img src="https://i.gyazo.com/23a27fb7e8f9c10ec152e16264f868c4.gif" alt="">
 
 #### ローカルリポジトリをvs code開き、htmlコードを貼り付け
-[![Image from Gyazo](https://i.gyazo.com/45ef5755f1eb935bb7a591c5cd3436c3.gif)](https://gyazo.com/45ef5755f1eb935bb7a591c5cd3436c3)
+<img src="https://i.gyazo.com/45ef5755f1eb935bb7a591c5cd3436c3.gif" alt="">
 
 #### add/commit
-[![Image from Gyazo](https://i.gyazo.com/378bc218a6e0d477e8ae3605fe36317b.gif)](https://gyazo.com/378bc218a6e0d477e8ae3605fe36317b)
+<img src="https://i.gyazo.com/378bc218a6e0d477e8ae3605fe36317b.gif" alt="">
 
 #### pushする前のリモートリポジトリの作成、push
-[![Image from Gyazo](https://i.gyazo.com/86d4f01cd693bdf3355219e8882115c6.gif)](https://gyazo.com/86d4f01cd693bdf3355219e8882115c6)
-
+<img src="https://i.gyazo.com/86d4f01cd693bdf3355219e8882115c6.gif" alt="">
 
 ## Q-2. 復習 - コミットをしていこう
 ### 問題 
@@ -74,17 +73,15 @@ index.htmlのbodyの中に下記コードを記載しましょう
 #### 解説
 
 #### 準備①
-[![Image from Gyazo](https://i.gyazo.com/0813946ef08adeec8382b9c066f77a55.gif)](https://gyazo.com/0813946ef08adeec8382b9c066f77a55)
+<img src="https://i.gyazo.com/0813946ef08adeec8382b9c066f77a55.gif" alt="">
 
-[![Image from Gyazo](https://i.gyazo.com/695befaf0a21930af8663f8da20709c5.gif)](https://gyazo.com/695befaf0a21930af8663f8da20709c5)
-
+<img src="https://i.gyazo.com/695befaf0a21930af8663f8da20709c5.gif" alt="">
 
 #### 準備②
-[![Image from Gyazo](https://i.gyazo.com/77b9a690268432044c0fd281eae07a8b.gif)](https://gyazo.com/77b9a690268432044c0fd281eae07a8b)
+<img src="https://i.gyazo.com/77b9a690268432044c0fd281eae07a8b.gif" alt="">
 
 #### 準備③
-[![Image from Gyazo](https://i.gyazo.com/15be2f5fe11184fe1c6fed98a7fec3b7.gif)](https://gyazo.com/15be2f5fe11184fe1c6fed98a7fec3b7)
-
+<img src="https://i.gyazo.com/15be2f5fe11184fe1c6fed98a7fec3b7.gif" alt="">
 
 ## Q-3. コミットの取り消しをしてみよう①
 ### 問題 
@@ -106,11 +103,12 @@ vs codeで上書きして、コミットすればいいのではないかと思�
 </div></details>
 
 #### ①取り消したいコミットを右クリックし、”Revert changes in commit”をクリック
-[![Image from Gyazo](https://i.gyazo.com/b5fd8f78aac329a374fd37cc9cc464ab.gif)](https://gyazo.com/b5fd8f78aac329a374fd37cc9cc464ab)
+<img src="https://i.gyazo.com/b5fd8f78aac329a374fd37cc9cc464ab.gif" alt="">
 
 #### ②『Revert3』というcommitメッセージを持ったcommitが確認できる。これをpushする。
 この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴がのこることになる。
-[![Image from Gyazo](https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif)](https://gyazo.com/d66b1c80dd145be8fa6c847885e5e755)
+<img src="https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif" alt="">
+
 
 
 ## Q-3. コミットの取り消しをしてみよう②
@@ -135,21 +133,19 @@ index.htmlのbodyの中に下記コードを記載しましょう
 </div></details>
 
 #### ① commitメッセージ『4』のコミットを作り出し、pushする
-[![Image from Gyazo](https://i.gyazo.com/7595bfd71ec84b6674c559c000a950ad.gif)](https://gyazo.com/7595bfd71ec84b6674c559c000a950ad)
-
+<img src="https://i.gyazo.com/7595bfd71ec84b6674c559c000a950ad.gif" alt="">
 
 #### ② "Repository"から"open in Terminal"をクリックし、ターミナルを開く
 ※ Windowsユーザーは、Git Bashをひらきます<br>
 ※ この時、『sample_git』上に自分がいることを確認しましょう
-[![Image from Gyazo](https://i.gyazo.com/1d792a1079d033f0f71f8ff1a6f854cb.gif)](https://gyazo.com/1d792a1079d033f0f71f8ff1a6f854cb)
+<img src="https://i.gyazo.com/1d792a1079d033f0f71f8ff1a6f854cb.gif" alt="">
 
 #### ③ ターミナル上でコマンドを入力する
 ```
 // 公式
 git log --oneline
 ```
-[![Image from Gyazo](https://i.gyazo.com/aa5f9cc1d4897153810a1d2847ecfc7d.gif)](https://gyazo.com/aa5f9cc1d4897153810a1d2847ecfc7d)
-
+<img src="https://i.gyazo.com/aa5f9cc1d4897153810a1d2847ecfc7d.gif" alt="">
 
 ```
 // コミット取り消し
@@ -168,8 +164,7 @@ git reset --hard 463e2ba
 このあと、再度コマンドで、git log --onelineと入力し、commitメッセージ『4』がきえていることを確認する<br>
 また、Github Desktopでもcommitメッセージ『4』がきえていることを確認する
 
-[![Image from Gyazo](https://i.gyazo.com/f607c4d0f4519766207eac62b641506e.gif)](https://gyazo.com/f607c4d0f4519766207eac62b641506e)
-
+<img src="https://i.gyazo.com/f607c4d0f4519766207eac62b641506e.gif" alt="">
 
 ## Q-4. Git Stashを経験してみよう①
 
@@ -206,16 +201,16 @@ git基本操作の復習です。<br>
 </div></details>
 
 #### ローカルリポジトリの作成
-[![Image from Gyazo](https://i.gyazo.com/bbe234ce853c48576c1b81910d70cf0e.gif)](https://gyazo.com/bbe234ce853c48576c1b81910d70cf0e)
+<img src="https://i.gyazo.com/bbe234ce853c48576c1b81910d70cf0e.gif" alt="">
 
 #### VS CODE起動、index.htmlにコードの記載
-[![Image from Gyazo](https://i.gyazo.com/24c6aa449981f396cced69f344634fce.gif)](https://gyazo.com/24c6aa449981f396cced69f344634fce)
+<img src="https://i.gyazo.com/24c6aa449981f396cced69f344634fce.gif" alt="">
 
 #### add/commit
-[![Image from Gyazo](https://i.gyazo.com/dfedb6fa3dede634f8be4bc9c6dc23c2.gif)](https://gyazo.com/dfedb6fa3dede634f8be4bc9c6dc23c2)
+<img src="https://i.gyazo.com/dfedb6fa3dede634f8be4bc9c6dc23c2.gif" alt="">
 
 #### push
-[![Image from Gyazo](https://i.gyazo.com/8b98fd42b35b8078723f40ac86bb8051.gif)](https://gyazo.com/8b98fd42b35b8078723f40ac86bb8051)
+<img src="https://i.gyazo.com/8b98fd42b35b8078723f40ac86bb8051.gif" alt="">
 
 ## Q-5. Git Stashを経験してみよう②
 
@@ -246,28 +241,28 @@ Github flowを用いて開発中、急に別のブランチをきって開発せ
 </div></details>
 
 #### index.htmlにコードの記載
-[![Image from Gyazo](https://i.gyazo.com/47ec325d9a1dce1253328ce1312a5226.gif)](https://gyazo.com/47ec325d9a1dce1253328ce1312a5226)
+<img src="https://i.gyazo.com/47ec325d9a1dce1253328ce1312a5226.gif" alt="">
 
 #### testブランチを作成、『Leave my changes on main』を選択肢、『testブランチ』に移動
-[![Image from Gyazo](https://i.gyazo.com/15d9376af60f9cfb5e57beaba43dd898.gif)](https://gyazo.com/15d9376af60f9cfb5e57beaba43dd898)
+<img src="https://i.gyazo.com/15d9376af60f9cfb5e57beaba43dd898.gif" alt="">
 
-[![Image from Gyazo](https://i.gyazo.com/9e7f88c80a81ed035f13456f7eb653e9.gif)](https://gyazo.com/9e7f88c80a81ed035f13456f7eb653e9)
+<img src="https://i.gyazo.com/9e7f88c80a81ed035f13456f7eb653e9.gif" alt="">
 
 #### VS CODEを確認する（現在いるブランチはtestブランチ）
-[![Image from Gyazo](https://i.gyazo.com/9a5ff2ef41b91a0112a25c12e421c163.gif)](https://gyazo.com/9a5ff2ef41b91a0112a25c12e421c163)
+<img src="https://i.gyazo.com/9a5ff2ef41b91a0112a25c12e421c163.gif" alt="">
 
 #### testブランチからmainブランチに移動する
-[![Image from Gyazo](https://i.gyazo.com/c22965dbab44198cf696ff6dcc7406f4.gif)](https://gyazo.com/c22965dbab44198cf696ff6dcc7406f4)
+<img src="https://i.gyazo.com/c22965dbab44198cf696ff6dcc7406f4.gif" alt="">
 
 #### 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VS CODEを確認する
-[![Image from Gyazo](https://i.gyazo.com/0de06e018d5af8237168798ef74b301e.gif)](https://gyazo.com/0de06e018d5af8237168798ef74b301e)
+<img src="https://i.gyazo.com/0de06e018d5af8237168798ef74b301e.gif" alt="">
 
 #### mainブランチからtestブランチにコードを移動する
-[![Image from Gyazo](https://i.gyazo.com/6c64975caa431c720da4bf6ba5b47a18.gif)](https://gyazo.com/6c64975caa431c720da4bf6ba5b47a18)
+<img src="https://i.gyazo.com/6c64975caa431c720da4bf6ba5b47a18.gif" alt="">
 
-[![Image from Gyazo](https://i.gyazo.com/07c2eeb10bb30e8494606c300f983e47.gif)](https://gyazo.com/07c2eeb10bb30e8494606c300f983e47)
+<img src="https://i.gyazo.com/07c2eeb10bb30e8494606c300f983e47.gif" alt="">
 
 #### testブランチでcommit後、mainブランチに移動し、VS CODEを確認する
-[![Image from Gyazo](https://i.gyazo.com/1c6098ad7db2b118c700b8f54c1e5303.gif)](https://gyazo.com/1c6098ad7db2b118c700b8f54c1e5303)
+<img src="https://i.gyazo.com/1c6098ad7db2b118c700b8f54c1e5303.gif" alt="">
 
-[![Image from Gyazo](https://i.gyazo.com/e51dde52cae73ff5ec28094178ac9630.gif)](https://gyazo.com/e51dde52cae73ff5ec28094178ac9630)
+<img src="https://i.gyazo.com/e51dde52cae73ff5ec28094178ac9630.gif" alt="">
