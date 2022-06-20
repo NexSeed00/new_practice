@@ -22,8 +22,7 @@
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/bf2f9c4d6610ffaf8b77a19fc19abd13.gif)](https://gyazo.com/bf2f9c4d6610ffaf8b77a19fc19abd13)
-
+<img src="https://i.gyazo.com/bf2f9c4d6610ffaf8b77a19fc19abd13.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -98,8 +97,7 @@ width()で横幅、height()で縦幅を取得できます。
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/f2c3d2a9e59e985ee931e1815141643d.gif)](https://gyazo.com/f2c3d2a9e59e985ee931e1815141643d)
-
+<img src="https://i.gyazo.com/f2c3d2a9e59e985ee931e1815141643d.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -176,8 +174,7 @@ h1{
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/2a5f699de0b94c6b9704ee4368eeae55.gif)](https://gyazo.com/2a5f699de0b94c6b9704ee4368eeae55)
-
+<img src="https://i.gyazo.com/2a5f699de0b94c6b9704ee4368eeae55.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -237,8 +234,7 @@ $('#birthday').on("change", function(){} → この記述でinputの値に変更
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/2968ce3cb412b63f448750f1e5fc8eaa.gif)](https://gyazo.com/2968ce3cb412b63f448750f1e5fc8eaa)
-
+<img src="https://i.gyazo.com/2968ce3cb412b63f448750f1e5fc8eaa.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -266,8 +262,7 @@ pop()を使用すると配列の最後の要素を削除することができま
 
 
 ### 正解の挙動
-[[![Image from Gyazo](https://i.gyazo.com/b132288ce044fbc0cceee42b9f314d06.gif)](https://gyazo.com/b132288ce044fbc0cceee42b9f314d06)
-
+<img src="https://i.gyazo.com/b132288ce044fbc0cceee42b9f314d06.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -301,8 +296,7 @@ alert(Math.max(...array));
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/fbe6f2822075454882e2c4b1c83c2e4d.gif)](https://gyazo.com/fbe6f2822075454882e2c4b1c83c2e4d)
-
+<img src="https://i.gyazo.com/fbe6f2822075454882e2c4b1c83c2e4d.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -360,8 +354,7 @@ $(function(){
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/6f388ddce525c7e6433b5d28963199ac.gif)](https://gyazo.com/6f388ddce525c7e6433b5d28963199ac)
-
+<img src="https://i.gyazo.com/6f388ddce525c7e6433b5d28963199ac.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -419,8 +412,7 @@ $(function(){
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/78fe7b59013b413f409edeefd77cc1ad.gif)](https://gyazo.com/78fe7b59013b413f409edeefd77cc1ad)
-
+<img src="https://i.gyazo.com/78fe7b59013b413f409edeefd77cc1ad.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -465,8 +457,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/d6b3efc790a5c167860408446154ff3f.gif)](https://gyazo.com/d6b3efc790a5c167860408446154ff3f)
-
+<img src="https://i.gyazo.com/d6b3efc790a5c167860408446154ff3f.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -509,8 +500,7 @@ inputに値を入力して、keyをUPした時に .valに値を表示しよう�
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/b99474293f53ebfc379f4e8b83c27f71.gif)](https://gyazo.com/b99474293f53ebfc379f4e8b83c27f71)
-
+<img src="https://i.gyazo.com/b99474293f53ebfc379f4e8b83c27f71.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>

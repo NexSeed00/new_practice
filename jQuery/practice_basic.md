@@ -3,8 +3,7 @@
 ## Q-1. ウィンドウサイズを変数に入れ、アラートを出してみよう。 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/850131b606a81f36a761838fd9714e36.gif)](https://gyazo.com/850131b606a81f36a761838fd9714e36)
-
+<img src="https://i.gyazo.com/850131b606a81f36a761838fd9714e36.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -21,16 +20,14 @@ alert(win_width);
 画面を縮めてリロードをするとアラートに出る数値が変化します。
 </div></details>
 
-## Q-2. 変数をひいてみよう。 
+## Q-2. 変数を引いてみよう。 
 
 ### 問題
-変数num1に5を代入。<br>
-変数num2に8を代入しふたつの変数をひいてアラートに出しましょう。
+変数num1に5を代入、変数num2に8を代入し、二つの変数を引いた数をアラートに表示してください。
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/15ddb634da9fe2c0a13705572b21287e.gif)](https://gyazo.com/15ddb634da9fe2c0a13705572b21287e)
-
+<img src="https://i.gyazo.com/15ddb634da9fe2c0a13705572b21287e.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -44,22 +41,19 @@ alert(num2 - num1);
 </div></details>
 
 <details><summary>解説</summary><div>
-変数には整数が入っているのでそのままひくことができる。
-変数をたくさん作って足したり引いたりして見ましょう。
+変数には整数が入っているのでそのまま引くことができます。
+変数をたくさん作って足したり引いたりしてみましょう。
 </div></details>
 
 ## Q-3. 文字列をたしてみよう。 
 
 ### 問題
-変数 text1に"リンゴ・グレープ"を代入。<br>
-変数 text2に "バナナ" を代入。<br>
-ふたつの変数を足して、アラートに出しましょう。<br>
-ただし条件があり、"グレープ" と言う文字列は取り除きましょう。
+変数 text1に"リンゴ・グレープ"を代入、変数 text2に "バナナ" を代入し、二つの変数を足した数をアラートに表示してください。<br>
+ただし条件があり、"グレープ" という文字列は取り除いてください。
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/08649dda81f6fcd8c0563fb457f5f353.gif)](https://gyazo.com/08649dda81f6fcd8c0563fb457f5f353)
-
+<img src="https://i.gyazo.com/08649dda81f6fcd8c0563fb457f5f353.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -76,19 +70,18 @@ alert(my_fruits);
 
 <details><summary>解説</summary><div>
 実践では今回のような、「特定の文字列を取り除く」条件などはよくあります。<br>
-わからないことでもググって実装する力はエンジニアとしてデビューする上でも必要になってくる技術になるので、
+分からないことでも調べて実装する力はエンジニアとしてデビューする上でも必要になってくる技術になるので、
 今のうちに挑む力を身に着けておきましょう。
 </div></details>
 
 ## Q-4. 5秒経過後にアラートを出力しよう 
 
 ### 問題
-リロードしてから5秒後に、アラートを出力してみましょう
+リロードしてから5秒後に、アラートを表示させてください。
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/8cb4234e239f9680ab2c35be1b2608be.gif)](https://gyazo.com/8cb4234e239f9680ab2c35be1b2608be)
-
+<img src="https://i.gyazo.com/8cb4234e239f9680ab2c35be1b2608be.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -102,22 +95,19 @@ setTimeout(function() {
 </div></details>
 
 <details><summary>解説</summary><div>
-数秒経過後というのは、setTimeoutを使用します<br>
+数秒経過後というのは、setTimeoutを使用します。<br>
 5秒を表しているのが、5000という表記です。<br>
-数字をかえて色々試してみましょう。
-</div></details>
+数字を変えて色々試してみましょう。</div></details>
 
 ## Q-5. 配列から値を取得しよう 
 
 ### 問題
-変数fruitsに配列を代入しよう
-代入する果物は "リンゴ"、"グレープ"、"バナナ"　の3つ
-代入ができたら、 "グレープ" をアラートに出して見よう。
+変数fruitsに配列を代入してください。
+代入する果物は "リンゴ"、"グレープ"、"バナナ"　の3つで、代入ができたら、 "グレープ" をアラートに表示させてください。
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/4cb60791cca08ece363dc8405df3f4d9.gif)](https://gyazo.com/4cb60791cca08ece363dc8405df3f4d9)
-
+<img src="https://i.gyazo.com/4cb60791cca08ece363dc8405df3f4d9.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -132,15 +122,14 @@ alert(fruits[1]);
 <details><summary>解説</summary><div>
 プログラミングでは0番目から数えるのが一般的です。<br>
 今回はグレープを出力したいので、1番目ということになります。<br>
-実務でも配列のの取り出し方はとても大事になってきます。<br>
+実務でも配列の取り出し方はとても大事になってきます。<br>
 早い段階で慣れていきましょう。
 </div></details>
 
 ## Q-6. タグの数を取得しよう 
 
 ### 問題
-liタグの数を取得してアラートに出して見よう。<br>
-jQueryを使用しよう。
+jQueryを使用してliタグの数を取得し、アラートに表示してください。<br>
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -172,8 +161,7 @@ li{
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/414a2c128e75f3cd62cb3f0960babe45.gif)](https://gyazo.com/414a2c128e75f3cd62cb3f0960babe45)
-
+<img src="https://i.gyazo.com/414a2c128e75f3cd62cb3f0960babe45.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -230,16 +218,14 @@ $(function(){
 
 <details><summary>解説</summary><div>
 数を取得するには「length」プロパティを使用します。<br>
-基本的にはどのプログラミング言語でも数を取得するプロパティやメソッドが用意されている。<br>
-lengthというのを覚えている必要はなくて、【数を取得する】技術があるというのを知っておくことが大事です。<br>
-ググれるようになることが大切です！全ての知識を覚えきるのは難しいですからね。
+基本的にはどのプログラミング言語でも数を取得するプロパティやメソッドが用意されています。<br>
+lengthというのを覚えている必要はなく、【数を取得する】技術があるというのを知っておくことが大事です。
 </div></details>
 
 ## Q-7. クラスのつけ剥がしをしよう
 
 ### 問題
-CSSクラスのつけはがしをしてみましょう<br>
-jQueryを使用しよう。
+jQueryを使用してCSSクラスのつけ剥がしを行ってください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -256,8 +242,7 @@ p.is-active {
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/688fbbe01bf85fe5f44e3c1b2cd815fa.gif)](https://gyazo.com/688fbbe01bf85fe5f44e3c1b2cd815fa)
-
+<img src="https://i.gyazo.com/688fbbe01bf85fe5f44e3c1b2cd815fa.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -288,17 +273,15 @@ $(function() {
 </div></details>
 
 <details><summary>解説</summary><div>
-classのつけはがしには、toggleClass()メソッドを使用します。<br>
-クリックイベントなどで毎回クラスをつけたりはがしたりするのに最適なメソッドです。<br>
-実務頻出技術です！！<br>
-アコーディオンなどやハンバーガメーニューの実装時に使用します
+classのつけ剥がしには、toggleClass()メソッドを使用します。<br>
+クリックイベントなどで毎回クラスをつけたりはがしたりするのに最適なメソッドで、実務ではよく使われる技術になります。<br>
+例えば、アコーディオンなどやハンバーガメーニューの実装時に使用します。
 </div></details>
 
 ## Q-8. 要素の先頭に子要素を追加しよう
 
 ### 問題
-文頭に文字要素を追加してみましょう<br>
-jQueryを使用しよう。
+jQueryを使用して文頭に文字要素を追加してください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -314,8 +297,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/1309ab8e2061cfcc08fb9cd5ac25cfb1.gif)](https://gyazo.com/1309ab8e2061cfcc08fb9cd5ac25cfb1)
-
+<img src="https://i.gyazo.com/1309ab8e2061cfcc08fb9cd5ac25cfb1.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -349,8 +331,7 @@ $(function() {
 ## Q-9. 要素の最後に子要素を追加しよう
 
 ### 問題
-文末に文字要素を追加してみましょう<br>
-jQueryを使用しよう。
+jQueryを使用して文末に文字要素を追加してください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -366,8 +347,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/d23c80609af40251ed3e3d4708269fda.gif)](https://gyazo.com/d23c80609af40251ed3e3d4708269fda)
-
+<img src="https://i.gyazo.com/d23c80609af40251ed3e3d4708269fda.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -401,8 +381,7 @@ $(function() {
 ## Q-10. 要素を表示しよう
 
 ### 問題
-クリックした際に文字を表示させてみましょう。<br>
-jQueryを使用しよう。
+jQueryを使用してクリックした際に文字を表示させてください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -413,8 +392,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582.gif)](https://gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582)
-
+<img src="https://i.gyazo.com/9aa4a9efaac60a1f1d3d81b591f7a582.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -439,15 +417,14 @@ $(function() {
 </div></details>
 
 <details><summary>解説</summary><div>
-クリックされる前にはcssでdisplay:none;をあてておき、クリックされたら、show()をつかって表示します。<br>
-こちらも実務で良く使うものです。
+クリックされる前にはcssでdisplay:none;を当てておき、クリックされたら、show()をつかって表示します。<br>
+こちらも実務で良く使われるものになります。
 </div></details>
 
 ## Q-11. 要素を削除しよう
 
 ### 問題
-クリックした際に文字を削除してみましょう。<br>
-jQueryを使用しよう。
+jQueryを使用してクリックした際に文字を削除してください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -458,8 +435,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/81bbe74d64329745c928c425a927cba4.gif)](https://gyazo.com/81bbe74d64329745c928c425a927cba4)
-
+<img src="https://i.gyazo.com/81bbe74d64329745c928c425a927cba4.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -484,14 +460,13 @@ $(function() {
 </div></details>
 
 <details><summary>解説</summary><div>
-クリックされたあとに、要素をけす。つまりdisplay;noneを付与するためには、hide()を使用します。
+クリックされた後に、要素を消すdisplay;noneを付与するためには、hide()を使用します。
 </div></details>
 
 ## Q-12. 要素をフェードインさせてみよう
 
 ### 問題
-クリックしたら文字をフェードインで出現させてみましょう<br>
-jQueryを使用しよう。
+jQueryを使用してクリックしたら文字をフェードインで出現させてください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -502,8 +477,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/e9e5ba47cd49220cb98c316f5dc003af.gif)](https://gyazo.com/e9e5ba47cd49220cb98c316f5dc003af)
-
+<img src="https://i.gyazo.com/e9e5ba47cd49220cb98c316f5dc003af.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -530,7 +504,7 @@ $(function() {
 <details><summary>解説</summary><div>
 display:noneが付与されている要素のフェードインは、fadeIn()を使用します。<br>
 fadeInメソッドにはオプションがあります。<br>
-例）fadeIn("2500"); fadeIn("normal");　fadeIn("slow"); <br>
+例）fadeIn("2500"); fadeIn("normal"); fadeIn("slow"); <br>
 引数を操作します<br>
 <br>
 1000 = 1秒 のスピードになります。
@@ -540,8 +514,7 @@ fadeInメソッドにはオプションがあります。<br>
 ## Q-13. 要素をフェードアウトさせてみよう
 
 ### 問題
-クリックしたら文字をフェードアウトさせてみましょう<br>
-jQueryを使用しよう。
+jQueryを使用してクリックしたら文字をフェードアウトさせてください。
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -552,8 +525,7 @@ jQueryを使用しよう。
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/026c22b46f19d40d0b917393e9f48d32.gif)](https://gyazo.com/026c22b46f19d40d0b917393e9f48d32)
-
+<img src="https://i.gyazo.com/026c22b46f19d40d0b917393e9f48d32.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -579,5 +551,5 @@ $(function() {
 
 <details><summary>解説</summary><div>
 要素のフェードアウトは、fadeOut()を使用します。<br>
-fadeOut()にもfadeIn()と同じ様にオプションがあります。
+fadeOut()にもfadeIn()と同様にオプションがあります。
 </div></details>
