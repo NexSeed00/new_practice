@@ -201,7 +201,7 @@ git基本操作の復習です。<br>
 #### ローカルリポジトリの作成
 <img src="https://i.gyazo.com/bbe234ce853c48576c1b81910d70cf0e.gif" alt="">
 
-#### VS CODE起動、index.htmlにコードの記載
+#### VScode起動、index.htmlにコードの記載
 <img src="https://i.gyazo.com/24c6aa449981f396cced69f344634fce.gif" alt="">
 
 #### add/commit
