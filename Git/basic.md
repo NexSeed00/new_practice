@@ -2,7 +2,7 @@
 
 ## Q-1.ローカルリポジトリを作成しよう 
 ### 問題 
-デスクトップ上に、『sample』というローカルリポジトリをGithub Desktop上から作成してみましょう。
+デスクトップ上に、『sample』というローカルリポジトリをGithub Desktop上から作成してください。
 
 
 ### 回答例
@@ -12,7 +12,7 @@
 ## Q-2. コード書き加えてみよう
 
 ### 問題 
-Q-1で作成したsampleフォルダをVisual Studio Codeを開き、index.htmlを作成後、HTML雛形をコードに書き込みましょう。
+Q-1で作成したsampleフォルダをVisual Studio Codeを開き、index.htmlを作成後、HTML雛形をコードに書き込んでください。
 
 ### 回答例
 #### 解説
@@ -23,7 +23,7 @@ Q-1で作成したsampleフォルダをVisual Studio Codeを開き、index.html�
 ## Q-3. add/commitをしてみよう
 
 ### 問題 
-Github Desktopから、index.htmlをadd（選択）し、『initial commit』というコミットメッセージを書いて、commit（保存）してみましょう。
+Github Desktopから、index.htmlをadd（選択）し、『initial commit』というコミットメッセージを書いて、commit（保存）してください。
 
 ### 回答例
 #### 解説
@@ -32,7 +32,7 @@ Github Desktopから、index.htmlをadd（選択）し、『initial commit』と
 ## Q-4. pushしてみよう
 
 ### 問題 
-リモートリポジトリ（Github上のリポジトリ）を、『sample』と命名し、ローカルからリモートへ成果物をpushしましょう。
+リモートリポジトリ（Github上のリポジトリ）を、『sample』と命名し、ローカルからリモートへ成果物をpushしてください。
 
 ### 回答例
 #### 解説
@@ -41,7 +41,7 @@ Github Desktopから、index.htmlをadd（選択）し、『initial commit』と
 ## Q-5. ファイルがアップロードできているのか確認しよう
 
 ### 問題 
-Githubにアクセスし、pushした内容が反映されているか確認してみましょう
+Githubにアクセスし、pushした内容が反映されているか確認してください。
 
 ### 回答例
 #### 解説
@@ -50,8 +50,8 @@ Githubにアクセスし、pushした内容が反映されているか確認し�
 ## Q-6. Github flowを練習しよう①
 
 ### 問題 
-create-headerブランチを作成し、下記のコードを記載してみましょう。（style.cssはファイルを新規作成すること）<br>
-その後、コミットメッセージを『Add : header』としてコミットまで行いましょう。
+create-headerブランチを作成し、下記のコードを記載してください。（style.cssはファイルを新規作成すること）<br>
+その後、コミットメッセージを『Add : header』としてコミットまで行ってください。
 
 ### 準備
 ```
@@ -106,13 +106,13 @@ header {
 ## Q-7. Github flowを練習しよう②
 
 ### 問題 
-create-headerブランチをpushしてみましょう。<br>
-続けてPull Requestを作成してみてましょう。<br>
-Pull Requestには下記の文言を記入してみましょう<br>
+create-headerブランチをpushしてください。<br>
+続けてPull Requestを作成してください。<br>
+Pull Requestには下記の文言を記入してください。<br>
 
 ### 準備
-この#や-で見出し化、リスト化する記述は、マークダウン記法というものである。<br>
-Notionというアプリ、Evernoteというアプリ、それからQiitaとあらゆる箇所で用いられている記法なので、覚えておいて損はないですよ。
+この#や-で見出し化、リスト化する記述は、マークダウン記法というものです。<br>
+Notionというアプリ、Evernoteというアプリ、それからQiitaとあらゆる箇所で用いられている記法なので、覚えておきましょう。
 ```
 # What
 - headerを作成しました。
@@ -133,7 +133,7 @@ Notionというアプリ、Evernoteというアプリ、それからQiitaとあ�
 ## Q-8. Github flowを練習しよう③
 
 ### 問題 
-create-headerブランチをmergeしてみましょう。
+create-headerブランチをmergeしてください。
 
 ### 回答例
 #### 解説
@@ -142,15 +142,15 @@ create-headerブランチをmergeしてみましょう。
 #### 補足
 個人開発であればGithub flowを用いて開発する必要はありません。<br>
 しかしチーム開発、つまり実務では、Github flowを当たり前にように使用していきます。（実務で個人開発を行うことは稀です）<br>
-Github上のmainブランチに直接、add/commit/pushしていくのではなく、ブランチをきり、そのブランチ上で開発していきます。（mainブランチのコピーのため、コードがぐちゃぐちゃになってしまった場合捨てることができる）<br>
+Github上のmainブランチに直接、add/commit/pushしていくのではなく、ブランチを切り、そのブランチ上で開発していきます。（mainブランチのコピーのため、コードがぐちゃぐちゃになってしまった場合捨てることができる）<br>
 そして、mainブランチにmergeする前に、Pull request（チームメンバーへ自分のコードが正しいのか正しいのかをお伺いする手紙）を提出して、チームメンバーでレビューする。そしてmainブランチが汚れないように開発する。<br>
 これがGithub flowです。
 
 ## Q-9. Github flowを練習しよう④
 
 ### 問題 
-Github Desktop上で、create-headerブランチからmainブランチへと使用するブランチを切り替え、pull（Github上のmainブランチ）してみましょう。<br>
-またその後、create-footerブランチを作成し、『footerを作成する』という次の作業に取り書かれる準備をした状態にしておきましょう。
+Github Desktop上で、create-headerブランチからmainブランチへと使用するブランチを切り替え、pull（Github上のmainブランチ）してください。<br>
+またその後、create-footerブランチを作成し、『footerを作成する』という次の作業に取り書かれる準備をした状態にしておいてください。
 
 ### 回答例
 #### 解説
@@ -162,8 +162,8 @@ Github Desktop上で、create-headerブランチからmainブランチへと使�
 
 <details><summary>補足</summary><div>
 Github flowを練習しよう①~④の流れは、使いこなせるように、何回も練習していきましょう。<br>
-個人開発では用いる必要はないとQ-8で説明しましたが、実際に開発現場では複数人で開発するため、必須スキルともいえます。<br>
-是非個人開発でも、意識的にGithub flowを使用するようにし、使い方になれてほしいです。<br>
+個人開発では用いる必要はないとQ-8で説明しましたが、実際に開発現場では複数人で開発するため、必須スキルとも言えます。<br>
+是非個人開発でも、意識的にGithub flowを使用するようにし、使い方に慣れてほしいです。<br>
 開発会社からすれば、求職者の『コードのスキルが現状高くない』としても、Github flowを使用できる人材であれば、開発タスクに、joinさせることができます。<br>
-逆に扱えないと、Github flowを勉強しておいてねとなってしまい、開発会社にはいったとしても実務経験をつめるのが遅くなってしまいますね。<br>
+逆に扱えないと、Github flowを勉強しておいてねとなってしまい、開発会社にはいったとしても実務経験をつめるのが遅くなってしまいます。<br>
 </div></details>

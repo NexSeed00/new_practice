@@ -2,14 +2,13 @@
 
 ## Q-1. 復習 - ローカルリポジトリ・リモートリポジトリを作成し、Gitの管理下においてみよう
 ### 問題 
-- デスクトップ上に、『sample_git』というローカルリポジトリをGithub Desktop上から作成してみましょう。
-- 下記の作業は、mainブランチで行っていきましょう。
-- vs codeでsample_gitを開き、index.htmlを作成し、下記『準備』に記載のコードを記載しましょう。
-- add, commitを行い（commitメッセージは、initial commit）を最後にpushを行いましょう。
-- リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『sample_git』として作成しましょう。
+デスクトップ上に、『sample_git』というローカルリポジトリをGithub Desktop上から作成し、下記の作業をmainブランチで行ってください。
+  - vs codeでsample_gitを開き、index.htmlを作成し、下記『準備』に記載のコードを記載する
+  - add, commitを行い（commitメッセージは、initial commit）を最後にpushを行う
+  - リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『sample_git』として作成する
 
 ### 準備
-index.htmlに下記コードを記載しましょう
+index.htmlに下記コードを記載してください
 ```
 <!DOCTYPE html>
 <html lang="ja">
@@ -30,7 +29,7 @@ index.htmlに下記コードを記載しましょう
 #### 解説
 <details><summary>解説</summary><div>
 git基本操作の復習です。<br>
-何度も繰り返し、練習していきましょう。
+何度も繰り返し、練習してください。
 </div></details>
 
 #### ローカルリポジトリの作成
@@ -47,24 +46,24 @@ git基本操作の復習です。<br>
 
 ## Q-2. 復習 - コミットをしていこう
 ### 問題 
-- 準備①コードを記載し、commitメッセージに、1と記載し、pushしましょう。
-- 準備②コードを記載し、commitメッセージに、2と記載し、pushしましょう。
-- 準備③コードを記載し、commitメッセージに、3と記載し、pushしましょう。
+- 準備①コードを記載し、commitメッセージに、1と記載し、pushする
+- 準備②コードを記載し、commitメッセージに、2と記載し、pushする
+- 準備③コードを記載し、commitメッセージに、3と記載し、pushする
 
 ### 準備①
-index.htmlのbodyの中に下記コードを記載しましょう
+index.htmlのbodyの中に下記コードを記載する
 ```
 <h1>Hello World!</h1>
 ```
 
 ### 準備②
-index.htmlのbodyの中に下記コードを記載しましょう
+index.htmlのbodyの中に下記コードを記載する
 ```
 <h2>Hello Japan!</h2>
 ```
 
 ### 準備③
-index.htmlのbodyの中に下記コードを記載しましょう
+index.htmlのbodyの中に下記コードを記載する
 ```
 <h3>Hello Tokyo!</h3>
 ```
@@ -85,7 +84,7 @@ index.htmlのbodyの中に下記コードを記載しましょう
 
 ## Q-3. コミットの取り消しをしてみよう①
 ### 問題 
-commitメッセージ『3』のコミットを取り消してみましょう。<br>
+commitメッセージ『3』のコミットを取り消してください。<br>
 ※この問題は、解くというよりは解説を見ながら、操作して理解を深めて頂いても構いません。
 
 
@@ -93,12 +92,12 @@ commitメッセージ『3』のコミットを取り消してみましょう。<
 #### 解説
 
 <details><summary>説明</summary><div>
-間違ってコミットしてしまった場合や、とりあえずコミットをしてみたが、なかったことにしたいということが開発をしているとあるでしょう。<br>
-vs codeで上書きして、コミットすればいいのではないかと思われる方もいるかもしれません。<br>
-基本はコミットで上書きしていけばよいです。<br>
+間違ってコミットしてしまった場合や、とりあえずコミットをしてみたが、なかったことにしたいということが開発をしているとあるかと思います。<br>
+VScodeで上書きして、コミットすればいいのではないかと思われる方もいるかもしれません。<br>
+基本はコミットで上書きしていけば問題ありません。<br>
 ですが、そのような運用でいくと、pushした際に、githubに変更履歴がアップロードされ、ときに、大事な情報であったり、隠すべき事項がインターネット上に流出してしまう可能性もあります。<br>
 ですので、この問題を通して、commitの取消方法は抑えておきましょう。<br>
-きっと役に立つ日がくるでしょう。
+きっと役に立つ日がくるかと思います。
 
 </div></details>
 
@@ -106,19 +105,19 @@ vs codeで上書きして、コミットすればいいのではないかと思�
 <img src="https://i.gyazo.com/b5fd8f78aac329a374fd37cc9cc464ab.gif" alt="">
 
 #### ②『Revert3』というcommitメッセージを持ったcommitが確認できる。これをpushする。
-この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴がのこることになる。
+この方法だと、3のcommitをなかったことにはできたが、結局pushしてしまい、変更履歴が残ることになる。
 <img src="https://i.gyazo.com/d66b1c80dd145be8fa6c847885e5e755.gif" alt="">
 
 
 
 ## Q-3. コミットの取り消しをしてみよう②
 ### 問題 
-下記準備①コードをindex.htmlにはりつけ、commitメッセージ『4』のコミットをつくりだし、pushしましょう。<br>
-commitメッセージ『4』のコミットを<b>変更履歴を残さず</b>取り消しましょう。<br>
+下記準備①コードをindex.htmlに貼りつけ、commitメッセージ『4』のコミットを作り出し、pushしてください。<br>
+commitメッセージ『4』のコミットを<b>変更履歴を残さず</b>取り消してください。<br>
 ※この問題は、解くというよりは解説を見ながら、操作して理解を深めて頂いても構いません。
 
 ### 準備①
-index.htmlのbodyの中に下記コードを記載しましょう
+index.htmlのbodyの中に下記コードを記載する
 
 ```
 <h4>Hello Kobe!</h4>
@@ -136,8 +135,8 @@ index.htmlのbodyの中に下記コードを記載しましょう
 <img src="https://i.gyazo.com/7595bfd71ec84b6674c559c000a950ad.gif" alt="">
 
 #### ② "Repository"から"open in Terminal"をクリックし、ターミナルを開く
-※ Windowsユーザーは、Git Bashをひらきます<br>
-※ この時、『sample_git』上に自分がいることを確認しましょう
+※ Windowsユーザーは、Git Bashを開きます<br>
+※ この時、『sample_git』上に自分がいることを確認してください
 <img src="https://i.gyazo.com/1d792a1079d033f0f71f8ff1a6f854cb.gif" alt="">
 
 #### ③ ターミナル上でコマンドを入力する
@@ -154,7 +153,7 @@ git reset --hard xxxxxxxxx
 ```
 
 下記コマンドは今回のキャプチャでの例になります。<br>
-今回は『4』のコミットを取り消したい、つまり、Revert 3まで戻ればよいので、git lo --onlineで出力されるcommitメッセージ『3』のコミット（463e2ba）までresetコマンドでもどる<br>
+今回は『4』のコミットを取り消したい、つまり、Revert 3まで戻ればよいので、git lo --onlineで出力されるcommitメッセージ『3』のコミット（463e2ba）までresetコマンドで戻る<br>
 
 ```
 git reset --hard 463e2ba
@@ -162,21 +161,20 @@ git reset --hard 463e2ba
 ```
 
 このあと、再度コマンドで、git log --onelineと入力し、commitメッセージ『4』がきえていることを確認する<br>
-また、Github Desktopでもcommitメッセージ『4』がきえていることを確認する
+また、Github Desktopでもcommitメッセージ『4』が消えていることを確認する
 
 <img src="https://i.gyazo.com/f607c4d0f4519766207eac62b641506e.gif" alt="">
 
 ## Q-4. Git Stashを経験してみよう①
 
 ### 問題 
-- Git Stashを経験するために下記準備を行いましょう。
+- Git Stashを経験するために下記準備を行ってください。
 
 ### 準備
-- デスクトップ上に、『GitStash』というローカルリポジトリを作成しましょう。
-- 下記の作業は、mainブランチで行っていきましょう。
-- vs codeで『GitStash』ディレクトリを開き、index.htmlを作成し、下記に記載のコードを記載しましょう。
-- add, commitを行い（commitメッセージは、initial commit）を最後にpushを行いましょう。
-- リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『GitStash』として作成しましょう。
+- デスクトップ上に、『GitStash』というローカルリポジトリを作成し、下記の作業は、mainブランチで行ってください。
+  - VScodeで『GitStash』ディレクトリを開き、index.htmlを作成し、下記に記載のコードを記載する
+  - add, commitを行い（commitメッセージは、initial commit）を最後にpushを行う
+  - リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『GitStash』として作成する
 
 ```
 <!DOCTYPE html>
@@ -197,7 +195,7 @@ git reset --hard 463e2ba
 #### 解説
 <details><summary>解説</summary><div>
 git基本操作の復習です。<br>
-何度も繰り返し、練習していきましょう。
+何度も繰り返し、練習してください。
 </div></details>
 
 #### ローカルリポジトリの作成
@@ -215,16 +213,16 @@ git基本操作の復習です。<br>
 ## Q-5. Git Stashを経験してみよう②
 
 ### 問題 
-- Git Stashを使用し、コードをコミットせず、一時保存してみましょう。
+- Git Stashを使用し、コードをコミットせず、一時保存してください。
 
 ### 操作手順
 - mainブランチ上で下記コードを記載
 - Github Desktop上の『Current Branch』から新しくtestブランチを作成、ポップアップが表示されるので、『Leave my changes on main』を選択し、『testブランチ』に移動する
-- vs codeを確認する
+- VScodeを確認する
 - testブランチから、mainブランチに移動する
-- 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VS CODEを確認する
+- 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VScodeを確認する
 - ここでGithub flowで開発していることを想定する。本来testブランチでコードを書き進める必要があるのにも関わらず今回、mainブランチに間違ってコードを書き進めてしまった（<h1>Hello</h1>）。このコードをtestブランチへと反映し、mainブランチではなかったことにする。ブランチ移動を行い、『Bring my changes to test』を選択する
-- testブランチ上でcommitを行い、その後、mainブランチへと戻り、VS CODEを確認してみる
+- testブランチ上でcommitを行い、その後、mainブランチへと戻り、VScodeを確認してみる
 
 ```
 <h1>Hello</h1>
@@ -234,10 +232,10 @@ git基本操作の復習です。<br>
 #### 解説
 <details><summary>解説</summary><div>
 Git Stashとはコードを一時退避・一時保存しておく技術です。<br>
-Github flowを用いて開発中、急に別のブランチをきって開発せざるを得なくなった場合や、ブランチをきりわすれmainブランチで作業をしてしまっている場合に、作業が中途半端過ぎてcommitはしたくないという場合に、利用します。<br>
+Github flowを用いて開発中、急に別のブランチを切って開発せざるを得なくなった場合や、ブランチを切り忘れmainブランチで作業をしてしまっている場合に、作業が中途半端過ぎてcommitはしたくないという場合に、利用します。<br>
 つまり一時的にコードを退避させておくということになります。<br>
 急な作業を終えた後に、一時退避させておいたコードを自分の作業ブランチに反映・復元（restore）することで作業を継続することができます。<br>
-実際の開発現場では、チームで開発を行っていきます。タスクが割り振られ、そのタスクを完成させるためのブランチをきり作業をしていきますが、時に差し込みで急なタスクの依頼をうけることが多々あります。commitができればいいですが、commitするまで区切りよく開発できていない、つまりキリがよくないこともあるでしょう。その際にはGitStashを使って一時退避・一時保存しておきましょう。
+実際の開発現場では、チームで開発を行っていきます。タスクが割り振られ、そのタスクを完成させるためのブランチを切り作業をしていきますが、時に差し込みで急なタスクの依頼をうけることが多々あります。commitができればいいですが、commitするまで区切りよく開発できていない、つまりキリがよくないこともあるでしょう。その際にはGitStashを使って一時退避・一時保存しておきましょう。
 </div></details>
 
 #### index.htmlにコードの記載
@@ -248,13 +246,13 @@ Github flowを用いて開発中、急に別のブランチをきって開発せ
 
 <img src="https://i.gyazo.com/9e7f88c80a81ed035f13456f7eb653e9.gif" alt="">
 
-#### VS CODEを確認する（現在いるブランチはtestブランチ）
+#### VScodeを確認する（現在いるブランチはtestブランチ）
 <img src="https://i.gyazo.com/9a5ff2ef41b91a0112a25c12e421c163.gif" alt="">
 
 #### testブランチからmainブランチに移動する
 <img src="https://i.gyazo.com/c22965dbab44198cf696ff6dcc7406f4.gif" alt="">
 
-#### 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VS CODEを確認する
+#### 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VScodeを確認する
 <img src="https://i.gyazo.com/0de06e018d5af8237168798ef74b301e.gif" alt="">
 
 #### mainブランチからtestブランチにコードを移動する
@@ -262,7 +260,7 @@ Github flowを用いて開発中、急に別のブランチをきって開発せ
 
 <img src="https://i.gyazo.com/07c2eeb10bb30e8494606c300f983e47.gif" alt="">
 
-#### testブランチでcommit後、mainブランチに移動し、VS CODEを確認する
+#### testブランチでcommit後、mainブランチに移動し、VScodeを確認する
 <img src="https://i.gyazo.com/1c6098ad7db2b118c700b8f54c1e5303.gif" alt="">
 
 <img src="https://i.gyazo.com/e51dde52cae73ff5ec28094178ac9630.gif" alt="">
