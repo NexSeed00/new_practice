@@ -55,7 +55,7 @@ printNum(4);
 function printKuku($num) {
     for ($i = 1; $i <= 9; $i++) {
         echo $num * $i;
-	echo '<br>';
+	    echo '<br>';
     }
 }
 	
@@ -80,7 +80,7 @@ function printIsEven($num) {
     if ($num % 2 === 0) {
         echo "偶数です";
     } else {
-	echo "奇数です";
+        echo "奇数です";
     }
 }
 	
@@ -179,8 +179,8 @@ function getSquared($num) {
     return $num * $num;
 }
 	
-    $result = getSquared(4);
-    echo $result;
+$result = getSquared(4);
+echo $result;
 ```
 		
 </div></details>
@@ -190,29 +190,29 @@ function getSquared($num) {
 	
 58. 以下の関数を作成して、作成した関数を実行してください。
 
-関数名：createSelfIntroductionText  
+関数名：profile
 引数1：1つの文字列  
 処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
 	
 例
 	
 ```
-$message = createSelfIntroductionText("NexSeed");
+$message = profile("Taro");
 echo $message;
 	
 // 実行結果
-私の名前はNexSeedです
+私の名前はTaroです
 ```
 	
 <details><summary>回答例</summary><div>
 		
 ```
-function createSelfIntroductionText($name) {
+function profile($name) {
     $msg = '私の名前は' . $name . 'です';
     return $msg;
 }
 	
-$message = createSelfIntroductionText("NexSeed");
+$message = profile("Taro");
 echo $message;
 ```
 		
@@ -234,7 +234,7 @@ $result = isEvenNumber(3);
 echo $result;
 	
 // 実行結果
-false
+blue(false)
 ```
 	
 <details><summary>回答例</summary><div>
@@ -259,22 +259,22 @@ var_dump($result);
 	
 60. 以下の関数を作成して、作成した関数を実行してください。
 
-関数名：isSeedKun  
+関数名：isTaro
 引数1：任意の文字列  
-処理内容：引数で渡された文字列が「SeedKun」の場合は true、そうでない場合は false を返す。
+処理内容：引数で渡された文字列が「Taro」の場合は true、そうでない場合は false を返す。
 	
 <details><summary>回答例</summary><div>
 		
 ```
-function isSeedKun($str) {
-    if ($str == "SeedKun") {
+function isTaro($str) {
+    if ($str == "Taro") {
         return true;
     } else {
 	return false;
     }
  }
 	
- $result = isSeedKun("SeedKun");
+$result = isTaro("Taro");
 var_dump($result);
 ```
 		

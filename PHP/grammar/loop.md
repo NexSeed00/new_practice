@@ -79,7 +79,7 @@ for ($i = 1; $i <= 100; $i++) {
         echo $i;
     }
 	echo '<br>';
-    }
+}
 ```
 		
 </div></details>
@@ -92,12 +92,12 @@ for ($i = 1; $i <= 100; $i++) {
 <details><summary>回答例</summary><div>
 		
 ```
-    for ($i = 1; $i <= 100; $i++) {
-        if ($i % 3 === 0) {
+for ($i = 1; $i <= 100; $i++) {
+    if ($i % 3 === 0) {
 	    echo $i;
 	    echo '<br>';
 	}
-    }
+}
 ```
 		
 </div></details>
@@ -110,12 +110,12 @@ for ($i = 1; $i <= 100; $i++) {
 <details><summary>回答例</summary><div>
 		
 ```
-    for ($i = 1; $i <= 100; $i++) {
-        if ($i % 5 === 0) {
+for ($i = 1; $i <= 100; $i++) {
+    if ($i % 5 === 0) {
 	    echo $i;
 	    echo '<br>';
 	}
-    }
+}
 ```
 		
 </div></details>
@@ -130,7 +130,7 @@ for ($i = 1; $i <= 100; $i++) {
 ```
 for ($i = 1; $i <= 100; $i++) {
     if ($i % 3 === 0 && $i % 5 === 0) {
-	echo $i;
+	    echo $i;
         echo '<br>';
     }
 }
@@ -153,7 +153,7 @@ for ($i = 1; $i <= 100; $i++) {
     } else {
         echo $i;
     }
-        echo '<br>';
+    echo '<br>';
 }
 ```
 		
@@ -178,9 +178,8 @@ for ($i = 1; $i <= 100; $i++) {
     } else {
         echo $i;
     }
-        echo '<br>';
+    echo '<br>';
 }
-
 ```
 		
 </div></details>
