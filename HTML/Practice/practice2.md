@@ -3,7 +3,7 @@
 
     準備
     1. 下記のリンクからzipファイルをダウンロードしてください。
-    https://github.com/NexSeed00/new_practice/blob/master/HTML/practice2_html%202.zip?raw=true
+    [https://github.com/NexSeed00/new_practice/blob/master/HTML/practice2_html%202.zip?raw=true](https://github.com/NexSeed00/new_practice/blob/master/HTML/practice2_html%202.zip?raw=true)
 
     2. style.cssを編集し、画像と同じ見た目になるようにコードを記載してください。
 

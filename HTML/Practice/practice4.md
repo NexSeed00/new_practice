@@ -1,9 +1,12 @@
 # 練習問題
 1. 下記リンクからzipファイルをダウンロードしてください。
-https://github.com/NexSeed00/new_practice/blob/master/HTML/practice4_html.zip?raw=true
+[https://github.com/NexSeed00/new_practice/blob/master/HTML/practice4_html.zip?raw=true](https://github.com/NexSeed00/new_practice/blob/master/HTML/practice4_html.zip?raw=true
+)
 
-    style.cssにコードを記載してきましょう。answer.cssが回答になります。
-    以下の画像のようなボタンを作成しましょう。
+    style.cssにコードを記載して
+    以下の画像のようなボタンを作成してください。
+    answer.cssが回答になります。
+
     ※heightは使用しないこと。
 
 
