@@ -1,9 +1,9 @@
 # 中級問題
 
-## Q-1. 復習 - ローカルリポジトリ・リモートリポジトリを作成し、Gitの管理下においてみよう
+## Q-1. 復習 - ローカルリポジトリ・リモートリポジトリを作成し、Gitの管理下に置く
 ### 問題 
 デスクトップ上に、『sample_git』というローカルリポジトリをGithub Desktop上から作成し、下記の作業をmainブランチで行ってください。
-  - vs codeでsample_gitを開き、index.htmlを作成し、下記『準備』に記載のコードを記載する
+  - VScodeでsample_gitを開き、index.htmlを作成し、下記『準備』に記載のコードを記載する
   - add, commitを行い（commitメッセージは、initial commit）を最後にpushを行う
   - リモートリポジトリをpublicリポジトリとして、ローカルリポジトリと同じ名前『sample_git』として作成する
 
@@ -29,13 +29,13 @@ index.htmlに下記コードを記載してください
 #### 解説
 <details><summary>解説</summary><div>
 git基本操作の復習です。<br>
-何度も繰り返し、練習してください。
+何度も繰り返し、練習しましょう。
 </div></details>
 
 #### ローカルリポジトリの作成
 <img src="https://i.gyazo.com/23a27fb7e8f9c10ec152e16264f868c4.gif" alt="">
 
-#### ローカルリポジトリをvs code開き、htmlコードを貼り付け
+#### ローカルリポジトリをVScode開き、htmlコードを貼り付け
 <img src="https://i.gyazo.com/45ef5755f1eb935bb7a591c5cd3436c3.gif" alt="">
 
 #### add/commit
@@ -44,7 +44,7 @@ git基本操作の復習です。<br>
 #### pushする前のリモートリポジトリの作成、push
 <img src="https://i.gyazo.com/86d4f01cd693bdf3355219e8882115c6.gif" alt="">
 
-## Q-2. 復習 - コミットをしていこう
+## Q-2. 復習 - コミットをする
 ### 問題 
 - 準備①コードを記載し、commitメッセージに、1と記載し、pushする
 - 準備②コードを記載し、commitメッセージに、2と記載し、pushする
@@ -82,7 +82,7 @@ index.htmlのbodyの中に下記コードを記載する
 #### 準備③
 <img src="https://i.gyazo.com/15be2f5fe11184fe1c6fed98a7fec3b7.gif" alt="">
 
-## Q-3. コミットの取り消しをしてみよう①
+## Q-3. コミットの取り消し①
 ### 問題 
 commitメッセージ『3』のコミットを取り消してください。<br>
 ※この問題は、解くというよりは解説を見ながら、操作して理解を深めて頂いても構いません。
@@ -110,7 +110,7 @@ VScodeで上書きして、コミットすればいいのではないかと思�
 
 
 
-## Q-3. コミットの取り消しをしてみよう②
+## Q-3. コミットの取り消し②
 ### 問題 
 下記準備①コードをindex.htmlに貼りつけ、commitメッセージ『4』のコミットを作り出し、pushしてください。<br>
 commitメッセージ『4』のコミットを<b>変更履歴を残さず</b>取り消してください。<br>
@@ -165,7 +165,7 @@ git reset --hard 463e2ba
 
 <img src="https://i.gyazo.com/f607c4d0f4519766207eac62b641506e.gif" alt="">
 
-## Q-4. Git Stashを経験してみよう①
+## Q-4. Git Stashの経験①
 
 ### 問題 
 - Git Stashを経験するために下記準備を行ってください。
@@ -195,7 +195,7 @@ git reset --hard 463e2ba
 #### 解説
 <details><summary>解説</summary><div>
 git基本操作の復習です。<br>
-何度も繰り返し、練習してください。
+何度も繰り返し、練習しましょう。
 </div></details>
 
 #### ローカルリポジトリの作成
@@ -210,7 +210,7 @@ git基本操作の復習です。<br>
 #### push
 <img src="https://i.gyazo.com/8b98fd42b35b8078723f40ac86bb8051.gif" alt="">
 
-## Q-5. Git Stashを経験してみよう②
+## Q-5. Git Stashの経験②
 
 ### 問題 
 - Git Stashを使用し、コードをコミットせず、一時保存してください。
@@ -221,7 +221,7 @@ git基本操作の復習です。<br>
 - VScodeを確認する
 - testブランチから、mainブランチに移動する
 - 『View stash』から一時保存したコードを確認し、mainブランチに反映し、VScodeを確認する
-- ここでGithub flowで開発していることを想定する。本来testブランチでコードを書き進める必要があるのにも関わらず今回、mainブランチに間違ってコードを書き進めてしまった（<h1>Hello</h1>）。このコードをtestブランチへと反映し、mainブランチではなかったことにする。ブランチ移動を行い、『Bring my changes to test』を選択する
+- ここでGithub flowで開発していることを想定します。本来testブランチでコードを書き進める必要があるのにも関わらず、mainブランチに間違ってコードを書き進めてしまった。このコードをtestブランチへと反映し、mainブランチではなかったことにする。ブランチ移動を行い、『Bring my changes to test』を選択する
 - testブランチ上でcommitを行い、その後、mainブランチへと戻り、VScodeを確認してみる
 
 ```

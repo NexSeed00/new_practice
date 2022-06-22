@@ -11,8 +11,7 @@ https://github.com/NexSeed00/new_practice/blob/master/PHP/foreach_array.zip?raw=
 
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/a956c9fa61df291d84e1afe1f30a0054.gif)](https://gyazo.com/a956c9fa61df291d84e1afe1f30a0054)
-
+<img width="932" alt="スクリーンショット 2022-06-22 13 21 07" src="https://user-images.githubusercontent.com/75789463/174949757-a983ae8e-860b-4edc-b46a-5decc813a80c.png">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
