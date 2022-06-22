@@ -43,7 +43,7 @@
 
     <br>
 
-4. 33で作成した配列animalsに「elephant」を追加してください。  
+4. 3で作成した配列animalsに「elephant」を追加してください。  
 
     <details><summary>回答例</summary><div>
             
@@ -56,7 +56,7 @@
 
     <br>
 	
-5. 33で作成した配列animals内の「dog」を「cat」に更新してください。  
+5. 3で作成した配列animals内の「dog」を「cat」に更新してください。  
 
     <details><summary>回答例</summary><div>
             
@@ -69,7 +69,7 @@
 
     <br>
 	
-6. 33で作成した配列animals内の「fox」を削除してください。  
+6. 3で作成した配列animals内の「fox」を削除してください。  
 
     <details><summary>回答例</summary><div>
             
@@ -83,7 +83,7 @@
 
     <br>
 	
-7. 33で作成した配列animalsの中身を全て出力してください。  
+7. 3で作成した配列animalsの中身を全て出力してください。  
 
     <details><summary>回答例</summary><div>
             
@@ -99,7 +99,7 @@
 
     <br>
 	
-8. 33で作成した配列animalsの中身を全て出力してください。  
+8. 3で作成した配列animalsの中身を全て出力してください。  
 ただし、「fox」は出力しないでください。  
 
     <details><summary>回答例</summary><div>

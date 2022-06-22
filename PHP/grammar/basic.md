@@ -144,6 +144,8 @@
 	echo $x;
 	echo $x * $x;
 	echo $x * $x * $x;
+
+	// pow関数（PHPでべき乗を計算する関数）を使用した場合
 	echo pow($x, 2);
 	```
 		
