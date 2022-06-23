@@ -291,7 +291,16 @@
 	
 	<br>
 
-17. Postモデルを作成してください。この時、データ型がtextのcontentカラムもマイグレーションファイルに追加してください。
+17. Postモデルを作成してください。この時、データ型がtextのcontentカラムもマイグレーションファイルに追加	int x = 2;
+	System.out.println(x);
+	System.out.println(x * x);
+	System.out.println(x * x * x);
+
+    // 下記の方法でも表示することができます。
+  	System.out.println((int) Math.pow(x, 1));
+	System.out.println((int) Math.pow(x, 2));
+   	System.out.println((int) Math.pow(x, 3));
+してください。
 
 	<details><summary>回答例</summary><div>
 

@@ -103,7 +103,7 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     <br>
 	
 6. 変数xに任意の数値を代入し、それが3の倍数か5の倍数かを判定するプログラムを作成してください。   
-ただし、3の倍数の場合は、「3の倍数です」、5の倍数の場合は「5の倍数です」、3と5の倍数の場合は「3と5の倍数です」、それ以外の場合は、「3と5の倍数以外です」と出力してください。
+ただし、3の倍数の場合は「3の倍数です」、5の倍数の場合は「5の倍数です」、3と5の倍数の場合は「3と5の倍数です」、それ以外の場合は「3と5の倍数以外です」と出力してください。
 
     <details><summary>回答例</summary><div>
             
@@ -162,12 +162,12 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
 
     <br>
 	
-9. 変数xに「男」または「女」を代入し、以下の表通り出力するプログラムを作成してください。   
+9. 変数xに「dog」または「cat」を代入し、以下の表通り出力するプログラムを作成してください。   
 
     | xの値    | 出力内容 |
     | -------- | -------- |
-    | 男       | male     |
-    | 女       | female   |
+    | dog       | 犬     |
+    | cat       | 猫   |
     | 上記以外 | ???      |
 
     <details><summary>回答例</summary><div>
@@ -175,26 +175,26 @@ x が y より小さい（未満）場合には「xはyより小さい」、x �
     ```
     // if文を使った方法
 
-    String x = "女";
+    String x = "dog";
         
-    if (x == "男") {
+    if (x == "犬") {
         System.out.println("male");
-    } else if (x == "女") {
-        System.out.println("female");
+    } else if (x == "cat") {
+        System.out.println("猫");
     } else {
         System.out.println("???");
     }
 
     // switch文を使った方法(動画内では解説していませんが、気になる方は調べてみると良いでしょう)
 
-    String x = "女";
+    String x = "dog";
 
     switch (x) {
-        case "男":
-            System.out.println("male");
+        case "dog":
+            System.out.println("犬");
             break;
-        case "女":
-            System.out.println("female");
+        case "cat":
+            System.out.println("猫");
             break;
         default:
             System.out.println("???");

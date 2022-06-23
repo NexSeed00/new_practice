@@ -10,8 +10,11 @@
             return 0
         else:
             return test(num + 1) + num
-    
+
     print(test(1))
+
+    // 出力結果
+    55
 	```
 		
 	</div></details>
@@ -31,6 +34,9 @@
             return test(num + 1) - num
 
     print(test(1))
+
+    // 出力結果
+    -55
 	```
 		
 	</div></details>
@@ -49,6 +55,9 @@
             return test(num + 1) * num
 
     print(test(1))
+
+    // 出力結果
+    3628800
 	```
 	
 	</div></details>
@@ -67,13 +76,17 @@
             return num1 * test(num1, num2 - 1)
 
     print(test(3, 5))
+
+    // 出力結果
+    243
 	```
 		
 	</div></details>
 	
 	<br>
 
-5. 【発展】下記の出力結果になるようなプログラムを再起処理を用いて作成し、実行してください。また、下記の数列はフィボナッチ数列といい、本講座では扱っていないのでご自身で調べながら問題に取り組んでください。
+5. 【発展】下記の出力結果になるようなプログラムを再起処理を用いて作成し、実行してください。
+※なお、下記の数列はフィボナッチ数列といい、本講座では扱っていないのでご自身で調べながら問題に取り組んでください。
     
     出力結果
 
@@ -98,6 +111,9 @@
     for i in range(1, count):
         fibonacci_number = test(i)
         print(fibonacci_number, end=" ")
+
+    // 出力結果
+    1 1 2 3 5 8 13 21 34 55
 	```
 		
 	</div></details>
