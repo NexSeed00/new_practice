@@ -59,6 +59,7 @@
             
     ```
     array.append(12)
+    print(array)
     ```
             
     </div></details>
@@ -72,6 +73,7 @@
             
     ```
     array.extend([13, 14, 15])
+    print(array)
     ```
             
     </div></details>
@@ -85,6 +87,7 @@
             
     ```
     array.insert(10, 11)
+    print(array)
     ```
             
     </div></details>
@@ -98,6 +101,7 @@
             
     ```
     del array[9]
+    print(array)
     ```
             
     </div></details>
@@ -111,6 +115,7 @@
             
     ```
     del array[4:6]
+    print(array)
     ```
             
     </div></details>
@@ -125,6 +130,7 @@
             
     ```
     array[7:12] = []
+    print(array)
     ```
             
     </div></details>
