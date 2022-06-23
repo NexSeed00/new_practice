@@ -7,8 +7,8 @@ phpmyadminを開き、『Japan』というデータベース名でデータベ�
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/7e41e4f43a50b15ca8e785d12de2f4c4.gif)](https://gyazo.com/7e41e4f43a50b15ca8e785d12de2f4c4)
 
+<img src="https://i.gyazo.com/7e41e4f43a50b15ca8e785d12de2f4c4.gif" alt="">
 
 ## Q-2. insert文を使用し、テーブルを作成しましょう①
 
@@ -27,7 +27,8 @@ CREATE TABLE `region` (
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/27cfdb7684fb443fffa315d0a6158530.gif)](https://gyazo.com/27cfdb7684fb443fffa315d0a6158530)
+
+<img src="https://i.gyazo.com/27cfdb7684fb443fffa315d0a6158530.gif" alt="">
 
 ## Q-3. insert文を使用し、テーブルを作成しましょう②
 
@@ -47,7 +48,8 @@ CREATE TABLE `prefecture` (
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/0a7473025112d2237da89fe62c86f74c.gif)](https://gyazo.com/0a7473025112d2237da89fe62c86f74c)
+
+<img src="https://i.gyazo.com/0a7473025112d2237da89fe62c86f74c.gif" alt="">
 
 ## Q-4. insert文を使用し、テーブルに初期データを格納しましょう①
 
@@ -69,7 +71,8 @@ INSERT INTO `region` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/4f68859770f3e81160cceff9fd97b8c0.gif)](https://gyazo.com/4f68859770f3e81160cceff9fd97b8c0)
+
+<img src="https://i.gyazo.com/4f68859770f3e81160cceff9fd97b8c0.gif" alt="">
 
 ## Q-5. insert文を使用し、テーブルに初期データを格納しましょう②
 
@@ -130,7 +133,8 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/47246f6933c3fea990444f6162ddcc49.gif)](https://gyazo.com/47246f6933c3fea990444f6162ddcc49)
+
+<img src="https://i.gyazo.com/47246f6933c3fea990444f6162ddcc49.gif" alt="">
 
 ## Q-6. データベースをエクスポートしてみよう
 
@@ -140,7 +144,8 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/e3dae5a1c45019b7f3f5e1f860d684be.gif)](https://gyazo.com/e3dae5a1c45019b7f3f5e1f860d684be)
+
+<img src="https://i.gyazo.com/e3dae5a1c45019b7f3f5e1f860d684be.gif" alt="">
 
 ## Q-7. テーブルを削除してみよう
 
@@ -149,7 +154,8 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/41c3a580bd4cfc706b79637a78a625e7.gif)](https://gyazo.com/41c3a580bd4cfc706b79637a78a625e7)
+
+<img src="https://i.gyazo.com/41c3a580bd4cfc706b79637a78a625e7.gif" alt="">
 
 ## Q-8. テーブルのレコードを削除してみよう
 
@@ -158,7 +164,8 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/4536972bac4897453ff4e8d45b37a6a2.gif)](https://gyazo.com/4536972bac4897453ff4e8d45b37a6a2)
+
+<img src="https://i.gyazo.com/4536972bac4897453ff4e8d45b37a6a2.gif" alt="">
 
 ## Q-9. テーブルのレコードを追加してみよう
 
@@ -170,7 +177,8 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/015de9bf0cf6683e7bf4175ae4c04b40.gif)](https://gyazo.com/015de9bf0cf6683e7bf4175ae4c04b40)
+
+<img src="https://i.gyazo.com/015de9bf0cf6683e7bf4175ae4c04b40.gif" alt="">
 
 ## Q-10. データベースを削除してみよう
 
@@ -179,7 +187,8 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/d9e8a1b89e32d996ef95af7ae64a72a6.gif)](https://gyazo.com/d9e8a1b89e32d996ef95af7ae64a72a6)
+
+<img src="https://i.gyazo.com/d9e8a1b89e32d996ef95af7ae64a72a6.gif" alt="">
 
 ## Q-11. データベースをインポートしましょう
 
@@ -188,4 +197,5 @@ INSERT INTO `prefecture` VALUES
 
 ### 回答例
 #### 解説
-[![Image from Gyazo](https://i.gyazo.com/88a3a65a2542e376e623bc4acc9761af.gif)](https://gyazo.com/88a3a65a2542e376e623bc4acc9761af)
+
+<img src="https://i.gyazo.com/88a3a65a2542e376e623bc4acc9761af.gif" alt="">
