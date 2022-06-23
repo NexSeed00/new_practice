@@ -186,7 +186,7 @@
 8. 下記の条件を満たすプログラムを作成してください。
 
     ```
-    メソッド名：createSelfIntroductionText  
+    メソッド名：getProfile
     引数1：1つの文字列  
     処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
     ```
@@ -194,7 +194,7 @@
     例
         
     ```
-    string message = createSelfIntroductionText("taro");
+    string message = getProfile("taro");
     Debug.Log(message);
         
     // 実行結果
@@ -204,7 +204,7 @@
     <details><summary>回答例</summary><div>
             
     ```
-    public static string createSelfIntroductionText(string name) {
+    public static string getProfile(string name) {
         string msg = "私の名前は" + name + "です";
         return msg;
     }

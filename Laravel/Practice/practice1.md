@@ -12,13 +12,15 @@
 
 	<br>
 
-2. .envファイルの編集を行ってください。
+2. .envファイルにtestというデータベース名を追記してください。また、Macの方はDB_SOCKETを追記してください。
 
 	<details><summary>回答例</summary><div>
 		
     ```
-    DB_SOCKET=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
     DB_DATABASE=test
+
+    // Macの方は下記も追記
+    DB_SOCKET=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
     ```
 		
 	</div></details>
@@ -51,17 +53,12 @@
 
 5. 下記のファイルをダウンロードし、app/assets/imagesフォルダ内にそれぞれのファイルを追加してください。
 
-	```
-    ファイルリンク
-    https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true
-    ```
+    [ダウンロードファイル](https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/img.zip?raw=true)
 
 6. 下記のファイルをダウンロードし、app/assets/stylesheets/application.cssと入れ替えてください。
 
-	```
-    ファイルリンク
-    https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true
-    ```
+    [ダウンロードリンク])(https://github.com/NexSeed00/new_practice/blob/master/Rails/Practice/application.css.zip?raw=true)
+
 
 7. 「test」をローカル環境のブラウザで表示させるためにサーバーを起動してください。
 
@@ -126,7 +123,7 @@
 	
 	<br>
 
-12. 8で作成したマイグレーションファイルに以下の情報を加えてください。
+12. 11で作成したマイグレーションファイルに以下の情報を加えてください。
 
     ```php:
     $table->text('title');
@@ -228,7 +225,7 @@
 
 	<br>
 
-16. 11で加えたindexメソッドに下記の処理を加えてください。
+16. 15で加えたindexメソッドに下記の処理を加えてください。
 
     ```
     ・変数postsを定義し、postsテーブルのデータを全て代入する
@@ -280,7 +277,7 @@
 	<details><summary>回答例</summary><div>
 
 	```php:
-    Route::get('/posts', 'PostController@index')->name('Post.index');
+    Route::get('/posts', 'PostController@index')->name('post.index');
 	```
     
 	</div></details>
@@ -379,7 +376,7 @@
 	<br>
 
 
-22. localhost:3000/posts/createのURLでPostコントローラーのcreateメソッドが処理されるようにルーティングを設定してください。
+22. localhost:3000/posts/createのURLで、Postコントローラーのcreateメソッドが処理されるように、ルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -428,13 +425,13 @@
 	
 	<br>
 
-24. 18で加えたstoreメソッドに下記の処理を加えてください。
+24. 23で加えたstoreメソッドに下記の処理を加えてください。
 
     ```
     ・ブラウザから送られてくるデータを引数に持つ
     ・変数$postを定義し、送られてきたデータを代入する
     ・$postのデータをpostsテーブルに保存する
-    ・トップページに戻る
+    ・redirectメソッドを使ってトップページに戻る
     ```
 
 	<details><summary>回答例</summary><div>
@@ -478,7 +475,7 @@
 	
 	<br>
 
-25. POST送信でlocalhost:8000/postsのURLにアクセスした際にPostコントローラーのstoreメソッドが処理されるようにルーティングを設定してください。
+25. POST送信で、localhost:8000/postsのURLにアクセスした際にPostコントローラーのstoreメソッドが処理されるように、ルーティングを設定してください。
 
 	<details><summary>回答例</summary><div>
 
@@ -511,8 +508,11 @@
     body：3回目の投稿です
     ```
 
-29. localhost:8000/postsにアクセスし、postsテーブルのデータが一覧で全て表示されているか確認してください。
+29. localhost:8000/posts/createにアクセスし、下記のデータを投稿してください。
 
+    ```
+    title：4回目
+    body：4回目の投稿です
+    ```
 
-30. 下記の見本通りの挙動になっているか確認してください。
-
+30. localhost:8000/postsにアクセスし、postsテーブルのデータが一覧で全て表示されているか確認してください。

@@ -84,7 +84,7 @@
 
 	<br>
 
-4. UserクラスにActionクラスを繋げるための窓口を作成してください。
+4. UserクラスからActionクラスを参照できるようにしてください。
 
 	<details><summary>回答例</summary><div>
 		
