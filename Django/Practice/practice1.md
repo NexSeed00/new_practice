@@ -261,6 +261,7 @@
 
 15. localhost:8000/testsnsにアクセスして、下記のように表示されているか確認してください。
 
+<img width="512" alt="スクリーンショット 2022-06-23 14 05 28" src="https://user-images.githubusercontent.com/75789463/175226918-923db9e5-f7d2-4d82-8d8e-ea470cb978a1.png">
 
 16. 「testsns」のviewのindexメソッド内で定義されている変数contextに下記のデータを新たに加え、index.htmlに受け渡してください。
 
