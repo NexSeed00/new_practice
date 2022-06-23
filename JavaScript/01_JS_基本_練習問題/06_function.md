@@ -1,6 +1,6 @@
 # 関数
 
-51. 以下の関数を作成して、作成した関数を実行してください。
+1. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：printHoge  
 	処理内容：「Hoge」と出力する
@@ -20,7 +20,7 @@
 
 	<br>
 	
-52. 以下の関数を作成して、作成した関数を実行してください。
+2. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：printNum  
 	引数：1つの数値  
@@ -41,7 +41,7 @@
 
 	<br>
 	
-53. 以下の関数を作成して、作成した関数を実行してください。
+3. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：printKuku  
 	引数：1つの数値  
@@ -51,7 +51,7 @@
 		
 	```
 	function printKuku(num) {
-	    for (var i = 1; i <= 9; i++) {
+	    for (let i = 1; i <= 9; i++) {
 	        console.log(num * i)
 	    }
 	}
@@ -64,7 +64,7 @@
 
 	<br>
 	
-54. 以下の関数を作成して、作成した関数を実行してください。
+4. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：printIsEven  
 	引数：1つの数値  
@@ -89,7 +89,7 @@
 
 	<br>
 	
-55. 以下の関数を作成して、作成した関数を実行してください。
+5. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：printMessage  
 	引数1：1つの文字列  
@@ -111,7 +111,7 @@
 		
 	```
 	function printMessage(str, count) {
-	    for (var i = 0; i < count; i++) {
+	    for (let i = 0; i < count; i++) {
 	        console.log(str);
 	    }
 	}
@@ -124,7 +124,7 @@
 
 	<br>
 	
-56. 以下の関数を作成して、作成した関数を実行してください。
+6. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：printMaxNum  
 	引数1：1つの数値  
@@ -140,8 +140,8 @@
 	    } else if (num1 < num2) {
 	        console.log(num2);
 	    } else {
-					console.log("同じ");
-			}
+			console.log("同じ");
+		}
 	}
 	
 	printMaxNum(1, 5);
@@ -152,7 +152,7 @@
 
 	<br>
 	
-57. 以下の関数を作成して、作成した関数を実行してください。
+7. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：getSquared  
 	引数1：1つの数値  
@@ -161,7 +161,7 @@
 	例
 	
 	```
-	var result = getSquared(4);
+	let result = getSquared(4);
 	console.log(result);
 	
 	// 実行結果
@@ -175,7 +175,7 @@
 	    return num * num
 	}
 	
-	var result = getSquared(4);
+	let result = getSquared(4);
 	console.log(result);
 	```
 		
@@ -184,7 +184,7 @@
 
 	<br>
 	
-58. 以下の関数を作成して、作成した関数を実行してください。
+8. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：createSelfIntroductionText  
 	引数1：1つの文字列  
@@ -193,7 +193,7 @@
 	例
 	
 	```
-	var message = createSelfIntroductionText("NexSeed");
+	let message = createSelfIntroductionText("NexSeed");
 	console.log(message);
 	
 	// 実行結果
@@ -204,11 +204,11 @@
 		
 	```
 	function createSelfIntroductionText(name) {
-	    var msg = "私の名前は" + name + "です";
+	    let msg = "私の名前は" + name + "です";
 	    return msg;
 	}
 	
-	var message = createSelfIntroductionText("太郎");
+	let message = createSelfIntroductionText("太郎");
 	console.log(message);
 	```
 		
@@ -217,7 +217,7 @@
 
 	<br>
 	
-59. 以下の関数を作成して、作成した関数を実行してください。
+9. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：isEvenNumber  
 	引数1：1つの数値  
@@ -226,7 +226,7 @@
 	例
 	
 	```
-	var result = isEvenNumber(3);
+	let result = isEvenNumber(3);
 	console.log(result);
 	
 	// 実行結果
@@ -244,7 +244,7 @@
 	    }
 	}
 	
-	var result = isEvenNumber(3);
+	let result = isEvenNumber(3);
 	console.log(result);
 	```
 		
@@ -253,7 +253,7 @@
 
 	<br>
 	
-60. 以下の関数を作成して、作成した関数を実行してください。
+10. 以下の関数を作成して、作成した関数を実行してください。
 
 	関数名：isTaro
 	引数1：任意の文字列  
@@ -270,7 +270,7 @@
 	    }
 	}
 	
-	var result = isTaro("Taro");
+	let result = isTaro("Taro");
 	console.log(result);
 	```
 		
