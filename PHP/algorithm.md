@@ -1,6 +1,6 @@
 # ロジック・アルゴリズム問題
 
-## Q-1. 文字列の一部を取り出してみよう
+## Q-1. 文字列の一部を取り出してみましょう
 
 ### 問題
 文字列「SeedTech」から「Tech」だけを取りだしてみましょう<br>
@@ -12,8 +12,8 @@ $school = 'SeedTech';
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/94e4f6bd1914f96ef22a97e6e0601a6f.png)](https://gyazo.com/94e4f6bd1914f96ef22a97e6e0601a6f)
 
+<img src="https://i.gyazo.com/94e4f6bd1914f96ef22a97e6e0601a6f.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -35,7 +35,7 @@ echo mb_substr($school, 4, 4);
 - 第三引数：取り出す個数 (2)
 </div></details>
 
-## Q-2. 文字列を置き換えてみよう
+## Q-2. 文字列を置き換えてみましょう
 
 ### 問題
 文字列「SoodTech」を正しく「SeedTech」に置き換えよう
@@ -47,8 +47,8 @@ $school = 'SoodTech';
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/c38c77e5fb860ff6d3d7303530498f6c.png)](https://gyazo.com/c38c77e5fb860ff6d3d7303530498f6c)
 
+<img src="https://i.gyazo.com/c38c77e5fb860ff6d3d7303530498f6c.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -60,8 +60,7 @@ echo str_replace('Sood', 'Seed', $school);
 </div></details>
 
 <details><summary>解説</summary><div>
-文字列の置き換えには、str_replace()を使用します。<br>
-実務でも頻出です。
+文字列の置き換えには、str_replace()を使用します。
 </div></details>
 
 ## Q-3. プログラム実行後、待機させよう
@@ -70,8 +69,8 @@ echo str_replace('Sood', 'Seed', $school);
 プログラム実行後、2秒待機してから現在時刻を表示してみましょう
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/bee99d621a5a2bd213772540aadf93ba.gif)](https://gyazo.com/bee99d621a5a2bd213772540aadf93ba)
 
+<img src="https://i.gyazo.com/bee99d621a5a2bd213772540aadf93ba.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -100,8 +99,8 @@ $list = [10, -500, 30, "1000", "1B", 0.8, [9], "5,000", 2021];
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/3d682f0a490fab0a42efbbf7a94797bc.png)](https://gyazo.com/3d682f0a490fab0a42efbbf7a94797bc)
 
+<img src="https://i.gyazo.com/3d682f0a490fab0a42efbbf7a94797bc.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -117,8 +116,7 @@ foreach ($list as $item) {
 </div></details>
 
 <details><summary>解説</summary><div>
-数値判定には、is_numeric()を使用します。<br>
-『配列の中身を1つ1つ取り出して並べる』ときたらforeachは鉄板ですね<br>
+数値判定には、is_numeric()を使用します。
 </div></details>
 
 ## Q-5. 最大値を求めよう
@@ -133,8 +131,8 @@ $list = [100, 1000, 550];
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/1bbf3b67ba1d895a7a4d4d9d3d8eded3.png)](https://gyazo.com/1bbf3b67ba1d895a7a4d4d9d3d8eded3)
 
+<img src="https://i.gyazo.com/1bbf3b67ba1d895a7a4d4d9d3d8eded3.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -146,8 +144,8 @@ echo max($list);
 </div></details>
 
 <details><summary>解説</summary><div>
-max()で最大値を取り出すこともできる<br>
-逆に最小値はmin()でとりだすことができる<br>
+max()で最大値を取り出すこともできます。<br>
+逆に最小値はmin()で取り出すことができます。<br>
 </div></details>
 
 ## Q-6. 配列の中身を逆転させよう
@@ -162,8 +160,8 @@ $list = ['a', 'b', 'c', 'd'];
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/053649defac51a91043a7c38143803ee.png)](https://gyazo.com/053649defac51a91043a7c38143803ee)
 
+<img src="https://i.gyazo.com/053649defac51a91043a7c38143803ee.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -178,14 +176,13 @@ foreach ($list as $item) {
 </div></details>
 
 <details><summary>解説</summary><div>
-array_reverse()で配列の中身を逆転することができます。<br>
-『配列の中身を1つ1つ取り出して並べる』ときたらforeachは鉄板ですね<br>
+array_reverse()で配列の中身を逆転することができます。
 </div></details>
 
 ## Q-7. 文字列を分解しよう
 
 ### 問題
-文字列を5文字でわけて改行し、出力してみましょう
+文字列を5文字で分けて改行し、出力してみましょう
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -194,8 +191,8 @@ $word = "ABCDEFGHIJKLMNOPQRST";
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/f18ad603555bdb1bd35ed9d14e8ec925.png)](https://gyazo.com/f18ad603555bdb1bd35ed9d14e8ec925)
 
+<img src="https://i.gyazo.com/f18ad603555bdb1bd35ed9d14e8ec925.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -204,18 +201,16 @@ $word = "ABCDEFGHIJKLMNOPQRST";
 $word = "ABCDEFGHIJKLMNOPQRST";
 $words = str_split($word, 5);
 foreach ($words as $word) {
-    echo $word."<br>\n";
+    echo $word."\n";
 }
 ```
 </div></details>
 
 <details><summary>解説</summary><div>
-str_split()で指定した文字数で文字列を配列に格納できます。<br>
-『配列の中身を1つ1つ取り出して並べる』ときたらforeachは鉄板ですね<br>
-もう慣れてきましたかね(*^^*)
+str_split()で指定した文字数で文字列を配列に格納できます。
 </div></details>
 
-## Q-8. うるう年を取り出してみよう
+## Q-8. うるう年を取り出してみましょう
 
 ### 問題
 配列に格納している年からうるう年のみを抽出してみましょう。
@@ -227,8 +222,8 @@ $years = [1800, 2000, 2020, 2040];
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/5345c20435259991111941689ee294b3.png)](https://gyazo.com/5345c20435259991111941689ee294b3)
 
+<img src="https://i.gyazo.com/5345c20435259991111941689ee294b3.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -252,10 +247,10 @@ function year($year) {
 checkdate()を使用して2月29日が存在する年なのかを判別しています<br>
 </div></details>
 
-## Q-9. クラスをつくろう
+## Q-9. クラスを作りましょう
 
 ### 問題
-下記から考えて、期待する出力結果になるようなクラスを定義してみよう
+期待する出力結果になるようなクラスを定義してみましょう
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -265,8 +260,8 @@ $php->call();
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/2052e297fd8785d12690f49299dd9aba.png)](https://gyazo.com/2052e297fd8785d12690f49299dd9aba)
 
+<img src="https://i.gyazo.com/2052e297fd8785d12690f49299dd9aba.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -290,11 +285,8 @@ $php->call();
 </div></details>
 
 <details><summary>解説</summary><div>
-オブジェクト指向は慣れですよ<br>
-この先ずっと付き合っていく技術になります<br>
 まずは書き方を覚えましょう<br>
 オブジェクト指向で分厚い1冊の本が出版されるぐらい奥が深い技術になります<br>
-すべてを理解しようとしなくて良いです。<br>
 まずはざっくり理解し、書き方を覚え、オブジェクト指向でかかれたコードを読めるようになりましょう
 </div></details>
 
@@ -304,8 +296,8 @@ $php->call();
 ページを開いたら（もしくはリロード）したら、https://seedtech.co.jp/ にリダイレクトされるようにコードを記載してみましょう。
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/0a44638cbeaa93a63c3a38f05a47b983.gif)](https://gyazo.com/0a44638cbeaa93a63c3a38f05a47b983)
 
+<img src="https://i.gyazo.com/0a44638cbeaa93a63c3a38f05a47b983.gif" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
@@ -325,8 +317,8 @@ exit;
 ## Q-11. 参照渡しと値渡し
 
 ### 問題
-値渡しと参照渡しについて調べてみよう<br>
-その後、下記コードを出力し、理解を深めましょう
+値渡しと参照渡しについて調べてみましょう<br>
+その後、下記コードを出力してみてください
 
 ### 準備
 #### 下記コードを記載した上で、問題を解きましょう
@@ -352,8 +344,8 @@ echo $b;
 ```
 
 ### 正解の挙動
-[![Image from Gyazo](https://i.gyazo.com/2a8d1da35d7bf54f28c5e27814629857.png)](https://gyazo.com/2a8d1da35d7bf54f28c5e27814629857)
 
+<img src="https://i.gyazo.com/2a8d1da35d7bf54f28c5e27814629857.png" alt="">
 
 ### 回答例
 <details><summary>ソースコード</summary><div>
