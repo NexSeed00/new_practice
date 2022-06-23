@@ -14,7 +14,7 @@
 	<br>
 
 
-2. DBeaverを使ってデータベースの新規作成を行ってください。ただし、データベース名は「testappdb」とします。
+2. DBeaverを使ってデータベースの新規作成を行ってください。データベース名は「testappdb」とします。
 
 	<details><summary>回答例</summary><div>
     	
@@ -178,25 +178,6 @@
     <body>
     </html>
     ```
-
-	<details><summary>回答例</summary><div>
-		
-	```html:
-	<!-- testapp/testsns/templates/testsns/index.html -->
-
-    <!DOCTYPE html>
-    <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>testsns</title>
-    </head>
-    <body>
-        <h1>Hello Django！<h1>
-    <body>
-    </html>
-	```
 		
 	</div></details>
 	
@@ -222,6 +203,9 @@
 	<br>
 
 12. localhost:8000/testsnsにアクセスして、下記のように表示されているか確認してください。
+
+<img width="515" alt="スクリーンショット 2022-06-23 13 58 19" src="https://user-images.githubusercontent.com/75789463/175226043-e2a8d30c-eb5d-44c4-964c-0ff318c0642b.png">
+
 
 
 13. 「testsns」のviewから下記のデータをindex.htmlに受け渡してください。
@@ -265,7 +249,7 @@
         <title>testsns</title>
     </head>
     <body>
-        <h1>Hello Django！<h1>
+        <h1>ようこそ！<h1>
         <div>{{ message }}</div>
     <body>
     </html>
@@ -282,7 +266,7 @@
 
     ```
     キー：members
-    値：Suguru, Robin, Terry
+    値：Taro, Ken, Yuki
     ```
 
 	<details><summary>回答例</summary><div>
@@ -321,7 +305,7 @@
         <title>testsns</title>
     </head>
     <body>
-        <h1>Hello Django！<h1>
+        <h1>ようこそ！<h1>
         <div>{{ message }}</div>
         <div>
             {% for member in members %}
@@ -447,7 +431,7 @@
 	
 	<br>
 
-26. Djangoの管理サイトから「Hello Django!!!」というデータをpostsテーブルに追加してください。
+26. Djangoの管理サイトから「Hello django!!!」というデータをpostsテーブルに追加してください。
 
     <details><summary>回答例</summary><div>
 		
@@ -481,7 +465,7 @@
     def index(request):
         posts = Posts.objects.all()  # 追加
         context = {"message": "初めてのDjangoアプリ作成"}
-        members = ["Suguru", "Robin", "Terry"]
+        members = ["Taro", "Ken", "Yuki"]
         return render(request,"testsns/index.html", context)
     ```
     	
@@ -529,7 +513,7 @@
         <title>testsns</title>
     </head>
     <body>
-        <h1>Hello Django！<h1>
+        <h1>ようこそ！<h1>
         <div>{{ message }}</div>
         <div>
             {% for post in posts %}
