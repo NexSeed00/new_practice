@@ -281,7 +281,7 @@
     def index(request):
         context = {
             "message": "初めてのDjangoアプリ作成"
-            "members": ["Suguru", "Robin", "Terry"]
+            "members": ["Taro", "Ken", "Yuki"]
         }
         return render(request,"testsns/index.html", context)
     ```
